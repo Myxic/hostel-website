@@ -91,3 +91,10 @@ hr{
     border-radius: 7px;
     font-size: 13px;
 }
+.follow_us img{
+    max-width: 30px;
+}
+.follow_us{
+    display: flex;
+    gap: 10px;
+}
