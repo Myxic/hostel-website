@@ -194,13 +194,14 @@ blockquote{
 .left{
     width: 30%;
     text-align: center;
+    margin: auto;
 }
 .join{
     color: white;
     padding: .5em 2em;
     background: #18A0FB;
     border-radius: 5px;
-    margin: auto;
+    
 }
 .join:hover{
     background: #0198fc;
