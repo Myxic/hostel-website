@@ -74,3 +74,51 @@ pic6.onclick= function() {
 
 };
 
+
+// Comment box
+
+const sone = document.getElementById("sone");
+const stwo = document.getElementById("stwo");
+const sthree = document.getElementById("sthree");
+const sfour = document.getElementById("sfour");
+const sfive = document.getElementById("sfive");
+
+sone.onclick = function() {
+    sone.style.color = "yellow";
+    stwo.style.color = "black";
+    sthree.style.color = "none";
+    sfour.style.color = "none";
+    sfive.style.color = "none";
+};
+
+stwo.onclick = function() {
+    sone.style.color = "yellow";
+    stwo.style.color = "yellow";
+    sthree.style.color = "black";
+    sfour.style.color = "black";
+    sfive.style.color = "black";
+};
+
+sthree.onclick = function() {
+    sone.style.color = "yellow";
+    stwo.style.color = "yellow";
+    sthree.style.color = "yellow";
+    sfour.style.color = "black";
+    sfive.style.color = "black";
+};
+
+sfour.onclick = function() {
+    sone.style.color = "yellow";
+    stwo.style.color = "yellow";
+    sthree.style.color = "yellow";
+    sfour.style.color = "orange";
+    sfive.style.color = "black";
+};
+
+sfive.onclick = function() {
+    sone.style.color = "yellow";
+    stwo.style.color = "yellow";
+    sthree.style.color = "yellow";
+    sfour.style.color = "orange";
+    sfive.style.color = "red";
+};

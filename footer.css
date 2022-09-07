@@ -98,3 +98,6 @@ hr{
     display: flex;
     gap: 10px;
 }
+@media (max-width:390px) {
+  
+}

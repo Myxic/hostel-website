@@ -141,6 +141,7 @@ blockquote{
 }
 .two  a{
     color:  rgb(191, 78, 3);
+    
     position: absolute;
     bottom: 15px;
     right: 35px;
@@ -201,10 +202,43 @@ blockquote{
     padding: .5em 2em;
     background: #18A0FB;
     border-radius: 5px;
+<<<<<<< Updated upstream
     
+=======
+>>>>>>> Stashed changes
 }
 .join:hover{
     background: #0198fc;
     color: rgba(0, 0, 0, 0.753);
     padding: .6em 2em;
 }
+<<<<<<< Updated upstream
+=======
+.rating span:hover{
+    color: rgb(255, 255, 19);
+ 
+}
+.rating span:nth-child(4):hover{
+    color: orange;
+}
+.rating span:nth-child(5):hover{
+    color: red;
+}
+#comment{
+  width:100%;
+  margin: 20px 0px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.comment button{
+    width: 20%;
+    padding : 5px 15px;
+}
+/* content: '★★★★★ */
+@media (max-width:390px) {
+    *{
+        transform: scale(.5);
+        outline: 1px solid;
+    }
+}
+>>>>>>> Stashed changes
