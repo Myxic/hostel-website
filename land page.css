@@ -231,14 +231,14 @@ blockquote{
 }
 #de_comment{
     display: flex;
-    overflow-x:scroll;
+    overflow-x:hidden;
     gap: 10px;
     margin-bottom: 20px;
 }
 #de_comment p{
     width: 700px;
     flex: 0 0 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* display: flex;
     flex-direction: column; */
     

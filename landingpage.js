@@ -128,15 +128,21 @@ let comment = document.getElementById("comment");
 const de_comment = document.getElementById("de_comment");
 const submit = document.getElementById("submit");
 
-console.log(comment.value)
-let con = 0;
-var item = document.createElement("p");
+// console.log(comment.value)
+// let con = 0;
+
+
 submit.onclick = function() {
-con ++
-console.log(item)
-item.textContent = `${comment.value}`;
-console.log(item.textContent)
-de_comment.append(item.textContent);
+// con ++
+const item = document.createElement("p")
+
+
+const text = document.createTextNode(`${comment.value}`);
+
+
+item.appendChild(text);
+
+de_comment.appendChild(item);
 
 
 };
@@ -149,9 +155,10 @@ const prev = document.getElementById("prev");
 
 next.onclick = function() {
     
-    de_comment.scrollLeft += 10;
+    de_comment.scrollLeft += 100;
+    // document.querySelector("#de_comment p").scrollIntoView()
 };
 prev.onclick = function() {
     
-    de_comment.scrollLeft -= 10;
+    de_comment.scrollLeft -= 100;
 };
