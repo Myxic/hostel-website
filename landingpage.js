@@ -149,7 +149,9 @@ const prev = document.getElementById("prev");
 
 next.onclick = function() {
     
+    de_comment.scrollLeft += 10;
 };
 prev.onclick = function() {
     
+    de_comment.scrollLeft -= 10;
 };
