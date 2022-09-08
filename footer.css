@@ -16,7 +16,7 @@ a{
 
 /****************Heading **************/
 header{
-    border: 1px transparent black;
+    /* border: 1px transparent black; */
     background: white;
     position: fixed;
     width: 100%;

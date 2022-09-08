@@ -188,6 +188,7 @@ blockquote{
     padding: 50px 30px;
     display: flex;
 }
+
 .right{
     width: 70%;
     font-size: larger;
@@ -202,18 +203,12 @@ blockquote{
     padding: .5em 2em;
     background: #18A0FB;
     border-radius: 5px;
-<<<<<<< Updated upstream
-    
-=======
->>>>>>> Stashed changes
 }
 .join:hover{
     background: #0198fc;
     color: rgba(0, 0, 0, 0.753);
     padding: .6em 2em;
 }
-<<<<<<< Updated upstream
-=======
 .rating span:hover{
     color: rgb(255, 255, 19);
  
@@ -234,6 +229,20 @@ blockquote{
     width: 20%;
     padding : 5px 15px;
 }
+#de_comment{
+    display: flex;
+    overflow-x:scroll;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#de_comment p{
+    width: 700px;
+    flex: 0 0 100%;
+    border: 1px solid red;
+    /* display: flex;
+    flex-direction: column; */
+    
+}
 /* content: '★★★★★ */
 @media (max-width:390px) {
     *{
@@ -241,4 +250,3 @@ blockquote{
         outline: 1px solid;
     }
 }
->>>>>>> Stashed changes

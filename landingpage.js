@@ -122,3 +122,34 @@ sfive.onclick = function() {
     sfour.style.color = "orange";
     sfive.style.color = "red";
 };
+
+
+let comment = document.getElementById("comment");
+const de_comment = document.getElementById("de_comment");
+const submit = document.getElementById("submit");
+
+console.log(comment.value)
+let con = 0;
+var item = document.createElement("p");
+submit.onclick = function() {
+con ++
+console.log(item)
+item.textContent = `${comment.value}`;
+console.log(item.textContent)
+de_comment.append(item.textContent);
+
+
+};
+
+
+const next = document.getElementById("next");
+const prev = document.getElementById("prev");
+
+
+
+next.onclick = function() {
+    
+};
+prev.onclick = function() {
+    
+};
