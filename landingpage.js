@@ -10,6 +10,11 @@ const iii = document.querySelector(".iii");
 const iv = document.querySelector(".iv");
 const v = document.querySelector(".v");
 const vi = document.querySelector(".vi");
+const here1 = document.querySelector(".here1 p")
+const here2 = document.querySelector(".here2 p")
+here1.style.webkitBackgroundClip = "text"; 
+here2.style.webkitBackgroundClip = "text";  
+
 
 
 // ***************facilities******************
@@ -145,23 +150,7 @@ const r2 = document.getElementById("rtwo");
 const r3 = document.getElementById("rthree");
 const r4 = document.getElementById("rfour");
 const r5 = document.getElementById("rfive");
-let radiochecker;
-if (r1.checked){
-    radiochecker = true;
-    }else if (r2.checked) {
-        radiochecker = true;
-    } else if(r3.checked ) {
-        radiochecker = true;
-    }
-    else if(r4.checked ){
-        radiochecker = true;
-    }else if(r5.checked ){
-        radiochecker = true;
-    }else  {
-        radiochecker = false;
-    }
-// console.log(comment.value)
-// let con = 0;
+
 window.onload = function(){
     comment.value = ""
     name1.value = ""
@@ -171,8 +160,27 @@ window.onload = function(){
     r4.checked = false;
     r5.checked = false;
 }
+let radiochecker;
+
+// console.log(comment.value)
+// let con = 0;
+
 
 submit.onclick = function() {
+    if (r1.checked){
+        radiochecker = true;
+        }else if (r2.checked) {
+            radiochecker = true;
+        } else if(r3.checked) {
+            radiochecker = true;
+        }
+        else if(r4.checked){
+            radiochecker = true;
+        }else if(r5.checked){
+            radiochecker = true;
+        }else{
+            radiochecker = false;
+        }
     console.log("")
     console.log(comment.value)
 if (comment.value != "" && name1.value != "" && radiochecker == true){

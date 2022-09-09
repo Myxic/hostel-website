@@ -246,6 +246,7 @@ textarea{
 #de_comment div p{
     /* border: 1px solid red; */
     margin: auto;
+    
 }
 input[type="radio"]{
     display: none;
