@@ -160,8 +160,8 @@ blockquote{
     position: absolute;
     left: 10px;
     margin: auto;
-    top: 0%;
-    bottom: 0%;
+    top: 10%;
+    /* bottom: 0%; */
     width: 1em;
     padding: 50px 5px;
     outline: 1px solid ;
@@ -170,8 +170,8 @@ blockquote{
     position: absolute;
     right: 10px;
     margin: auto;
-    top: 0%;
-    bottom: 0%;
+    top: 10%;
+    /* bottom: 0%; */
     padding: 50px 5px;
     width: 1em;
     outline: 1px solid ;
@@ -181,6 +181,88 @@ blockquote{
     padding: 55px 5px;
     border: 1px solid;
 }
+.rating span:hover{
+    color: rgb(255, 255, 19);
+ 
+}
+.rating span:nth-child(4):hover{
+    color: orange;
+}
+.rating span:nth-child(5):hover{
+    color: red;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+}
+.comment{
+    width:80%;
+    margin: 20px  auto;
+    text-align: left;
+    padding: 20px;
+    /* border: 1px solid; */
+    border-radius: 5px;
+}
+textarea,
+input[type="text"]{
+    padding: 10px;
+    min-width: 70%;
+    max-width: 70%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+textarea{
+    max-height: 100px;
+    min-height: 50px;
+}
+.comment_box{
+    display: flex;
+    flex-direction: row;
+}
+#submit{
+    width: 20%;
+    padding : 5px 15px;
+    margin: 10px 40%;
+}
+#de_comment{
+    
+    display: flex;
+    overflow-x:auto;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#de_comment div{
+    width:100%;
+    max-width:100%;
+    padding-top: 50px;
+    flex: 0 0 100%;
+    text-align: center;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    
+}
+#de_comment div p{
+    /* border: 1px solid red; */
+    margin: auto;
+}
+input[type="radio"]{
+    display: none;
+  }
+#warning,
+#warning2,
+#warning3{
+    /* border: 1px solid; */
+    margin-bottom: 5px;
+    text-align: left;
+}
+.warn{
+    text-align: left;
+    width: 100%;
+    /* border: 1px solid; */
+}
+
 
 /* ****** section 4 ****** */
 .four{
@@ -209,41 +291,21 @@ blockquote{
     color: rgba(0, 0, 0, 0.753);
     padding: .6em 2em;
 }
-.rating span:hover{
-    color: rgb(255, 255, 19);
- 
+
+#top{
+    position: fixed;
+    bottom: 20%;
+    right: 0%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: 200;
+    font-size: 10px;
+    z-index: 10;
+    background: purple;
+
 }
-.rating span:nth-child(4):hover{
-    color: orange;
-}
-.rating span:nth-child(5):hover{
-    color: red;
-}
-#comment{
-  width:100%;
-  margin: 20px 0px;
-  border: 1px solid;
-  border-radius: 5px;
-}
-.comment button{
-    width: 20%;
-    padding : 5px 15px;
-}
-#de_comment{
-    display: flex;
-    overflow-x:hidden;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-#de_comment p{
-    width: 700px;
-    flex: 0 0 100%;
-    /* border: 1px solid red; */
-    /* display: flex;
-    flex-direction: column; */
-    
-}
-/* content: '★★★★★ */
+
 @media (max-width:390px) {
     *{
         transform: scale(.5);

@@ -110,33 +110,80 @@
             <a href="#" class="veiw_more"><small>veiw more...</small></a>
         </section>
         <section class="section three">
-            <img src="./images/sample.svg" alt="prev" class="prev" id="prev">
-            <div id="de_comment">
-                <p>
-                    Lorem ipsum (This contains testimonial), consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, qui similique sed commodi voluptas distinctio!
-                </p>
-            </div>
-            <img src="./images/sample2.svg" alt="next" class="next" id="next" >
-
-            <div class="rating">
-                <span class="fa fa-star"id="sone"></span>
-                <span class="fa fa-star"  id="stwo"></span>
-                <span class="fa fa-star" id="sthree"></span>
-                <span class="fa fa-star" id="sfour"></span>
-                <span class="fa fa-star" id="sfive"></span>
-            </div>
-            <!-- <form method="post"> -->
-                <div class="comment">
-                    <label for="comment"> comment</label>
-                    <br>
-                    <textarea name="comment" id="comment" cols="30" rows="2" placeholder="hey hey"></textarea>
-                    <br>
-                    <button type="submit" id="submit"> submit</button>
+            <div class="comment_top">
+                <img src="./images/sample.svg" alt="prev" class="prev" id="prev">
+                <div id="de_comment">
+                    <div class="here2">
+                        <h4>
+                            Dev
+                        </h4>
+                        <q>
+                            Lorem ipsum (This contains testimonial), consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        </q>
+                        <p style="background: yellow;background-clip: text;-webkit-text-fill-color: transparent;">
+                            ★★★★★ 
+                        </p>
+                    </div>
+                    <div class="here1">
+                        <h4>
+                            Dev2
+                        </h4>
+                        <q>
+                            Lorem ipsum (This contains testimonial), consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        </q>
+                        <p style="background: yellow;background-clip: text;-webkit-text-fill-color: transparent;">
+                            ★★★★★ 
+                        </p>
+                    </div>
+                    
                 </div>
-            <!-- </form>     -->
+                <img src="./images/sample2.svg" alt="next" class="next" id="next" >
+            </div>
+
+            
+              
+                <div class="comment">
+                    <div class="warn"><small id="warning"></small></div>
+                    <label for="username">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="name" id="username"  placeholder="Enter your Name">
+                    
+                    <br>
+                    <div class="warn"><small id="warning2"></small></div>
+                    <div class="comment_box">
+                        
+                        <label for="comment">Testimonial:&nbsp;&nbsp;</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter Testimonial"> hey hey</textarea>
+                    </div>
+                    <div class="warn"><small id="warning3"></small></div>
+                    <div class="stars">
+                    
+                    <label for="radioi">Rating:&nbsp;&nbsp;</label>
+                    <input type="radio" name="radio" id="rone" placeholder="one star">
+                    <input type="radio" name="radio" id="rtwo" placeholder="two star">
+                    <input type="radio" name="radio" id="rthree" placeholder="three star">
+                    <input type="radio" name="radio" id="rfour" placeholder="four star">
+                    <input type="radio" name="radio" id="rfive" placeholder="five star">
+                    <div class="rating">
+                        <label for="rone">
+                            <span class="fa fa-star"id="sone"></span>
+                        </label>
+                        <label for="rtwo">
+                            <span class="fa fa-star"id="stwo"></span>
+                        </label>
+                        <label for="rthree">
+                            <span class="fa fa-star"id="sthree"></span>
+                        </label>
+                        <label for="rfour">
+                            <span class="fa fa-star"id="sfour"></span>
+                        </label>
+                        <label for="rfive">
+                            <span class="fa fa-star"id="sfive"></span>
+                        </label>
+                    </div>
+                </div>           
+                    <input type="submit" value="submit" id="submit" placeholder="Submit">
+            
+        
         </section>
         <section class="section four">
             <div class="right">
@@ -148,6 +195,7 @@
         </section>
 
     </div>
+    <button type="button" id="top">Top</button>
     <footer>
         <div class="footer_up">
             <div class="logo">
