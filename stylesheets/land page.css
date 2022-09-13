@@ -3,7 +3,7 @@
 }
 /************ welcome session************ */
 .welcome{
-    background-image: url(./images/hfyv1.jpg);
+    background-image: url(/images/hfyv1.jpg);
     background-size: cover;
     text-align: center;
     min-height: 100vh;
@@ -28,37 +28,7 @@ h1 small{
     font-size: 22px;
 }
 
-.btn1{
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: auto;
-    margin-top: 30px;
-    /* border: 1px solid red; */
-    display: flex;
-    gap: 20px;   
-    font-size: 13px;
-}
-.btn1 a{
-    width: 100px;
-    color: white;
-    padding-top: 8px ;
-    padding-bottom: 8px;
-    border-radius: 7px;
-}
-.login{
-    background: orangered;
-}
-.reg{
-    background: rgb(68, 68, 218);
-}
-.login:hover{
-    background: rgba(255, 69, 0,0.8);
-    color: black;
-}
-.reg:hover{
-    background: rgba(68, 68, 218,0.8);
-    color: black;
-}
+
 /* ********** Facilities**************** */
 .one{
     /* min-height: 400px; */
@@ -212,8 +182,8 @@ input[type="text"]{
     margin-bottom: 20px;
 }
 textarea{
-    max-height: 100px;
-    min-height: 50px;
+    height: 100px;
+    resize: none;
 }
 .comment_box{
     display: flex;
@@ -295,17 +265,15 @@ input[type="radio"]{
 
 #top{
     position: fixed;
-    bottom: 20%;
-    right: 0%;
+    bottom: 10px;
+    right: 10px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    font-weight: 200;
-    font-size: 10px;
     z-index: 10;
-    background: purple;
+    background: #e62739;
 
-}
+} 
 
 @media (max-width:390px) {
     *{

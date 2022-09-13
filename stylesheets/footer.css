@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+     width: 100%;
+     font-family: 'Poppins', sans-serif;
+}
+/* removing text-decorators for the links */
+a{
+    text-decoration: none;
+    color: #18A0FB;;
+}
+.btn1{
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;   
+    font-size: 13px;
+}
+.btn1 a{
+    width: 100px;
+    color: white;
+    padding-top: 8px ;
+    padding-bottom: 8px;
+    border-radius: 7px;
+}
+.login{
+    background: orangered;
+}
+.reg{
+    background: rgb(68, 68, 218);
+}
+.login:hover{
+    background: rgba(255, 69, 0,0.8);
+    color: black;
+}
+.reg:hover{
+    background: rgba(68, 68, 218,0.8);
+    color: black;
+}
+
+/****************Heading **************/
+header{
+    /* border: 1px transparent black; */
+    background: white;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 10;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 4%;
+    
+    
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+ }
+ ul li p{
+    color: #18A0FB;
+ }
+ ul li p:hover,
+ ul li a:hover{
+    color: orangered;
+    border-bottom:3px solid red;
+
+
+ }
+ #burger,
+ #exit{
+    display: none;
+ }
+/* *******************BOOKING***************** */
+
+.booking{
+    position: fixed;
+    min-width:100% ;
+    background: black;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    display: none;
+    overflow: auto;
+}
+
+.outerdiv_booking{
+    margin: auto;
+    width: 50%;
+    border: 1px solid transparent;
+    min-height: 100px;
+    transform: translateY(20%);
+}
+#close{
+   float: right;
+    width: 40px;
+    
+}
+#close:hover{
+    width: 38px;
+}
+.how_to_book{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    background: #E9E9E9;
+    border-radius: 10px;
+    
+}
+.how_to_book h2{
+    background: #D9D9D9CF;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+.how_to_book ul{
+    text-align: left;
+    list-style:outside;
+    display: block;
+    padding:20px 60px;
+    line-height: 25px;
+    
+}
+
+ /****************Footer **************/
+footer{
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding-top: 20px;
+}
+footer a{
+    color: aliceblue;
+}
+footer a:hover{
+    color: rgb(102, 102, 192);
+}
+
+.footer_up,
+.footer_down{
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 45%;
+}
+.links{
+    display: flex;
+    width: 55%;
+    gap: 10%;
+}
+h4{
+    margin-bottom: 18px;
+}
+.quick_links div,
+.community div,
+.company div{
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+}
+hr{
+    border-color: black;
+}
+.btns{ 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.btns a{
+    width: 100px;
+    color: white;
+    padding-top: 8px ;
+    padding-bottom: 8px;
+    border-radius: 7px;
+    font-size: 13px;
+}
+.follow_us img{
+    max-width: 30px;
+}
+.follow_us{
+    display: flex;
+    gap: 10px;
+}
+@media (max-width:700px) {
+.nav_ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+    background: #18A0FB;
+    padding-top: 20%;
+    line-height: 40px;
+    font-size: 25px;
+    height: 100vh;
+    width: 100%;
+    z-index: 35;
+}
+
+.btn_book{
+    width: max-content;
+    margin: auto;
+    /* border: 2px solid white; */
+}
+
+.nav_ul li p,
+.nav_ul li a{
+    color: white;
+}
+#burger{
+    position: absolute;
+    right: 20px;
+    width: 24px;
+    display: block;
+}
+#burger:hover{
+    width: 22px;
+}
+#exit{
+   position: absolute;
+   width: 25px; 
+   right: 20px;
+   top:20px;
+   display: block;
+}
+.outerdiv_booking{
+    width: 80%;
+    transform: translateY(10%);
+}
+}
