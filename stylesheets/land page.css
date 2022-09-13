@@ -274,6 +274,21 @@ input[type="radio"]{
     background: #e62739;
 
 } 
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    
+  }
+.up {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+   
+  }
 
 @media (max-width:390px) {
     *{
