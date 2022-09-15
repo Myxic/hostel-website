@@ -91,7 +91,7 @@ ul{
     left: 0;
     z-index: 15;
     display: none;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .outerdiv_booking{
@@ -129,7 +129,7 @@ ul{
     display: block;
     padding:20px 60px;
     line-height: 25px;
-    
+    overflow: auto;
 }
 
  /****************Footer **************/
@@ -195,6 +195,9 @@ hr{
     gap: 10px;
 }
 @media (max-width:700px) {
+p{
+    font-size: 13px;
+}
 .nav_ul{
     position: fixed;
     top: 0;
@@ -237,13 +240,38 @@ hr{
    display: block;
 }
 .outerdiv_booking{
-    width: 80%;
-    transform: translateY(10%);
+    width: 90%;
+    transform: translateY(5%);
 }
 .how_to_book ul{
-    font-size: 12px;
+    font-size: 14px;
+    
 }
+
 .how_to_book h2{
     font-size: 20px;
+}
+.footer_up{
+    display: block;
+}
+.footer_up{
+    position: relative;
+}
+.btns{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.links{
+    margin-top: 50px;
+    width: 100%;
+}
+.copyright,
+.follow_us{
+    font-size: 12px;
+
+}
+.follow_us img{
+    width:20px;
 }
 }
