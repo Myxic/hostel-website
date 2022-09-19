@@ -207,7 +207,7 @@ p{
     left: 0;
     text-align: center;
     display: none;
-    background: #18A0FB;
+    background: white;
     padding-top: 20%;
     line-height: 40px;
     font-size: 25px;
@@ -225,10 +225,10 @@ p{
     /* border: 2px solid white; */
 }
 
-.nav_ul li p,
+/* .nav_ul li p,
 .nav_ul li a{
     color: white;
-}
+} */
 #burger{
     position: absolute;
     right: 20px;
