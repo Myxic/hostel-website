@@ -210,8 +210,8 @@ p{
     display: none;
     background: white;
     padding-left:20px ;  
-    padding-top: 20%;
-    line-height: 40px;
+    padding-top: 10%;
+    line-height: 50px;
     font-size: 20px;
     height: 100vh;
     width: 30%;
@@ -228,7 +228,10 @@ p{
     }
 }
 
-.nav_ul * {
+.nav_ul li *:hover {
+
+    border-bottom: 3px solid orangered;
+    background: rgba(54, 88, 124, 0.4);
     transition-property: all;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
