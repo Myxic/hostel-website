@@ -16,15 +16,15 @@ close.onclick= function() {
 
 
 burger.onclick= function() {
-    // document.querySelector(".nav_ul").style.display = "block";
-    // document.querySelector("#top").style.display = "none"
-    if (document.querySelector(".nav_ul").style.display = "none") {
-        document.querySelector(".nav_ul").style.display = "block";
-        document.querySelector("#top").style.display = "none"
-        exit.style.display = "none"
-    } else if (document.querySelector(".nav_ul").style.display = "block") {
-        document.querySelector(".nav_ul").style.display = "none";
-    }
+    document.querySelector(".nav_ul").style.display = "block";
+    document.querySelector("#top").style.display = "none"
+    // if (document.querySelector(".nav_ul").style.display = "none") {
+    //     document.querySelector(".nav_ul").style.display = "block";
+    //     document.querySelector("#top").style.display = "none"
+    //     exit.style.display = "none"
+    // } else if (document.querySelector(".nav_ul").style.display = "block") {
+    //     document.querySelector(".nav_ul").style.display = "none";
+    // }
 };
 
 exit.onclick = function() {
