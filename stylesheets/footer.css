@@ -81,6 +81,9 @@ ul{
  #exit{
     display: none;
  }
+ nav figure:first-child{
+    border: none;
+}
 /* *******************BOOKING***************** */
 
 .booking{
@@ -245,6 +248,7 @@ p{
 } 
 nav figure:first-child{
     z-index:11;
+
 }
 .nav_ul li a,
 .nav_ul li p{
