@@ -226,12 +226,12 @@ p{
     top: 0%;
     left: 0%;
     text-align: left;
-    display: none;
-    background: rgb(236, 235, 235);
+    display: block;
+    background: white;
     padding:10% ;  
     padding-top: 20%;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 15px;
     height: 100vh;
     width: 80%;
     z-index: 10;
@@ -256,7 +256,8 @@ nav figure:first-child{
     width: 100%;
     text-decoration:double ;
 }
-
+.nav_ul li a:focus ,
+.nav_ul li p:focus,
 .nav_ul li a:hover ,
 .nav_ul li p:hover {
 
@@ -267,7 +268,7 @@ nav figure:first-child{
     transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
 .nav_ul p{
-    font-size: 20px;
+    font-size: 15px;
     margin: 0;
     
 }
@@ -285,12 +286,16 @@ nav figure:first-child{
 #burger{
     position: absolute;
     right: 20px;
-    width: 24px;
+    width: 18px;
     display: block;
+    outline: 1px solid #18A0FB;
+    padding: 5px;
+    border-radius: 5px;
+
 }
 #burger:hover{
-    outline: 1px solid #18A0FB;
-    padding: 1px;
+    outline: 3px solid #18A0FB;
+    
 }
 #exit{
    position: absolute;
