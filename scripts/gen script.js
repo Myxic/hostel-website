@@ -8,10 +8,12 @@ const exit = document.getElementById("exit")
 btnbook.onclick= function() {
 
     booking.style.display = "block";
+    document.querySelector("nav figure").style.display = "none"
 };
 
 close.onclick= function() {
     booking.style.display = "none";
+    document.querySelector("nav figure").style.display = "block"
 };
 
 
