@@ -321,20 +321,26 @@ nav figure:first-child{
 .links{
     margin-top: 50px;
     width: 100%;
+    justify-content: space-between;
+    
+}
+.links div h4{
+    font-size: 13px;
+}
+.links div{
+    font-size: 10px;
 }
 .footer_down{
     flex-direction: column;
-    gap: 10px;
+    gap: 13px;
 }
 .copyright,
 .follow_us{
     font-size: 12px;
 
 }
-.follow_us{
-    align-self: flex-end;
-}
+
 .follow_us img{
-    width:20px;
+    width:15px;
 }
 }
