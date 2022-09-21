@@ -149,7 +149,7 @@ blockquote{
 .next:hover,
 .prev:hover{
     padding: 55px 5px;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 .rating span:hover{
     color: rgb(255, 255, 19);
@@ -337,6 +337,9 @@ input[type="radio"]{
     .gallery{
         
         grid-template-columns: 1fr 1fr ;
+    }
+    #de_comment{
+        overflow-x: auto;
     }
     .comment,
     .next,

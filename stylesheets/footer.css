@@ -285,7 +285,8 @@ nav figure:first-child{
     display: block;
 }
 #burger:hover{
-    width: 22px;
+    outline: 1px solid #18A0FB;
+    padding: 1px;
 }
 #exit{
    position: absolute;
@@ -315,11 +316,12 @@ nav figure:first-child{
 }
 .btns{
     position: absolute;
+    gap: 15px;
     top: 10px;
     right: 20px;
 }
 .links{
-    margin-top: 50px;
+    margin-top: 60px;
     width: 100%;
     justify-content: space-between;
     
@@ -342,5 +344,12 @@ nav figure:first-child{
 
 .follow_us img{
     width:15px;
+}
+.btn1 a,
+.btns a{
+    width: 80px;
+    padding-top: 6px ;
+    padding-bottom: 6px;
+    font-size: 10px;
 }
 }
