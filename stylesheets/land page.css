@@ -257,6 +257,7 @@ input[type="radio"]{
     background: #18A0FB;
     border-radius: 5px;
 }
+.join:focus,
 .join:hover{
     background: #0198fc;
     color: rgba(0, 0, 0, 0.753);
@@ -264,6 +265,7 @@ input[type="radio"]{
 }
 
 #top{
+    display: none;
     position: fixed;
     bottom: 10px;
     right: 10px;

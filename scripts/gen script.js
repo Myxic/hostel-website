@@ -17,9 +17,12 @@ close.onclick= function() {
 };
 
 
-burger.onclick= function() {
+burger.addEventListener("click", ()=> {
+    
     document.querySelector(".nav_ul").style.display = "block";
     document.querySelector("#top").style.display = "none"
+    
+
     // if (document.querySelector(".nav_ul").style.display = "none") {
     //     document.querySelector(".nav_ul").style.display = "block";
     //     document.querySelector("#top").style.display = "none"
@@ -27,9 +30,18 @@ burger.onclick= function() {
     // } else if (document.querySelector(".nav_ul").style.display = "block") {
     //     document.querySelector(".nav_ul").style.display = "none";
     // }
-};
+});
 
-exit.onclick = function() {
-    document.querySelector(".nav_ul").style.display = "none"
+exit.addEventListener("click", ()=> {
+    // document.querySelector(".nav_ul").style.right = "50vw"; 
+    // document.querySelector(".nav_ul").style.animationDirection= "reverse";
+    document.querySelector(".nav_ul").style.display = "none";
     document.querySelector("#top").style.display = "block"
-};
+    
+})
+
+window.addEventListener("resize", ()=> {
+    if (document.querySelector(".nav_ul").position= "absolute"){
+        window.location.reload(false);  
+    }
+})

@@ -318,3 +318,14 @@ prev.onclick = function() {
 document.getElementById("top").onclick = function() {
     document.querySelector(".welcome").scrollIntoView();
 };
+window.addEventListener("scroll", function(){
+    
+    if (window.scrollY > 200) {
+        document.getElementById("top").style.display = "block";
+    } else if (window.scrollY < 200){
+        document.getElementById("top").style.display = "none";
+    }
+
+})
+
+
