@@ -89,7 +89,7 @@ blockquote{
 .imgs{
     /* display: flex; */
     overflow-x: auto;
-    /* display: none; */
+    display: none;
 }
 .imgs img{
    width: 100%;
@@ -157,13 +157,29 @@ ul[data-slides]{
     z-index: 1;
     transition-delay: 0ms;
  }
-@media (min-width:700px) {
-    .carousel{
+ @media (max-width:400px){
+    .label_img div{
+        grid-template-columns: 1fr 1fr ;
+        
+    } 
+    h3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+    /* .carousel{
         width: 80vw;
         height: 80vh;
-        /* margin: 0%; */
         margin-left: 18vw;
-    }
+    } */
+ }
+@media (min-width:700px) {
+    /* .carousel{
+        width: 80vw;
+        height: 80vh;
+         margin: 0%;
+        margin-left: 18vw;
+    } */
     .label_img div{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
