@@ -87,7 +87,6 @@ blockquote{
 
 
 .imgs{
-    /* display: flex; */
     overflow-x: auto;
     display: none;
 }
