@@ -15,7 +15,7 @@ figure{
     
 }
 
-.enviroment img{
+.enviroment  img{
     width:98%;
   
     
@@ -23,13 +23,15 @@ figure{
 .enviroment{
     padding: 20px;
     
+    
 }
 .label_img{
     display: flex;
     flex-direction: column;
+    display: none;
     
 }
-.label_img div{
+.label_img > div{
     margin-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -47,7 +49,7 @@ h3{
     grid-column-start: 1;
     grid-column-end: 4;
 }
-.label_img img{
+figure > img{
     border: 2px solid rgb(65, 65, 62);
     border-radius:8px ;
     object-fit: cover;
@@ -69,7 +71,7 @@ figcaption{
     background: black;
     opacity: .7;
     justify-content: space-between;
-    padding: 10px;
+    padding: 4px 13px;
     border-radius: 10px 10px 0px 0px;
     position: absolute;
     top: 0;
@@ -79,6 +81,29 @@ figcaption{
   
     
 }
+figcaption > div{
+    display: flex;
+    max-width: 5%;
+    gap: 5px;
+    max-height: 40px;
+    margin-bottom: 0%;
+    overflow: hidden;
+    color: white;
+    font-size: 10px;
+    line-height: 20px;
+    /* border: 1px solid white; */
+}
+figcaption img{
+    cursor: pointer;
+}
+
+.svg{
+    min-width: 10px;
+   
+    
+   border: none;
+   outline: none;
+   }
 blockquote{
     font-style: italic;
     text-align: center;
@@ -86,13 +111,15 @@ blockquote{
 }
 
 
+
 .imgs{
     overflow-x: auto;
-    display: none;
+    
+    /* display: none; */
 }
 .imgs img{
    width: 100%;
-   flex-shrink: 0; 
+   /* flex-shrink: 0;  */
 }
 .carousel-button{
     position: absolute;
@@ -126,8 +153,10 @@ blockquote{
     
     margin: auto;
     width: 96vw;
-    height: 60vh;
+    height: 96vh;
     margin-top: 20px;
+    margin-bottom: 20px;
+    
     position: relative;
     /* border: 1px solid; */
     
@@ -149,7 +178,10 @@ ul[data-slides]{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center
+    object-position: center;
+    border: 10px solid ;
+    border-style: inset black;
+    border-radius: 10px;
  }
 .slide[data-active] {
     opacity: 1;
@@ -172,7 +204,8 @@ ul[data-slides]{
         margin-left: 18vw;
     } */
  }
-@media (min-width:700px) {
+
+@media (min-width:800px) {
     /* .carousel{
         width: 80vw;
         height: 80vh;

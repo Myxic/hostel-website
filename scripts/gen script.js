@@ -40,8 +40,8 @@ exit.addEventListener("click", ()=> {
     
 })
 
-window.addEventListener("resize", ()=> {
-    if (document.querySelector(".nav_ul").position= "absolute"){
-        window.location.reload(false);  
-    }
-})
+// window.addEventListener("resize", ()=> {
+//     if (document.querySelector(".nav_ul").position= "absolute"){
+//         window.location.reload(false);  
+//     }
+// })
