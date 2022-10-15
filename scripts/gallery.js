@@ -1,4 +1,4 @@
-const rowdiv = document.querySelectorAll(".row div")
+const rowdiv = document.querySelectorAll(".row .column")
 
 
 

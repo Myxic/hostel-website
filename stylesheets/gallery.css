@@ -4,19 +4,22 @@
   flex-wrap: wrap;
   gap: 5px;
 }
+.row > #addImage,
 .row > .column {
     /* flex-shrink: 0; */
     display: flex;
     padding: 8px 8px;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 110px;
     /* border: 2px solid red; */
    
   }
+  #addImage > img,
 .column > img{
     width: 100%;
-    /* aspect-ratio: 1/1; */
+    /* aspect-ratio: 1/3; */
   }
+
   
   .row:after {
     content: "";
