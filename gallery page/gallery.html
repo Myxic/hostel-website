@@ -126,7 +126,83 @@
 
     </div>
   </div>
+  <div class="gallery-container">
+    <!-- Images used to open the lightbox -->
+    <div class="row" id="row">
+      <div class="column">
+        <img src="../images/hfyv1.jpg" class="hover-shadow" alt="pic">
+      </div>
+      <div class="column">
+        <img src="../images/Rectangle.svg" class="hover-shadow" alt="pic">
+      </div>
+      <div class="column">
+        <img src="../images/download12.svg" class="hover-shadow" alt="pic">
+      </div>
+      <div class="column">
+        <img src="../images/Rectangle.svg" class="hover-shadow" alt="pic">
+      </div>
+      <div id="addImage">
+        <img src="../images/plus.svg" alt="add image">
+      </div>
 
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="../images/hfyv1.jpg" style="width:100%" alt="pic">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="../images/Rectangle.svg" style="width:100%" alt="pic">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="../images/download12.svg" style="width:100%" alt="pic">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="../images/Rectangle.svg" style="width:100%" alt="pic">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)" id="prev">&#10094;</a>
+        <a class="next" id="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      </div>
+      <!-- Thumbnail image controls -->
+      <div id="thumbnail">
+        <div class="column">
+          <img class="demo" src="../images/hfyv1.jpg" alt="Nature">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/Rectangle.svg" alt="Snow">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/download12.svg" alt="Mountains">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/Rectangle.svg" alt="Lights">
+        </div>
+      </div>
+
+
+    </div>
+  </div>
   <footer>
     <div class="footer_up">
       <div class="logo">
