@@ -1,8 +1,21 @@
+.gallery-container{
+  height: 50vh;
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 0px 5px rgba(0,0,0,0);
+  padding: 10px;
+  overflow: auto;
+}
+
 .row,
 #thumbnail {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+}
+.row{
+  overflow: auto;
+  justify-content:stretch;
+  margin: auto;
 }
 
 .row>#addImage,
@@ -12,6 +25,8 @@
   padding: 8px 8px;
   width: 160px;
   height: 110px;
+  border: 1px solid;
+  border-radius: 5%;
   /* border: 2px solid red; */
 
 }
