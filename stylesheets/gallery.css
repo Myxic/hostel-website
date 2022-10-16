@@ -1,11 +1,12 @@
 .row,
-#thumbnail{
+#thumbnail {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
 }
-.row > #addImage,
-.row > .column {
+
+.row>#addImage,
+.row>.column {
   /* flex-shrink: 0; */
   display: flex;
   padding: 8px 8px;
