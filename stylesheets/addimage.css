@@ -1,0 +1,27 @@
+
+form {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#button11,
+#button22,
+#button33 {
+    display: block;
+    position: relative;
+    left: 90%;
+    padding: 2px 5px;
+    /* margin-bottom: 12px; */
+}
+dialog:modal{
+    border-radius: 5%;
+    padding: 20px;
+    margin: auto;
+    outline: 3px solid white;
+}
+dialog:modal::backdrop{
+    background: rgba(0, 0, 0, 0.8) ;
+   
+}
