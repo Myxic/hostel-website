@@ -1,102 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>student page</title>
-    <link rel="stylesheet" href="../stylesheets/footer.css">
+    <title>Student page</title>
+    <link rel="stylesheet" href="../stylesheets/studentpage.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <figure>
-                <a href="../index.html"><img src="#" alt="photo"></a>
-            </figure>
-           <ul class="nav_ul">
-            <li><img src="../images/x.svg" alt="close" id="exit"></li>
-            <li><p class="btn_book">How To Book</p>
-            <div class="booking">
-                <div class="outerdiv_booking">
-                    <img src="../images/close.svg" alt="close" id="close">
-                    <div class="how_to_book">
-                        <h2>How To Book</h2>
-                        <ul>
-                            <li>Step 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
-                            <li>Step 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                            <li>Step 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
-                            <li>Step 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                            <li>Step 5: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
-                            <li>Step 6: Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                            <li>Step 7: Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                            <li> Step 8: Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                        </ul>
 
-                    </div>
-                </div>
-            </div></li>
-            <li><a href="../gallery page/gallery.html">Gallery</a></li>
-            <li><a href="../FAQ page/FAQ.html">FAQ</a></li>
-            <li><a href="../about page/about.html">About</a></li>
-           </ul>
-           <img src="../images/Frame 6379.svg" alt="menu" id="burger">
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <div class="header-left">
 
-
-        <!-- ENTER YOUR WORK -->
-
-
-    <footer>
-        <div class="footer_up">
-            <div class="logo">
-                <img src="#" alt="photo">
             </div>
-            <div class="links">
-                <div class="quick_links">
-                    <h4>Quick Link</h4>
-                    <div>
-                        <a href="#">How to Book</a>
-                        
-                        <a href="../gallery page/gallery.html">Gallery</a>
-                        
-                        <a href="../FAQ page/FAQ.html">FAQ</a>
-                    </div>
-                </div>
-                <div class="community">
-                    <h4>Community</h4>
-                    <div>
-                        <a href="#">Featured artists</a>
-                        <a href="#">The Portal</a>
-                        <a href="#">Live events</a>
-                    </div>
-                </div>
-                <div class="company">
-                    <h4>Quick Link</h4>
-                    <div>
-                        <a href="../about page/about.html">About us</a>
-                        <a href="../contact us/contact us.html">Contact us</a>
-                        <a href="#">History</a>
-                    </div>
+            <div class="header-right">
+                <div class="togglebtn">
+                    <input type="checkbox" name="toggle" id="check" class="toggle">
+                    <label for="check"></label>
                 </div>
             </div>
-            <div class="btns">
-                <a href="../registration page/registration.html" class="reg">Register</a>
-                <a href="../login page/login.html" class="login">Log in</a>
-                
+        </header>
+        <div class="body-part">
+            <nav class="navbar">
+                <ul>
+                    <li class="dashboard">
+                        <input type="radio" name="navbar" id="input-dashboard">
+                        <label for="input-dashboard" class="dash-item icons">
+                            <div class="dash-item-left">
+                                <span class="icon-img1">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.3001 2H5.10004C3.38793 2 2 3.2536 2 4.8V27.2C2 28.7464 3.38793 30 5.10004 30H11.3001C13.0122 30 14.4001 28.7464 14.4001 27.2V4.8C14.4001 3.2536 13.0122 2 11.3001 2Z"
+                                            stroke="#111111" stroke-width="2.91667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M29.8997 2H23.6996C21.9875 2 20.5996 3.2536 20.5996 4.8V10.4C20.5996 11.9464 21.9875 13.2 23.6996 13.2H29.8997C31.6118 13.2 32.9998 11.9464 32.9998 10.4V4.8C32.9998 3.2536 31.6118 2 29.8997 2Z"
+                                            stroke="#111111" stroke-width="2.91667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M29.8997 18.8H23.6996C21.9875 18.8 20.5996 20.0537 20.5996 21.6V27.2C20.5996 28.7464 21.9875 30 23.6996 30H29.8997C31.6118 30 32.9998 28.7464 32.9998 27.2V21.6C32.9998 20.0537 31.6118 18.8 29.8997 18.8Z"
+                                            stroke="#111111" stroke-width="2.91667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </span>
+                            </div>
+                            <div class="dash-item-right min">
+                                <strong>Dashboard</strong>
+                            </div>
+                        </label>
+                    </li>
+
+                    <li class="messages">
+                        <input type="radio" name="navbar" id="input-messages">
+                        <label for="input-messages" class="messages-item icons">
+                            <div class="messages-item-left">
+                                <span class="icon-img">
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.2 3.2H28.8V22.4H5.072L3.2 24.272V3.2ZM3.2 0C1.44 0 0.016 1.44 0.016 3.2L0 32L6.4 25.6H28.8C30.56 25.6 32 24.16 32 22.4V3.2C32 1.44 30.56 0 28.8 0H3.2ZM6.4 16H25.6V19.2H6.4V16ZM6.4 11.2H25.6V14.4H6.4V11.2ZM6.4 6.4H25.6V9.6H6.4V6.4Z"
+                                            fill="#111111" />
+                                    </svg>
+
+                                </span>
+                            </div>
+                            <div class="messages-item-right min">
+                                <strong>Messages</strong>
+                            </div>
+                        </label>
+                    </li>
+
+                    <li class="payment">
+                        <input type="radio" name="navbar" id="input-payment">
+                        <label for="input-payment" class="payment-item icons">
+                            <div class="payment-item-left">
+                                <span class="icon-img"><svg width="33" height="27" viewBox="0 0 33 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.4163 15.4584C18.2011 15.4584 17.1681 14.9844 16.3174 14.0365C15.4667 13.0886 15.0413 11.9375 15.0413 10.5834C15.0413 9.22921 15.4667 8.07817 16.3174 7.13025C17.1681 6.18233 18.2011 5.70837 19.4163 5.70837C20.6316 5.70837 21.6646 6.18233 22.5153 7.13025C23.366 8.07817 23.7913 9.22921 23.7913 10.5834C23.7913 11.9375 23.366 13.0886 22.5153 14.0365C21.6646 14.9844 20.6316 15.4584 19.4163 15.4584ZM9.20801 20.3334C8.40593 20.3334 7.71954 20.0149 7.14884 19.3779C6.57717 18.742 6.29134 17.9771 6.29134 17.0834V4.08337C6.29134 3.18962 6.57717 2.42479 7.14884 1.78887C7.71954 1.15187 8.40593 0.833374 9.20801 0.833374H29.6247C30.4268 0.833374 31.1136 1.15187 31.6853 1.78887C32.256 2.42479 32.5413 3.18962 32.5413 4.08337V17.0834C32.5413 17.9771 32.256 18.742 31.6853 19.3779C31.1136 20.0149 30.4268 20.3334 29.6247 20.3334H9.20801ZM12.1247 17.0834H26.708C26.708 16.1896 26.9934 15.4242 27.5641 14.7872C28.1357 14.1513 28.8226 13.8334 29.6247 13.8334V7.33337C28.8226 7.33337 28.1357 7.01487 27.5641 6.37787C26.9934 5.74196 26.708 4.97712 26.708 4.08337H12.1247C12.1247 4.97712 11.8388 5.74196 11.2672 6.37787C10.6965 7.01487 10.0101 7.33337 9.20801 7.33337V13.8334C10.0101 13.8334 10.6965 14.1513 11.2672 14.7872C11.8388 15.4242 12.1247 16.1896 12.1247 17.0834ZM3.37467 26.8334C2.57259 26.8334 1.8862 26.5154 1.31551 25.8795C0.743841 25.2425 0.458008 24.4771 0.458008 23.5834V7.33337C0.458008 6.87296 0.598008 6.48675 0.878008 6.17475C1.15704 5.86383 1.50315 5.70837 1.91634 5.70837C2.32954 5.70837 2.67613 5.86383 2.95613 6.17475C3.23516 6.48675 3.37467 6.87296 3.37467 7.33337V23.5834H26.708C27.1212 23.5834 27.4673 23.7394 27.7463 24.0514C28.0263 24.3623 28.1663 24.748 28.1663 25.2084C28.1663 25.6688 28.0263 26.0545 27.7463 26.3654C27.4673 26.6774 27.1212 26.8334 26.708 26.8334H3.37467ZM9.20801 17.0834V4.08337V17.0834Z"
+                                            fill="#111111" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="payment-item-right min">
+                                <strong>Payment</strong>
+                            </div>
+                        </label>
+
+                    </li>
+
+                    <li class="event">
+                        <input type="radio" name="navbar" id="input-event">
+                        <label for="input-event" class="event-item icons">
+                            <div class="event-item-left">
+                                <span class="icon-img">
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3" d="M7.29102 7.29169H27.7077V10.2084H7.29102V7.29169Z"
+                                            fill="#111111" />
+                                        <path
+                                            d="M29.5556 5.1H27.8333V2H24.3889V5.1H10.6111V2H7.16667V5.1H5.44444C3.55 5.1 2 6.495 2 8.2V29.9C2 31.605 3.55 33 5.44444 33H29.5556C31.45 33 33 31.605 33 29.9V8.2C33 6.495 31.45 5.1 29.5556 5.1ZM29.5556 29.9H5.44444V14.4H29.5556V29.9ZM29.5556 11.3H5.44444V8.2H29.5556V11.3ZM8.88889 17.5H26.1111V20.6H8.88889V17.5ZM8.88889 23.7H20.9444V26.8H8.88889V23.7Z"
+                                            fill="#111111" />
+                                    </svg>
+
+                                </span>
+                            </div>
+                            <div class="event-item-right min">
+                                <strong>Event</strong>
+                            </div>
+                        </label>
+                    </li>
+
+                    <li class="report">
+                        <input type="radio" name="navbar" id="input-report">
+                        <label for="input-report" class="report-item icons">
+                            <div class="report-item-left">
+                                <span class="icon-img">
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M23.9239 2H11.0761L2 11.0761V23.9239L11.0761 33H23.9239L33 23.9239V11.0761L23.9239 2ZM29.5556 22.4944L22.4944 29.5556H12.5056L5.44444 22.4944V12.5056L12.5056 5.44444H22.4944L29.5556 12.5056V22.4944Z"
+                                            fill="#111111" />
+                                        <path
+                                            d="M17.4993 24.7917C18.3048 24.7917 18.9577 24.1387 18.9577 23.3333C18.9577 22.5279 18.3048 21.875 17.4993 21.875C16.6939 21.875 16.041 22.5279 16.041 23.3333C16.041 24.1387 16.6939 24.7917 17.4993 24.7917Z"
+                                            fill="#111111" />
+                                        <path d="M16.041 10.2083H18.9577V20.4166H16.041V10.2083Z" fill="#111111" />
+                                    </svg>
+
+                                </span>
+                            </div>
+                            <div class="report-item-right min">
+                                <strong>Report</strong>
+                            </div>
+                        </label>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="content">
+                <input type="radio" name="hey" id="">
+                <input type="radio" name="hey" id="">
+                <input type="radio" name="hey" id="">
+                <input type="radio" name="hey" id="">
             </div>
         </div>
-        <hr>
-        <div class="footer_down">
-            <div class="copyright"><small>&copy;HFYV,Inc.2022.We love our students!</small></div>
-            <div class="follow_us"> Follow us: 
-                <img src="../images/Vector.svg" alt="Facebook">
-                <img src="../images/Vector-1.svg" alt="twitter">
-                <img src="../images/Vector-2.svg" alt="whatsapp">
-                <img src="../images/Vector-3.svg" alt="instargram">
+    </div>
+    <footer>
+        <div class="powered"><strong>POWERED BY - Bravta Ltd</strong></div>
+        <div class="moto">© HFYV, Inc. 2022. We love our students!</div>
+        <div class="social-links">
+            <div class="links">
+                <span class="facebook">
+                    <svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect x="0.519531" width="36.9472" height="34" fill="url(#pattern0)" />
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_337_2088"
+                                    transform="translate(0.0398842) scale(0.0102248 0.0111111)" />
+                            </pattern>
+                            <image id="image0_337_2088" width="90" height="90"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAFYklEQVR4nO2dXWjXVRjHP7mtbeXSYlGRlaYpFZgpFL0RLCnoxt4sKhWi9ygyQrqsi4LAqwwhgi666cIoSIMgbyxK7WKWK6nErEQlZ2tbmVO3/39dPP/JGvu757z//r+dDxx2seec8/y+Hs/bc84ZZDKZTCaTyWQymUxBOSu1A5PQBCwFFgOLgIXAlcC5wPm1nwD/Av21n/uBn4G9wG7gW6AS1esGYQ6wFtgCDAKjjmkA2Ay8CFwa8TsKSTuwGtiKtD5XceulEeBzYBXQFuXLCsJMpKUdIpy49VIv8BowK/hXJqQFWAf0EV/giakPeLnmU6m4Dfie9AJPTD8BywN+dzTagI1AlfSi1ktVYAPQGkiD4MwFdpJeSG3qBhYEUSIgy/EzTYudBoCuAHoE4V5giPSi2aaTwEPeVfHMU4SdE8dKFeBJz9p44x5kcZBaJJ9iP+hVIQ90ASdIL47vdBK406NOTlxFYw582jQAzHcVyXX3rg3YDlzv6ogHhoG/auk4MANZajcDHciu39mWZXcDtyAtPAkbSdfSKsCnwAvAdYiwU3Ex8IRlfRsMtfHG7aRZ8VWB94GrLf3ucqj3Vss6rWkBfrB02CX1A3c5+m4r9CjQg3RF0Vjn4KxtGsTPWOAi9CjwkgcfVHSQZqtzhSf/XYU+iuypG6EZQCbyLHCBRT4XNgGfRK6zHp3A06EraQf+IG5LriBBWl+4tuhR4DCGYTHTFr0SuMgwjyvbkAh3kbgEuM8kg+kIutrQ3gdbDO2bgbuBa4DZk/z+CmePhDXAB57K+h9zSLMzd6OBjwuAHyP5NYK0bO+sjfQB49MQ+mVzK/Hn9s8rfTPqo+8wsPXFPuCU0vYR4NqAvkyGd02akFVZ7Bb9hYGPnyXwr7+mzZRoW/RSJh9YQjNoYJtiB3E2sERjqBV6sb0vTgwo7ZqQhUQKVNpohfa5YDBhWGnXifK/cABU2hRdaC3nJKx7ocZIK/RcB0fKzjyNkVboUp++dESljVboDgdHyo5KG63Qxvuv0wiV0FHDMhPYytRHr7RR59/R75E/DqxX2mpQnSTQCn0c+1B9PYaRlZUPqgZlXeapzjH+0Rhpu45jDo4UDd9TVZU2WqF9tbwi4Fto1epVK/R+B0eKRDtwuecyf9EYaYVWFdYALMIuIH0m9mmMtJXudXCkSKiWy4Z4FfobB0eKhO0xsjOh0kYrdA9me8NFxfdAOAjs0Rhq59FV5IaV67m38cwHXpnCpgeJnEzFLOAZhd1NChsTvibA5f7niB8qek/p27wEvo2i+8cFzEbgj8hPM4ynAnysNTYR+gjwlbE75eVL5BK/CtM55buG9mXGSAtToT8EDhrmKSOHkK5UjanQw8A7hnnKyNvoA8fWzCTe0d0izjqOAOcp/TqNzbr/GPC6Rb6y8Crwd6zKWohzarNoLXoPllEp252sYeAxpte8uopcqRixyeyyZbgTeMshf6OxnoTriHbk+m7Zu45uHJ9yc90EH0IeQjnqWE6R6QMeQF5vsMZHtOEA8q5FsgvpATkF3A/86lqQr7DONuSMhtVAUVAqyIUgk8Pw0ViF31doUvXRI8DDNgLEZAXyAm6jCn2CBni8aoybgT9pPKF78R+FAfyH3sfYDiwDdgQqPwQ7gBtoLJ9P0wy8iX2/HaNFV4A3SHvg0xtLkJZSNKF3EairSEkTEsw8SHqhDyP7FqG6zkLQilztPUB8oX9DovnT6mX0GchjsZuQFVgooUeQQ+8rKeHD3KZ0Ao8izzKMnxbaCt1bK2sNcKFvZ20o4p8HAflzIMuQ/ZPNCvtO5PWF3cB3yOnXajDvMplMJpPJZDKZTKZM/AeVgBDEEtUBawAAAABJRU5ErkJggg==" />
+                        </defs>
+                    </svg>
+
+                </span>
+                <span class="twitter">
+                    <svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect x="0.0546875" width="36.9472" height="34" fill="url(#pattern0)" />
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_337_2091"
+                                    transform="translate(0.0398842) scale(0.0102248 0.0111111)" />
+                            </pattern>
+                            <image id="image0_337_2091" width="90" height="90"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAFXklEQVR4nO3cWahVVRzH8c+9plmZpkEDNtA8ExFNJDbYQNAIDQ9FD9EEBfUQNENQb8295EMFTVARIRU0EUlZCTZQYmalZFqGZWaKZFevPaxz8Xa73rPP3mvvdYf1hR/3cu7Z+//fv7v2Pmv9z1qLTCaTyWQymUwmk8lkMplMpkO6UidQM1MwE8fgQExuvb4Oy/A1PsT6JNmNcLpwEd5ED7a2UQ/ewAXKNbwuHFc56xHGTHylvbnb0xeY0UG8c/EZboyT/jZuQHfsk0ZgAh5Br/Im96kXD2OH7cTaBddhYev9f7Rei8aJrRM/EfOkEZiE91Q3eKDes83APXAFXsXGAe+7PfYFvdDv5HfFPnlJJmKu+Cb3aSEW2f6dssD2W34pdsJf/QL04tqYAUrynPpMbqe/cHTsCzprkEC9uC12oA64cpCcmtJGnD5IThOrXtQdQwR9RPP98cn4dYic6m7J5/bLpQsn40ncUvXCnmkT/EXsWDVIB9zZJp+69BkOwf7CHTUbK1t/e1+EHtlrBZL4HIdWDVSAcbZdXJPaLPSz1w7yt2XYM8bFvVUwmfW4OkbAIZhVMJem9DsOa5d00aa+ruD7JuFZPI/dCx7TKWfXdN4y/InzsSTWCR/X+X96DW4WuZ+JD0rkUodWq6HGcU2FhL7GGRFzSfF8HqglCjwuynB4hOTmChWyqp/MA4fATet1ofxaG99ESvRboTi1c8k8NkfKo6wmlMy7MLdHTng9XsKlOjN9sO5VkyrbQAozRfiUrSP5DXhF+PA8AeOHyGNxTTnUanSnQ+db8WiZQB3yN74UBkHLsQorWj8fwoUN5DAYW4RGsLXuQOMwX9oWlVJ/ljWu0x7AFlyCX8oGHOFsKHtgUaOP6vf7KqGbtqZs0BHMb3UH+FwYkV2FXVuvHY2l0t/OTerVsgYWbdGrhUL380IRZT5uwhxja07E0rIHFq1DrOr3+wSc1NJY44eyBxZt0fPKBhhlLCp7YNF+9D5CP3Yss0kYtG0qc3DRFr1S+EAcyyxQ0mQ660c/WDbIKKGxx+c4fC99FyuVzqluYXFmSF+mTKG1KpZHOx2Cz9NMUWm4MQf/NB10fCtw6lbWpM6P4lwJJggTvVMb0IRWa3Zy0P/YAfcZ/c/sB2IZVpXThCJ9akPqUI8wWBs29K0bmWt0tfBXYppUll1wJKb2e20azsNH0ptUVb04PoJPlZkolEy3Ct/xpTYmtl6OZ1UY7ZVlszCD8hTxp32lZjMuFxrSsGC6/y65GC2aHdMkqrVowrcrPRquA9TMb8Kkno2pExnIeMNnhmcMXRrXnrhMw3fSm1RVw6I71479ha96UptVVqtEWh7RBFPVs4q1bm3CqTX4UStdwjqWvj72SFD0RfNNMkVY8LlceiOH0lN1GdCfJhZiduNYYTXV8ULf+2Ds3UDsdswRBiY9qROpg1n4WfqW/LbEdea6mCxsQRFjT42qekeEddvDjW5hOe8v0hu8VdgOY1SZ3C08//p2akmtXtxtFG3YNR334Efpze3TBsN8aF2EvtmldwnTebdIb2x/zRN2JEjKULfRLBwklEHXCZW+nYTR33QcIKwePdbw/PT+G/cK81C2JM5lSLpxvVA2TN0qO9VbOCK+JfUyFfcLrTq1ge30qcG34BlR7C4Yvlp6QwfqY1xc36WnYUdh0dA8aQcfa/CY/64YG7XsJxSO5mtmPscKPI3LjLBBR8zO+27CrKUzheLRMbbtbluGf4T52IvxCd5VYQ1JauocJXUJWwkfLHQH98VewtSEvv0ueoTBxFrhi94N+EnYsmKpcJdkMplMJpPJZDKZTCaTyWQyY5N/AdKCSy6SF0A+AAAAAElFTkSuQmCC" />
+                        </defs>
+                    </svg>
+
+                </span>
+                <span class="whatsapp">
+                    <svg width="39" height="34" viewBox="0 0 39 34" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect id="LinkedIn" x="0.861328" width="37.7012" height="34" fill="url(#pattern0)" />
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_337_2089"
+                                    transform="translate(0.0490864) scale(0.0100203 0.0111111)" />
+                            </pattern>
+                            <image id="image0_337_2089" width="90" height="90"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAADOklEQVR4nO2cvWsUQRiHn4sfFyGCEj8xjQQbwTaIBBTBRmwstBErERE/Av4BIjaC5E/QSgzYWFkJamcMiNFCBQsbRUHxI8kREqKexRg5g7c7M7czt7P3e2CKJPO+987DZva9vd0DIYQQQgghhBBCCAHQD4wBU0ADaFZ0NIAnwEWgXog5B4aAF56Fpzye/1l7FPrpTcmtsqMc2WNdWFzZxoWOLVow1aXFlWlMukqruQYAc8CAR1yVaADrXQJ8RDc9YqqIk7u+UFWIf5HoSEh0JCQ6ErFEfwGuAKPAbuAwcAv4Gen1k8S153wKbG2T6yCmXex2X+wzguNSzDdgW06+E445yzKC41LMNYt8NeC1Y94yDCdC79EPLeY0LeclTWjRs5bzZoJWUQJCix62nLcraBWJ4rKP3bPIN4g58ru95yZ9MmwCxzNy1YAJj5xlGMFxLWgR82HB6hV5tgB3PPKVZTgR8zLpB+ARprfeiXmzss4zVxlwcqfr0f7oenQZWblvVoVF4CMwj+lqNtPlgyqG6OtkbzcbgDP/+f19YDojbgA41/LzLHATc4J9Biy1/K0Pcz/GfuAkcCi36hLgenZelZNvuE3c2Zy47S1zJ4BNDmsYBd56rKXU7V1o0Zd9FoHZTl7m1F6Y6NRPhneBq56xn4GjmH08OCmLngFOd5jjDXCjgFpySVn0PPC1gDzjwI8C8mSSsuiieIfpUoJSpT56ENiL6T4+Ye6P+24Z+wAYCVSXN2XpOpZZg/n3X1gRPwucssxxzHFNPdXeLTOe8dq/gH0WOUY81uVE6nv0DswjD+2oAZcs8rwvppz2pC76CGbryOKARZ65AmrJJHXReyzmDAIbc+YsFFBLJqmLzhO4TN6N80uY/TwYvSLa5pOcoJ1E6qJtn47K28eDk7roZJDoSEh0JCQ6EhIdCYmOhERHQqIjIdGRkOhISHQkJDoSEh0J3R/tj+6PLiMSHQmJjoRER0KiI+EjulF4Felh+4z7X3xEv/KIqRrODnxE3/aIqRpRHNQxX4TayYM2KY9pYG3HFi0ZojdlT2NurIxKHfOts5Ok+wVUNmMOeAycJ+KRLIQQQgghhBBCCFFmfgOM5xQSF/wGJQAAAABJRU5ErkJggg==" />
+                        </defs>
+                    </svg>
+
+                </span>
+                <span class="instagram">
+                    <svg width="39" height="34" viewBox="0 0 39 34" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect id="Instagram" x="0.957031" width="37.7012" height="34" fill="url(#pattern0)" />
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_337_2090"
+                                    transform="translate(0.0490864) scale(0.0100203 0.0111111)" />
+                            </pattern>
+                            <image id="image0_337_2090" width="90" height="90"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAFgklEQVR4nO2d328UVRTHPyvBxUQa9UlLrT8a1EoBFRQrNCE+aDSK/AM+mogWfLN/ggQNb/5ohEcFSTT4o2pV0EQeTIhGTNSGWDE8CALVtEWw3e2uD3fWVN07c2fnnLmz2/tJTkIus/ec883Mnbln7txCIBAIBAKBQCAQCBSUknL/ZeABYCuwDrgduB64Gliu7NvGPPAncAY4CXwHHAW+AuY8xdQy9wCjwB9AvU3sd+BV4C4FPcRZD3yIf9GyWA34AHMFFo4VwF6ggn+hpKwCvBTlVghWA9/iXxgt+wboE1OrRTYC5/AvhrZNAYNCmqXmXmAmIcBOshlgg4hyKVgNnM8YeDvab8CtAvo5sQIzbvlO2pedAK7KrKIDez0kVzTbk1nFBNbSWY9wrVoFM2dQ46MCJFkUey+jllbuxsyafCcoaXPA80B3ZCNRm8tvayhN10c9iaFpI03yHEnx+1dSq5hAmfYqELlad5Ncu1P8fgq40kXAK1wOwpQ6r3E8tt1JUzq+DtjkcqCr0FtTOG8nnnRsi+NBiUAaHMb/Za5hc5gxuZWbYcPecRHQ9TL5Aeh3PFaSSWAcOAZMAKcxNQeALqA3imsL8DA5To8X8T0wINXZBfI7y6rAm5j7QhpKwGbgQNRHXvGeTxlnLGkvp1ZtHPNeMSv9wGc5xfyXQLz/oB3sJeApyYAjngYu5xC/GJpBnsO8QNDiPvRLumJoinyHZKAW+tEVWwyN4C7hdib3AjuBjzFPHhcjm4jahoEbHfrZhN4wIoZGcEljcg+wH7cniCqwD1iV0OcOpVzEkA5sPMHfdmC2hX5ngG0JfR9RyEcMyaCqxD/CPQcsZOh/AdgV0/+dyD9niyEZ1BsxfraTTeTFYsed2W8J5ySGZFC2GV8PrQ0XNpuheRkUzJS9o4X+CXt9Zb+gn4a9bvFVAk4J+hFDKqCXLf33olOfqGKulGa8JugnEdd6tBTHLO1PAMsU/C2L+m7Glwr+rOQt9ISl/VFFn7a+bbGokLfQpy3tmnVk20pQWywquBb+pQb8MubThv8yi/ncQoOLwEpLLFIlzkQd8z6jfVDzHQDkL3SzMwvgV0WfZyztXYo+/0feQvda2n9W9DlpabfFokLeQtte8I4p+rT1nevL5ryF3mJpfxdTn5Cmin0x4pCCv8xIzaAmsd+h9wn6adioxVcJ+EXQjxiSyW+2+FiF7Dcx08ANFl9DwjmJIRnUgRg/jyBT81gAHo/xc0g4JzEkg6oSfyPaRfbC/86Y/gcy9t82QteBTxP8baO1YWQaeCym3xLwuUI+YkgHVscsbomjG1NPdhlKKpgbn21MbjCslIsYGsFdxixuSaIHeBbzMf+PmLrIbPTvMeAZ7DXnxQxiahtLTug6ZlFLHhOHNegu1BRDK8CG2E6r5ltkEP3VsGJoBlnHDCM7JAPG3PiG0RsuVITOa9nuEcy6i6wMoPN00cxEl+3muRB9ATiIqYuk+XCnhJnxHUL+OTnOnBaiF/3TilPAJ5gXqROY+sRs9H9dwE1RXEPAQ8DNHmIU/bSiUz8WkrC3XQR0LZOecDxuKeKkjavQX2QIpNM56nKQ6xhdxrx7u7blcDqTKcy0v5J0oOsZPYe5mwf+zUEcRE5LJ24jkcVqKG5COFaABItihzNqGcsazEoj30n6tgo5bKn5YgES9W27M6voQBn42kNyRbHjkQa50IfZbM930nnbWeAWAf1SsZGltWXmNGZfbC9sYGmc2WfxKHKDPjp7zD6Oh+HCRhmzjWQnPfrNAy/guAtY3qwF3qe9Z5A1zKJLiTc96qzHfOo2hX/hXO1CFLPKnqPafx5kOXA/ZsuydcBtmGrXSvxdkvOYtzTN/jyIeIEoEAgEAoFAIBAIBArP3wkgJZFFV9suAAAAAElFTkSuQmCC" />
+                        </defs>
+                    </svg>
+
+                </span>
             </div>
         </div>
     </footer>
-    <script src="../scripts/gen script.js"></script>
+
 </body>
+
 </html>
