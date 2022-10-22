@@ -9,9 +9,9 @@
     --genpadding--: 5px 10px;
     --nt--:10vh;
     --nwidth--: 15%;
-    --nav--hover:rgb(198, 192, 192);
+    --nav--hover:rgb(224, 222, 222);
     --cwidth--: calc(100% - var(--nwidth--));
-    --icon--hover:#BF4E03;
+    --icon--hover:#ef670b;
     --box-shadow--: 0px 0px 2px black;
 }
 
@@ -126,11 +126,13 @@ input[type="checkbox"].toggle:checked + label{
 .navbar>ul li{
     display: flex;
     background-color: var(--bc--);
-    
-    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 200;
     border-bottom: 1px solid ;
     /* border: 1px solid; */
     cursor: pointer;
+
 }
 .navbar>ul li:focus,
 .navbar>ul li:hover{
@@ -155,16 +157,18 @@ input[type="checkbox"].toggle:checked + label{
     gap: 5px;
     justify-content: center;
     width: 100%;
-    
+    cursor: pointer;
     margin: auto;
     padding: 1.5em;
 }
-.icon-img1 svg path{
+.icon-img1 *{
+    width: 20px;
     stroke: var(--fc--);
     
 }
-.icon-img svg path{ 
+.icon-img *{ 
     fill:var(--fc--);
+    width: 20px;
     
     
     
