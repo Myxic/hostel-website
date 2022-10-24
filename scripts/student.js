@@ -20,14 +20,26 @@ if (darkMode === 'enabled') {
 
 check.addEventListener("click", ()=> {
     darkMode = localStorage.getItem('darkMode');
-    if (check.checked && darkMode !== "enabled"){
+    if (check.checked && darkMode !== "enabled" ){
         enableDarkMode();
-        // console.log(darkMode);
+        console.log(darkMode);
     }else{
         disableDarkMode();
-        // console.log(darkMode);
+        console.log(darkMode);
     }
 });
+
+if (window.matchMedia("(prefers-color-scheme: dark)").matches){
+    check.checked = true;
+    if (check.checked){
+        enableDarkMode();
+        console.log(darkMode);
+    }else{
+        disableDarkMode();
+        console.log(darkMode);
+    }
+
+}
 
 
 // ADDING THE FUNCTION FOR THE HAM BURGER MENU 

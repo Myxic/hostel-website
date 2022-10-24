@@ -82,6 +82,7 @@ header {
     transition: all 0.5s ease-in-out;
     /* border: 3px solid; */
 }
+
 .ham-burger::after,
 .ham-burger::before{
     content: " ";
@@ -121,7 +122,11 @@ header {
 .ham.open .ham-burger::after{
     transform: rotate(-45deg) translate(-35px, -35px);
 }
-
+.ham-burger,
+.ham-burger::after,
+.ham-burger::before{
+    display: none;
+}
 
 /* user-profile */
 .header-right,
@@ -368,6 +373,11 @@ footer >.social-links> .links >span >svg *{
     .min{
         display: none;
     }
+    .ham-burger,
+    .ham-burger::after,
+    .ham-burger::before{
+    display: block;
+    }
     .powered{
         grid-column-start: 1;
         grid-column-end: 4;
@@ -387,19 +397,3 @@ footer >.social-links> .links >span >svg *{
     }
 }
 
-/* @media (prefers-color-scheme:dark){
-    :root{
-        --bc--: black;
-        --fc--: white;
-        --ic--: #ef670b;
-        --nav--hover:rgb(126, 109, 109);
-        --icon--hover:#18A0FB;
-        --box-shadow--: 0px 0px 2px white;
-    }
-    .profile-pic {
-        border-color: var(--ic--);
-        background: var(--fc--);
-        fill: var(--fc--);
-        z-index: -1;
-    }
-}  */
