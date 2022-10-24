@@ -22,10 +22,8 @@ check.addEventListener("click", ()=> {
     darkMode = localStorage.getItem('darkMode');
     if (check.checked && darkMode !== "enabled" ){
         enableDarkMode();
-        console.log(darkMode);
     }else{
         disableDarkMode();
-        console.log(darkMode);
     }
 });
 
@@ -33,10 +31,8 @@ if (window.matchMedia("(prefers-color-scheme: dark)").matches){
     check.checked = true;
     if (check.checked){
         enableDarkMode();
-        console.log(darkMode);
     }else{
         disableDarkMode();
-        console.log(darkMode);
     }
 
 }
@@ -45,14 +41,26 @@ if (window.matchMedia("(prefers-color-scheme: dark)").matches){
 // ADDING THE FUNCTION FOR THE HAM BURGER MENU 
 
 const hamBurgerMenu = document.querySelector('.ham');
+const textmenu = document.querySelectorAll('.min');
+const navmenu = document.querySelector('.navbar')
 let menuOpen = false;
 
 hamBurgerMenu.addEventListener("click", ()=> {
     if (!menuOpen) {
         hamBurgerMenu.classList.add("open");
         menuOpen = true;
+        textmenu.forEach(text => {
+            text.style.display = "flex";
+        });
+        navmenu.style.width = "var(--phone-fullview--";
+        
     }else{
         hamBurgerMenu.classList.remove("open");
         menuOpen = false;
-    }
+        textmenu.forEach(text => {
+            text.style.display = "none";
+        });
+        navmenu.style.width = "var(--nwidth--)";
+    };
+
 });
