@@ -7,6 +7,7 @@ svg,
     cursor: pointer;
 }
 :root{
+    --pc--:var(--bc--);
     --bc--: white;
     --fc--: black;
     --ic--: #18A0FB;
@@ -18,33 +19,71 @@ svg,
     --icon--hover:#ef670b;
     --box-shadow--: 0px 0px 2px black;
 }
+.darkmode{
+        --pc--:var(--fc--);
+        --bc--: black;
+        --fc--: white;
+        --ic--: #ef670b;
+        --nav--hover:rgb(126, 109, 109);
+        --icon--hover:#18A0FB;
+        --box-shadow--: 0px 0px 2px white;
+}
 
 
 /* Header */
 header {
     width: 100%;
     height: 10vh;
-    display: flex;
-    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 5fr 1fr ;
+    /* display: flex;
+    justify-content: space-around;*/
+    align-items: center; 
     position: relative;
-    align-items: center;
     box-shadow: var(--box-shadow--);
     background: var(--bc--) ;
     z-index: 3;
      
 }
+/* .header-left{ 
+    /* width: 60%;  */
+    /*border: 1px solid var(--fc--); 
+} */
 .header-right{
+    /* width: 40%; */
     position: relative;
     height: 12px;
     display: flex;
     justify-content: space-between;
-    /* border:1px solid ; */
+    /* border:1px solid var(--fc--); */
 }
 .togglebtn{
     /* position: absolute; */
     top: 0;
     right: 0;
 }
+/* hambuger menu */
+.ham-burger::before{
+    content: " ";
+    border: 1px solid;
+    width: 50px;
+    height: 3px;
+}
+.ham-burger{
+    border: 1px solid#18A0FB;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 20px;
+    margin-left: 20px;
+}
+.ham-burger::after{
+    content: " ";
+    border: 1px solid red;
+    width: 50px;
+    height: 3px ;
+}
+
 
 /* user-profile */
 .header-right,
@@ -60,8 +99,18 @@ header {
     border-radius: 50%;
     display: flex;
     border: 2px solid var(--fc--);
+    background: var(--pc--);
+    fill: var(--fc--);
+    z-index: -1;
+}
+.bell svg{
+    width: 30px;
+    height: 30px;
+    /* display: flex; */
 }
 .bell svg *{
+    width: 30px;
+    height: 30px;
     stroke: var(--fc--);
 }
 .upload-option{
@@ -264,6 +313,17 @@ footer >.social-links> .links >span >svg *{
 }
 
 @media (max-width: 700px) {
+    header{
+        grid-template-columns: 3fr 2fr ;
+    }
+    .profile-pic{
+        width: 20px;
+        height: 20px;
+    }
+    .bell svg{
+        width: 20px;
+        height: 20px;
+    }
     .icons{
         padding: .8em;
     }
@@ -289,7 +349,7 @@ footer >.social-links> .links >span >svg *{
     }
 }
 
-@media (prefers-color-scheme:dark){
+/* @media (prefers-color-scheme:dark){
     :root{
         --bc--: black;
         --fc--: white;
@@ -304,4 +364,4 @@ footer >.social-links> .links >span >svg *{
         fill: var(--fc--);
         z-index: -1;
     }
-}
+}  */
