@@ -268,7 +268,7 @@ input[type="checkbox"].toggle:checked + label{
     width: var(--nwidth--);
     border: 1px solid transparent;
     box-shadow: var(--box-shadow--);
-    height: 80vh;
+    height: 82vh;
     background: var(--bc--);
     z-index: 1;
 } 
@@ -400,3 +400,8 @@ footer >.social-links> .links >span >svg *{
     }
 }
 
+@media (min-width: 768px) {
+    .min{
+        display: flex;
+    }
+}
