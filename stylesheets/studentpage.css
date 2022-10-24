@@ -17,6 +17,8 @@ svg,
     --genpadding--: 5px 10px;
     --nt--:10vh;
     --nwidth--: 15%;
+    --phone-fullview--: 30%;
+    --phone--bodyview--: calc(100% - var(--phone-fullview--));
     --nav--hover:rgb(224, 222, 222);
     --cwidth--: calc(100% - var(--nwidth--));
     --icon--hover:#ef670b;
