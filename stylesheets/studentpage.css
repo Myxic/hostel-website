@@ -1,6 +1,9 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+    color: var(--fc--);
 }
 svg,
 .profile-pic{
@@ -18,6 +21,7 @@ svg,
     --cwidth--: calc(100% - var(--nwidth--));
     --icon--hover:#ef670b;
     --box-shadow--: 0px 0px 2px black;
+    --box-burger--: 0px 1px 3px rgba(178, 164, 158, 0.2) ;
 }
 .darkmode{
         --pc--:var(--fc--);
@@ -27,13 +31,14 @@ svg,
         --nav--hover:rgb(126, 109, 109);
         --icon--hover:#18A0FB;
         --box-shadow--: 0px 0px 2px white;
+        --box-burger--: 0px 1px 3px rgba(255, 101, 47, 0.2) ;
 }
 
 
 /* Header */
 header {
     width: 100%;
-    height: 10vh;
+    min-height: 10vh;
     display: grid;
     grid-template-columns: 5fr 1fr ;
     /* display: flex;
@@ -45,10 +50,12 @@ header {
     z-index: 3;
      
 }
-/* .header-left{ 
-    /* width: 60%;  */
-    /*border: 1px solid var(--fc--); 
-} */
+.header-left{ 
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 5fr ;
+} 
 .header-right{
     /* width: 40%; */
     position: relative;
@@ -63,25 +70,56 @@ header {
     right: 0;
 }
 /* hambuger menu */
+.ham{
+    justify-self: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    /* border: 3px solid; */
+}
+.ham-burger::after,
 .ham-burger::before{
     content: " ";
-    border: 1px solid;
-    width: 50px;
+    background: var(--fc--);
+    position: absolute;
+    width: 25px;
     height: 3px;
+    border-radius: 5px;
+    box-shadow: var(--box-burger--);
+    transition: all 0.5s ease-in-out;
 }
 .ham-burger{
-    border: 1px solid#18A0FB;
-    display: flex;
-    flex-direction: column;
-    width: 50px;
-    height: 20px;
-    margin-left: 20px;
+    width: 25px;
+    height: 3px;
+    background: var(--fc--);
+    border-radius: 5px;
+    box-shadow: var(--box-burger--);
+    transition: all 0.5s ease-in-out;
+
 }
 .ham-burger::after{
-    content: " ";
-    border: 1px solid red;
-    width: 50px;
-    height: 3px ;
+    transform: translateY(8px);
+}
+.ham-burger::before{
+    transform: translateY(-8px);
+}
+/* Animation for burger*/
+.ham.open .ham-burger{
+    transform: translateX(50px);
+    background: transparent;
+    box-shadow: none;
+
+}
+.ham.open .ham-burger::before{
+    transform: rotate(45deg) translate(-35px, 35px);
+}
+.ham.open .ham-burger::after{
+    transform: rotate(-45deg) translate(-35px, -35px);
 }
 
 
