@@ -257,6 +257,7 @@ footer>div{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 footer >.social-links> .links >span >svg *{
     fill: var(--fc--);
@@ -271,20 +272,20 @@ footer >.social-links> .links >span >svg *{
     }
     .powered{
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 4;
         text-align: center;
     }
     .moto{
         grid-column-start: 1;
-        grid-column-end: 5;
+        grid-column-end: 3;
         font-size: .7em;
         text-align: center;
+        /* border: 1px solid; */
 
     }
     .links{
-        grid-column-start: 5;
-        grid-column-end: 7;
-        
+        display: flex;
+        gap: 0.5em;
     }
 }
 
