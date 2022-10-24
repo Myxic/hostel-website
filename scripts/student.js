@@ -28,3 +28,19 @@ check.addEventListener("click", ()=> {
         // console.log(darkMode);
     }
 });
+
+
+// ADDING THE FUNCTION FOR THE HAM BURGER MENU 
+
+const hamBurgerMenu = document.querySelector('.ham');
+let menuOpen = false;
+
+hamBurgerMenu.addEventListener("click", ()=> {
+    if (!menuOpen) {
+        hamBurgerMenu.classList.add("open");
+        menuOpen = true;
+    }else{
+        hamBurgerMenu.classList.remove("open");
+        menuOpen = false;
+    }
+});
