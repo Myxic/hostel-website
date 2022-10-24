@@ -2,6 +2,10 @@
     margin: 0%;
     padding: 0%;
 }
+svg,
+.profile-pic{
+    cursor: pointer;
+}
 :root{
     --bc--: white;
     --fc--: black;
@@ -74,6 +78,8 @@ header {
 .user-upload{
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    color: var(--fc--);
 }
 input[type="checkbox"]#option-icon + label .user-upload::before{
     position: absolute;
@@ -86,6 +92,7 @@ input[type="checkbox"]#option-icon:checked + label .user-upload svg{
 input[type="checkbox"]#option-icon:checked + label .user-upload::before {
     position: relative;
     opacity: 1;
+    
 
 }
 
@@ -177,7 +184,8 @@ input[type="checkbox"].toggle:checked + label{
     font-size: 15px;
     line-height: 20px;
     font-weight: 200;
-    border-bottom: 1px solid ;
+    color: var(--fc--);
+    border-bottom: 1px solid var(--fc--);
     /* border: 1px solid; */
     cursor: pointer;
 
@@ -236,6 +244,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     min-height: 8vh;
     padding: 1em;
+    color: var(--fc--);
     justify-content: space-evenly;
     box-shadow: var(--box-shadow--);
     bottom: 0%;
@@ -243,10 +252,14 @@ footer{
     background: var(--bc--);
     z-index: 1;
 }
+
 footer>div{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+footer >.social-links> .links >span >svg *{
+    fill: var(--fc--);
 }
 
 @media (max-width: 700px) {
@@ -272,5 +285,22 @@ footer>div{
         grid-column-start: 5;
         grid-column-end: 7;
         
+    }
+}
+
+@media (prefers-color-scheme:dark){
+    :root{
+        --bc--: black;
+        --fc--: white;
+        --ic--: #ef670b;
+        --nav--hover:rgb(126, 109, 109);
+        --icon--hover:#18A0FB;
+        --box-shadow--: 0px 0px 2px white;
+    }
+    .profile-pic {
+        border-color: var(--ic--);
+        background: var(--fc--);
+        fill: var(--fc--);
+        z-index: -1;
     }
 }
