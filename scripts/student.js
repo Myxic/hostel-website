@@ -64,3 +64,19 @@ hamBurgerMenu.addEventListener("click", ()=> {
     };
 
 });
+
+// PROFILE PIC
+
+const profile = document.querySelector('#display-profile-pic');
+const modal = document.querySelector('.profile-modal');
+const closeModal = document.querySelector('#closeModal');
+
+
+profile.addEventListener("click", () => {
+    modal.showModal();
+    
+});
+closeModal.addEventListener("click", () => {
+    modal.close();
+    
+});
