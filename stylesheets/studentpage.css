@@ -197,6 +197,7 @@ input[type="checkbox"]#option-icon:checked + label .user-upload::before {
 
 }
 /* the modal profile picture */
+.full-profile::backdrop,
 .profile-modal::backdrop{
     background: black;
     
@@ -214,22 +215,28 @@ input[type="checkbox"]#option-icon:checked + label .user-upload::before {
     transition: all 0.5s ease-in-out;
 }
 .profile-pic-modal{
-    background: url(../images/person-fill.svg),white;
-    background-repeat: no-repeat;
-    background-size:100%;
-    background-position:top;
+    
     width: 25em;
     height: 25em;
     border-radius: 50%;
     display: flex;
     border: 3px solid white;
     position: relative;
-    
 }
+.profile-pic-modal2{
+    background: url(../images/person-fill.svg),white;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:top;
+    width: 100%;
+    border-radius: 50%;
+
+}
+
 #closeModal{
     width: 2em;
     height: 2em;
-    display: flex;
+    display: flex; 
     position: absolute;
     right: 5px;
     top: 5px;
@@ -239,8 +246,12 @@ input[type="checkbox"]#option-icon:checked + label .user-upload::before {
 #closeModal svg {
     width: 2em;
     height: 2em;
+    
+}
+#closeModal{
     fill: white;
 }
+
 .pic-upload{
     width: 4em;
     height: 4em;
@@ -436,7 +447,25 @@ footer>div{
 footer >.social-links> .links >span >svg *{
     fill: var(--fc--);
 }
-
+/* FULL PROFILE PIC  */
+.full-profile{
+    margin: auto;
+    width: 40em;
+    height: 40em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    border: none;
+}
+.full-profile-pic{
+    background: url(../images/person-fill.svg),white;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:top;
+    width: 30em;
+    height: 30em;
+}
 @media (max-width: 700px) {
     header{
         grid-template-columns: 3fr 2fr ;
@@ -490,6 +519,15 @@ footer >.social-links> .links >span >svg *{
         height: 2.5em;
         right: 10px;
         bottom: 25px;
+    }
+    .full-profile-pic{
+        width: 18em;
+        height: 18em;
+    }
+    .full-profile{
+        margin: auto;
+        width: 20em;
+        height: 20em;
     }
 }
 

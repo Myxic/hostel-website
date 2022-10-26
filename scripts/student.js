@@ -71,7 +71,9 @@ hamBurgerMenu.addEventListener("click", ()=> {
 
 const profile = document.querySelector('#display-profile-pic');
 const modal = document.querySelector('.profile-modal');
-const closeModal = document.querySelector('#closeModal');
+const closeModal = document.querySelector('.closeModal');
+const closeModal2 = document.querySelector('.closeModal1');
+const modal2 = document.querySelector(".full-profile")
 
 
 profile.addEventListener("click", () => {
@@ -80,6 +82,7 @@ profile.addEventListener("click", () => {
 });
 closeModal.addEventListener("click", () => {
     modal.close();
+    
     
 });
 
@@ -92,8 +95,20 @@ imgInput.addEventListener("change", function() {
     const reader = new FileReader();
     reader.addEventListener("load", () => {
         const uploaded_image = reader.result;
-        document.querySelector('.profile-pic-modal').style.backgroundImage = `url(${uploaded_image})`;
+        document.querySelector('.profile-pic-modal2').style.backgroundImage = `url(${uploaded_image})`;
         profile.style.backgroundImage = `url(${uploaded_image})`;
+        document.querySelector(".full-profile-pic").style.backgroundImage = `url(${uploaded_image})`;
     });
     reader.readAsDataURL(this.files[0]);
 });
+
+document.querySelector('.profile-pic-modal2').addEventListener("click", () => {
+    modal2.showModal();
+});
+closeModal2.addEventListener("click", () => {
+    modal2.close();
+    
+    
+});
+
+
