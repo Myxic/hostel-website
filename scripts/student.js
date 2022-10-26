@@ -11,10 +11,12 @@ const enableDarkMode = () => {
 const disableDarkMode = () => {
     // 1. add the class off darkmode to the body 
     document.body.classList.remove("darkmode");
+    check.checked = false;
     // 2. update darkmode in the localStorage
     localStorage.setItem('darkMode', null);
 }  
 if (darkMode === 'enabled') {
+    check.checked = true;
     enableDarkMode();
 }
 
@@ -79,4 +81,19 @@ profile.addEventListener("click", () => {
 closeModal.addEventListener("click", () => {
     modal.close();
     
+});
+
+
+// adding profile pic 
+
+const imgInput = document.querySelector('#add-profile-pic');
+
+imgInput.addEventListener("change", function() {
+    const reader = new FileReader();
+    reader.addEventListener("load", () => {
+        const uploaded_image = reader.result;
+        document.querySelector('.profile-pic-modal').style.backgroundImage = `url(${uploaded_image})`;
+        profile.style.backgroundImage = `url(${uploaded_image})`;
+    });
+    reader.readAsDataURL(this.files[0]);
 });
