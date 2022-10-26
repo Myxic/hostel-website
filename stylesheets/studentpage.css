@@ -2,8 +2,12 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    transition: all 0.5s ease-in-out;
+    transition: opacity, color, 0.5s ease-in-out;
     color: var(--fc--);
+    
+}
+body{
+    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -170,10 +174,10 @@ header {
     align-items: center;
     justify-content: center;
 }
-.user-upload svg *{
+.user-upload svg {
     fill: var(--fc--);
     opacity: 1;
-    /* transition: opacity 100ms ease-in-out; */
+    transition: transform 500ms ease-in-out  ;
     
 }
 .user-upload{
@@ -182,24 +186,23 @@ header {
     cursor: pointer;
     color: var(--fc--);
 }
-input[type="checkbox"]#option-icon + label .user-upload::before{
-    position: absolute;
-    content: "\005f";
-    opacity: 0;
-}
+
 input[type="checkbox"]#option-icon:checked + label .user-upload svg{
-    opacity: 0;
+    transform: rotate(180deg);
 }
-input[type="checkbox"]#option-icon:checked + label .user-upload::before {
+/* input[type="checkbox"]#option-icon:checked + label .user-upload::before {
     position: relative;
     opacity: 1;
     
 
-}
+} */
+
 /* the modal profile picture */
-.full-profile::backdrop,
+.full-profile::backdrop{
+    background:black;
+}
 .profile-modal::backdrop{
-    background: black;
+    background: rgba(101, 99, 99, 0.751);
     
     
 }
@@ -246,9 +249,6 @@ input[type="checkbox"]#option-icon:checked + label .user-upload::before {
 #closeModal svg {
     width: 2em;
     height: 2em;
-    
-}
-#closeModal{
     fill: white;
 }
 
