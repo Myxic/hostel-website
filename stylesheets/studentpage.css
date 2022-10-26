@@ -142,12 +142,16 @@ header {
     gap: 10px;
 }
 .profile-pic{
+    background: url(../images/person-fill.svg),white;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:top;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     display: flex;
     border: 2px solid var(--fc--);
-    background: var(--pc--);
+    /* background: var(--pc--); */
     fill: var(--fc--);
     z-index: 4;
 }
@@ -206,16 +210,19 @@ input[type="checkbox"]#option-icon:checked + label .user-upload::before {
     justify-content: center; 
     align-items: center;
     position: relative;
-    background: var(--bc--);
+    background: black;
     transition: all 0.5s ease-in-out;
 }
 .profile-pic-modal{
-    background: var(--fc--);
+    background: url(../images/person-fill.svg),white;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:top;
     width: 25em;
     height: 25em;
     border-radius: 50%;
     display: flex;
-    border: 3px solid var(--ic--);
+    border: 3px solid white;
     position: relative;
     
 }
