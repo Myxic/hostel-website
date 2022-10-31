@@ -33,13 +33,14 @@ if (window.matchMedia("(prefers-color-scheme: dark)").matches){
     check.checked = true;
     if (check.checked){
         enableDarkMode();
+    }else if (window.matchMedia("(prefers-color-scheme: light)").matches){
+        console.log("Check")
+        disableDarkMode();
     }else{
         disableDarkMode();
     }
 
 }
-
-
 // ADDING THE FUNCTION FOR THE HAM BURGER MENU 
 
 const hamBurgerMenu = document.querySelector('.ham');
@@ -85,30 +86,53 @@ closeModal.addEventListener("click", () => {
     
     
 });
-
-
 // adding profile pic 
 
 const imgInput = document.querySelector('#add-profile-pic');
 
+
+
 imgInput.addEventListener("change", function() {
+    var image = imgInput.files[0];
+    console.log(image);
+    createReader(image, function(w, h) {
+
+        // alert("Width is: " + w +
+        // "pixels, Height is: " + h + "pixels");
+    });
+    
     const reader = new FileReader();
     reader.addEventListener("load", () => {
+           var width = this.width 
+            var height = this.height;
+        
         const uploaded_image = reader.result;
+        
         document.querySelector('.profile-pic-modal2').style.backgroundImage = `url(${uploaded_image})`;
         profile.style.backgroundImage = `url(${uploaded_image})`;
         document.querySelector(".full-profile-pic").style.backgroundImage = `url(${uploaded_image})`;
     });
     reader.readAsDataURL(this.files[0]);
+    
 });
-
+function createReader(file, whenReady) {
+    var reader = new FileReader;
+    reader.onload = function(evt) {
+        var image = new Image();
+        image.onload = function(evt) {
+            var width = this.width;
+            var height = this.height;
+            if (whenReady) whenReady(width, height);
+        };
+        image.src = evt.target.result;
+    };
+    reader.readAsDataURL(file);
+}
 document.querySelector('.profile-pic-modal2').addEventListener("click", () => {
     modal2.showModal();
 });
 closeModal2.addEventListener("click", () => {
     modal2.close();
-    
-    
 });
 
 

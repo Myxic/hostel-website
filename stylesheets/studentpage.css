@@ -6,9 +6,7 @@
     color: var(--fc--);
     
 }
-body{
-    overflow: hidden;
-}
+
 a{
     text-decoration: none;
 }
@@ -17,6 +15,7 @@ svg,
     cursor: pointer;
 }
 :root{
+    
     --pc--:var(--bc--);
     --bc--: white;
     --fc--: black;
@@ -215,7 +214,8 @@ input[type="checkbox"]#option-icon:checked + label .user-upload svg{
     justify-content: center; 
     align-items: center;
     position: relative;
-    background: black;
+    background: none;
+    border: none;
     transition: all 0.5s ease-in-out;
 }
 .profile-pic-modal{
@@ -289,9 +289,9 @@ input[type="checkbox"].toggle{
     /* top: -90000px; */
     /* left: -90000px; */
 }
-input[type="checkbox"].toggle:focus + label::before{
+/* input[type="checkbox"].toggle:focus + label::before{
     outline: 1px solid black;
-}
+} */
 input[type="checkbox"].toggle + label{
     position: relative;
     display: flex;
@@ -370,7 +370,6 @@ input[type="checkbox"].toggle:checked + label{
     font-weight: 200;
     color: var(--fc--);
     border-bottom: 1px solid var(--fc--);
-    /* border: 1px solid; */
     cursor: pointer;
     overflow: hidden;
 
@@ -460,6 +459,7 @@ footer >.social-links> .links >span >svg *{
     border: none;
 }
 .full-profile-pic{
+
     background: url(../images/person-fill.svg),white;
     background-repeat: no-repeat;
     background-size:100%;
@@ -467,6 +467,7 @@ footer >.social-links> .links >span >svg *{
     width: 30em;
     height: 30em;
 }
+
 @media (max-width: 700px) {
     header{
         grid-template-columns: 3fr 2fr ;
@@ -530,6 +531,54 @@ footer >.social-links> .links >span >svg *{
         width: 20em;
         height: 20em;
     }
+.body-part{
+    flex-direction: column;
+    background: var(--bc--);
+    min-height: 100vh;
+}
+.min{
+    display: block;
+}
+.navbar{
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    max-height: 10vh;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar  ul {
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: var(--box-shadow--);
+    align-items: center;
+    justify-content: space-evenly ;
+    
+
+}
+.navbar ul li {
+    border: none;
+    background: none;
+    line-height:0px;
+    
+    
+}
+.navbar>ul li label{
+    flex-direction: column;
+    font-size: 8px;
+    gap: 2px;
+}
+.content{
+    width: 100%;
+}
+.ham-burger,
+footer{
+    display: none;
+}
 }
 
 @media (min-width: 768px) {

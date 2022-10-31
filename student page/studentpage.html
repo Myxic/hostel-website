@@ -113,7 +113,7 @@
                         <input type="radio" name="navbar" id="input-payment">
                         <label for="input-payment" class="payment-item icons">
                             <div class="payment-item-left">
-                                <span class="icon-img"><svg width="33" height="27" viewBox="0 0 33 27" fill="none"
+                                <span class="icon-img"><svg width="35" height="35" viewBox="0 0 33 27" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M19.4163 15.4584C18.2011 15.4584 17.1681 14.9844 16.3174 14.0365C15.4667 13.0886 15.0413 11.9375 15.0413 10.5834C15.0413 9.22921 15.4667 8.07817 16.3174 7.13025C17.1681 6.18233 18.2011 5.70837 19.4163 5.70837C20.6316 5.70837 21.6646 6.18233 22.5153 7.13025C23.366 8.07817 23.7913 9.22921 23.7913 10.5834C23.7913 11.9375 23.366 13.0886 22.5153 14.0365C21.6646 14.9844 20.6316 15.4584 19.4163 15.4584ZM9.20801 20.3334C8.40593 20.3334 7.71954 20.0149 7.14884 19.3779C6.57717 18.742 6.29134 17.9771 6.29134 17.0834V4.08337C6.29134 3.18962 6.57717 2.42479 7.14884 1.78887C7.71954 1.15187 8.40593 0.833374 9.20801 0.833374H29.6247C30.4268 0.833374 31.1136 1.15187 31.6853 1.78887C32.256 2.42479 32.5413 3.18962 32.5413 4.08337V17.0834C32.5413 17.9771 32.256 18.742 31.6853 19.3779C31.1136 20.0149 30.4268 20.3334 29.6247 20.3334H9.20801ZM12.1247 17.0834H26.708C26.708 16.1896 26.9934 15.4242 27.5641 14.7872C28.1357 14.1513 28.8226 13.8334 29.6247 13.8334V7.33337C28.8226 7.33337 28.1357 7.01487 27.5641 6.37787C26.9934 5.74196 26.708 4.97712 26.708 4.08337H12.1247C12.1247 4.97712 11.8388 5.74196 11.2672 6.37787C10.6965 7.01487 10.0101 7.33337 9.20801 7.33337V13.8334C10.0101 13.8334 10.6965 14.1513 11.2672 14.7872C11.8388 15.4242 12.1247 16.1896 12.1247 17.0834ZM3.37467 26.8334C2.57259 26.8334 1.8862 26.5154 1.31551 25.8795C0.743841 25.2425 0.458008 24.4771 0.458008 23.5834V7.33337C0.458008 6.87296 0.598008 6.48675 0.878008 6.17475C1.15704 5.86383 1.50315 5.70837 1.91634 5.70837C2.32954 5.70837 2.67613 5.86383 2.95613 6.17475C3.23516 6.48675 3.37467 6.87296 3.37467 7.33337V23.5834H26.708C27.1212 23.5834 27.4673 23.7394 27.7463 24.0514C28.0263 24.3623 28.1663 24.748 28.1663 25.2084C28.1663 25.6688 28.0263 26.0545 27.7463 26.3654C27.4673 26.6774 27.1212 26.8334 26.708 26.8334H3.37467ZM9.20801 17.0834V4.08337V17.0834Z"
@@ -184,6 +184,41 @@
             </div>
         </div>
     </div>
+     <!-- ADDING A MODAL FOR THE PROFILE PIC -->
+     <dialog class="profile-modal">
+        <span id="closeModal" class="closeModal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+        </span>
+        
+        <div class="profile-pic-modal">
+            <div class="profile-pic-modal2">
+
+            </div>
+            <div class="pic-upload">
+                <label for="add-profile-pic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                  </svg></label>
+                <input type="file" name="file" id="add-profile-pic" accept="image/png, image/jpg, image/jpeg">
+                </div>
+        </div>
+        
+    </dialog>
+    <dialog class="full-profile">
+        <div class="full-profile-pic" >
+            
+            
+
+        </div>
+        <span id="closeModal" class="closeModal1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+    </dialog>
     <footer>
         <div class="powered"><strong>POWERED BY - Bravta Ltd</strong></div>
         <div class="moto">© HFYV, Inc. 2022. We love our students!</div>
@@ -216,40 +251,7 @@
             </div>
         </div>
     </footer>
-     <!-- ADDING A MODAL FOR THE PROFILE PIC -->
-     <dialog class="profile-modal">
-        <span id="closeModal" class="closeModal">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
-                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-              </svg>
-        </span>
-        
-        <div class="profile-pic-modal">
-            <div class="profile-pic-modal2">
-
-            </div>
-            <div class="pic-upload">
-                <label for="add-profile-pic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-camera-fill" viewBox="0 0 16 16">
-                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
-                  </svg></label>
-                <input type="file" name="file" id="add-profile-pic" accept="image/png, image/jpg, image/jpeg">
-                </div>
-        </div>
-        
-    </dialog>
-    <dialog class="full-profile">
-        <div class="full-profile-pic" >
-            
-
-        </div>
-        <span id="closeModal" class="closeModal1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
-                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-              </svg>
-    </dialog>
+    
 </body>
 
 </html>
