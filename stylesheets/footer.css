@@ -238,7 +238,7 @@ hr{
     display: flex;
     gap: 10px;
 }
-@media screen and (max-width:700px) {
+@media (max-width:700px) {
 p{
     font-size: 13px;
 }
@@ -376,4 +376,8 @@ nav figure:first-child{
     font-size: 10px;
 }
 }
-
+/* @media (min-width:700px) {
+    .nav_ul{
+        display: flex important!;
+    }
+} */

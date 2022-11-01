@@ -78,6 +78,7 @@ const modal2 = document.querySelector(".full-profile")
 
 
 profile.addEventListener("click", () => {
+    
     modal.showModal();
     
 });
