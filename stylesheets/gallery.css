@@ -1,15 +1,23 @@
-
-.gallery-container{
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
   min-height: 40vh;
   max-height: 60vh;
   /* border: 2px solid black; */
-  box-shadow: inset 0px 0px 0px 5px rgba(0,0,0,0);
+  box-shadow: inset 0px 0px 0px 5px rgba(0, 0, 0, 0);
   /* padding: 10px; */
   overflow: auto;
   position: relative;
-  
+  padding-bottom: 30px;
+
 }
-.one-1::before{
+.gallery-container::before{
+  position: sticky;
+}
+
+.one-1::before {
   content: "Exterior";
   display: block;
   color: white;
@@ -24,7 +32,8 @@
   margin-bottom: 20px;
 
 }
-.two-2::before{
+
+.two-2::before {
   content: "interior";
   display: block;
   color: white;
@@ -36,12 +45,14 @@
   position: sticky;
   top: 0px;
   margin-bottom: 20px;
-  
+
 }
-.three-3{
+
+.three-3 {
   margin-bottom: 30px;
 }
-.three-3::before{
+
+.three-3::before {
   content: "Events";
   display: block;
   color: white;
@@ -65,10 +76,15 @@
   flex-wrap: wrap;
   gap: 5px;
 }
-.row{
+
+.row {
+  width: 90%;
   overflow: auto;
-  justify-content:stretch;
+  justify-content: space-between;
+  /* padding: 30px; */
   margin: auto;
+  
+  /* border: 1px solid black; */
 }
 
 .row>#addImage,
@@ -95,7 +111,7 @@
   content: "";
   display: table;
   clear: both;
-  
+
 }
 
 /* Create four equal columns that floats next to eachother */
@@ -111,10 +127,11 @@
   width: 120px;
   height: 60px;
 }
+
 /* fixing the thumbnail to stay at the bottom always */
 #thumbnail,
 #thumbnail2,
-#thumbnail3{
+#thumbnail3 {
   position: fixed !important;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -128,6 +145,7 @@
   padding: auto !important;
   gap: 5px;
 }
+
 /* The Modal (background) */
 .modal {
   display: none;
@@ -196,8 +214,8 @@
 }
 
 .mySlides1 img,
-.mySlides2 img ,
-.mySlides3 img  {
+.mySlides2 img,
+.mySlides3 img {
   height: 40vh;
 }
 
@@ -250,10 +268,25 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-@media (min-width: 700px) {
-.mySlides1 img,
-.mySlides2 img ,
-.mySlides3 img {
+
+@media (max-width: 700px) {
+
+  .mySlides1 img,
+  .mySlides2 img,
+  .mySlides3 img {
     height: 60vh;
-  } 
+  }
+
+  
+}
+@media (max-width: 400px) {
+.row{
+  padding: 4%;
+}
+  .row>#addImage,
+  .row>.column {
+    width: calc(90%/2.25 );
+    height: 70px;
+    margin-bottom: 30px;
+  }
 }

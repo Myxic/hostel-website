@@ -166,6 +166,7 @@ blockquote{
     flex-direction: row;
 }
 .comment{
+    display: none;
     width:80%;
     margin: 20px  auto;
     text-align: left;
