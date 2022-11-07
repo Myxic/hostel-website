@@ -74,7 +74,13 @@ const profile = document.querySelector('#display-profile-pic');
 const modal = document.querySelector('.profile-modal');
 const closeModal = document.querySelector('.closeModal');
 const closeModal2 = document.querySelector('.closeModal1');
-const modal2 = document.querySelector(".full-profile")
+const modal2 = document.querySelector(".full-profile");
+
+const moveup = document.querySelector("#move-up");
+const movedown = document.querySelector("#move-down");
+const moveleft = document.querySelector("#move-left");
+const moveright = document.querySelector("#move-right");
+const savedp = document.querySelector(".save-dp");
 
 
 profile.addEventListener("click", () => {
@@ -94,6 +100,7 @@ const imgInput = document.querySelector('#add-profile-pic');
 
 
 imgInput.addEventListener("change", function() {
+    
     var image = imgInput.files[0];
     console.log(image);
     createReader(image, function(w, h) {
@@ -108,10 +115,17 @@ imgInput.addEventListener("change", function() {
             var height = this.height;
         
         const uploaded_image = reader.result;
-        
+                // ADDING THE IMAGE
         document.querySelector('.profile-pic-modal2').style.backgroundImage = `url(${uploaded_image})`;
         profile.style.backgroundImage = `url(${uploaded_image})`;
         document.querySelector(".full-profile-pic").style.backgroundImage = `url(${uploaded_image})`;
+              // ADDING THE EDITTING BUTTONS
+        document.querySelector(".pic-upload").style.display="none";
+        closeModal.style.display = "none";
+        document.querySelectorAll(".edit-dp").forEach(button => {
+            button.style.display = "block";
+        });
+        document.querySelector(".save-dp").style.display = "block";
     });
     reader.readAsDataURL(this.files[0]);
     
@@ -136,4 +150,46 @@ closeModal2.addEventListener("click", () => {
     modal2.close();
 });
 
+// ADDING DP EDITOR
+
+let movepercent = 60;
+let movepercentX = 0;
+console.log(movepercent)
+moveup.addEventListener("click", () => {
+    movepercent += 5;
+    profile.style.backgroundPositionY = `${movepercent}%`;
+    document.querySelector(".full-profile-pic").style.backgroundPositionY = `${movepercent}%`;
+    document.querySelector('.profile-pic-modal2').style.backgroundPositionY = `${movepercent}%`;
+    
+
+});
+movedown.addEventListener("click", () => {
+    movepercent -= 5;
+    profile.style.backgroundPositionY = `${movepercent}%`;
+    document.querySelector(".full-profile-pic").style.backgroundPositionY = `${movepercent}%`;
+    document.querySelector('.profile-pic-modal2').style.backgroundPositionY = `${movepercent}%`;
+    
+});
+moveleft.addEventListener("click", () => {
+    movepercentX += 5;
+    profile.style.backgroundPositionX = `${movepercentX}px`;
+    document.querySelector(".full-profile-pic").style.backgroundPositionX = `${movepercentX}px`;
+    document.querySelector('.profile-pic-modal2').style.backgroundPositionX = `${movepercentX}px`;
+    
+});
+moveright.addEventListener("click", () => {
+    movepercentX -= 5;
+    profile.style.backgroundPositionX = `${movepercentX}px`;
+    document.querySelector(".full-profile-pic").style.backgroundPositionX = `${movepercentX}px`;
+    document.querySelector('.profile-pic-modal2').style.backgroundPositionX = `${movepercentX}px`;
+    
+});
+document.querySelector(".save-dp").addEventListener("click", () =>{
+    document.querySelector(".pic-upload").style.display="block";
+    closeModal.style.display = "block";
+    document.querySelectorAll(".edit-dp").forEach(button => {
+        button.style.display = "none";
+    });
+    document.querySelector(".save-dp").style.display = "none";
+});
 
