@@ -6,7 +6,9 @@
     color: var(--fc--);
     
 }
-
+body{
+    overflow: hidden;
+}
 a{
     text-decoration: none;
 }
@@ -351,6 +353,8 @@ input[type="checkbox"].toggle:checked + label{
 .body-part{
     width: 100%;
     display: flex;
+    overflow: auto;
+
 }
 /* Nav-bar */
 
@@ -360,6 +364,7 @@ input[type="checkbox"].toggle:checked + label{
     box-shadow: var(--box-shadow--);
     height: 82vh;
     background: var(--bc--);
+    overflow: auto;
     z-index: 1;
 } 
 .navbar>ul li{
@@ -377,12 +382,12 @@ input[type="checkbox"].toggle:checked + label{
 .navbar>ul li:focus,
 .navbar>ul li:hover{
     background: var(--nav--hover);
-    
 }
 .navbar>ul li:focus strong,
 .navbar>ul li:hover strong{
     color: var(--icon--hover);
-}
+} 
+
 .navbar>ul li:hover .icon-img1 svg path{
     
     stroke: var(--icon--hover);
@@ -390,7 +395,22 @@ input[type="checkbox"].toggle:checked + label{
 .navbar>ul li:hover .icon-img svg path{
     fill: var(--icon--hover);
 }
+/* adding class for when the icons elements are clicked */
+.navbar>ul .selected{
+    background: var(--nav--hover);
+}
+.selected strong{
+    color: var(--icon--hover);
+} 
 
+.selected .icon-img1 svg path{
+    
+    stroke: var(--icon--hover);
+}
+.selected .icon-img svg path{
+    fill: var(--icon--hover);
+}
+/*     */
 .icons{
     display: flex;
     align-items: center;
@@ -418,6 +438,7 @@ input[type="checkbox"].toggle:checked + label{
 .content {
     width:var(--cwidth--);
     background-color: var(--bc--);
+    overflow: auto;
     
 }
 /* FOOTER */
@@ -507,6 +528,13 @@ transform: translateX(50%);
     top: 50%;
     transform: translateY(50%);
     rotate: 270deg;
+}
+.remove-dp{
+    padding: 5px 10px;
+    font-size: 1em;
+    color: black;
+    position: absolute;
+    bottom: 3%;
 }
 .save-dp{
     padding: 5px 10px;
@@ -647,6 +675,7 @@ transform: translateX(50%);
     font-size: 8px;
     gap: 2px;
 }
+.navbar>ul .selected,
 .navbar>ul li:focus,
 .navbar>ul li:hover{
     background: none;

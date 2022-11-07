@@ -116,12 +116,13 @@ imgInput.addEventListener("change", function() {
         
         const uploaded_image = reader.result;
                 // ADDING THE IMAGE
-        document.querySelector('.profile-pic-modal2').style.backgroundImage = `url(${uploaded_image})`;
-        profile.style.backgroundImage = `url(${uploaded_image})`;
-        document.querySelector(".full-profile-pic").style.backgroundImage = `url(${uploaded_image})`;
+                document.querySelector('.profile-pic-modal2').style.backgroundImage = `url(${uploaded_image})`;
+                profile.style.backgroundImage = `url(${uploaded_image})`;
+                document.querySelector(".full-profile-pic").style.backgroundImage = `url(${uploaded_image})`;
               // ADDING THE EDITTING BUTTONS
         document.querySelector(".pic-upload").style.display="none";
         closeModal.style.display = "none";
+        document.querySelector(".remove-dp").style.display="none";
         document.querySelectorAll(".edit-dp").forEach(button => {
             button.style.display = "block";
         });
@@ -154,7 +155,7 @@ closeModal2.addEventListener("click", () => {
 
 let movepercent = 60;
 let movepercentX = 0;
-console.log(movepercent)
+
 moveup.addEventListener("click", () => {
     movepercent += 5;
     profile.style.backgroundPositionY = `${movepercent}%`;
@@ -187,9 +188,74 @@ moveright.addEventListener("click", () => {
 document.querySelector(".save-dp").addEventListener("click", () =>{
     document.querySelector(".pic-upload").style.display="block";
     closeModal.style.display = "block";
+    document.querySelector(".remove-dp").style.display="block";
     document.querySelectorAll(".edit-dp").forEach(button => {
         button.style.display = "none";
     });
     document.querySelector(".save-dp").style.display = "none";
 });
+document.querySelector(".remove-dp").addEventListener("click", ()=>{
+    document.querySelector('.profile-pic-modal2').style.backgroundImage = "url(../images/person-fill.svg)";
+    profile.style.backgroundImage = "url(../images/person-fill.svg)";
+    document.querySelector(".full-profile-pic").style.backgroundImage = "url(../images/person-fill.svg)";
+});
 
+const navIcon1 =  document.querySelectorAll(".nav-icon")
+navIcon1.forEach(navIcon => {
+    navIcon.addEventListener("click", () =>{
+        if (navIcon1[0].checked){
+            document.querySelector(".dashboard").classList.add("selected");
+          }else{
+            document.querySelector(".dashboard").classList.remove("selected");
+          };
+          if (navIcon1[1].checked){
+            document.querySelector(".messages").classList.add("selected");
+          }else{
+            document.querySelector(".messages").classList.remove("selected");
+          };
+          if (navIcon1[2].checked){
+            document.querySelector(".payment").classList.add("selected");
+          }else{
+            document.querySelector(".payment").classList.remove("selected");
+          };
+          if (navIcon1[3].checked){
+            document.querySelector(".event").classList.add("selected");
+          }else{
+            document.querySelector(".event").classList.remove("selected");
+          };
+          if (navIcon1[4].checked){
+            document.querySelector(".report").classList.add("selected");
+          }else{
+            document.querySelector(".report").classList.remove("selected");
+          };
+    });
+    
+    window.addEventListener("load", () => {
+        if (navIcon1[0].checked){
+            document.querySelector(".dashboard").classList.add("selected");
+          }else{
+            document.querySelector(".dashboard").classList.remove("selected");
+          };
+          if (navIcon1[1].checked){
+            document.querySelector(".messages").classList.add("selected");
+          }else{
+            document.querySelector(".messages").classList.remove("selected");
+          };
+          if (navIcon1[2].checked){
+            document.querySelector(".payment").classList.add("selected");
+          }else{
+            document.querySelector(".payment").classList.remove("selected");
+          };
+          if (navIcon1[3].checked){
+            document.querySelector(".event").classList.add("selected");
+          }else{
+            document.querySelector(".event").classList.remove("selected");
+          };
+          if (navIcon1[4].checked){
+            document.querySelector(".report").classList.add("selected");
+          }else{
+            document.querySelector(".report").classList.remove("selected");
+          };
+    });
+   
+});
