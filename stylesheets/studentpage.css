@@ -467,13 +467,80 @@ footer >.social-links> .links >span >svg *{
     width: 30em;
     height: 30em;
 }
-.dm-pic{
-    /* display: none; */
-}
+/* .dm-pic{
+    display: none;
+} */
 .dm-pic >*{
     /* display: none; */
     overflow: hidden;
 }
+.edit-dp{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: none;
+}
+.edit-dp > svg{
+    width: 26px;
+     height: 26px;
+}
+#move-up{
+top: -15px;
+right: 50%;
+transform: translateX(50%);
+}
+#move-down{
+    bottom: -15px;
+right: 50%;
+transform: translateX(50%);
+
+}
+#move-left{
+    left: 0px;
+    top: 50%;
+    transform: translateY(50%);
+    rotate: 90deg;
+}
+#move-right{
+    right: 0px;
+    top: 50%;
+    transform: translateY(50%);
+    rotate: 270deg;
+}
+.save-dp{
+    padding: 5px 10px;
+    font-size: 1em;
+    color: black;
+    position: absolute;
+    bottom: 3%;
+    display: none;
+}
+/* #move-up-left{
+    top: 20%;
+    left: 0%;
+    transform: translateX(50%);
+    rotate: -45deg;
+}
+#move-up-right{
+    top: 20%;
+    left: 100%;
+    transform: translateX(50%);
+    rotate: 45deg;
+}
+#move-down-left{
+    bottom: 15%;
+    left: 0%;
+    transform: translateX(50%);
+    rotate: 45deg;
+    
+}
+#move-down-right{
+    bottom: 15%;
+    right: 0%;
+    transform: translateX(50%);
+    rotate: -45deg;
+} */
 @media (max-width: 700px) {
     header{
         grid-template-columns: 3fr 2fr ;
