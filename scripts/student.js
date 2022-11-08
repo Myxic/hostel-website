@@ -259,3 +259,14 @@ navIcon1.forEach(navIcon => {
     });
    
 });
+
+if (window.matchMedia("(max-width:400px)").matches) {
+  const footershow = document.querySelector("#footershow");
+  document.querySelector("#labell1").addEventListener("click", () =>{
+  if (footershow.checked) {
+     document.querySelector("footer").classList.add("footerdiv");
+  } else if(!footershow.checked){
+    document.querySelector("footer").classList.remove("footerdiv");
+  }
+});
+};
