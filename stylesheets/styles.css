@@ -75,7 +75,7 @@
 
 .forgot >a{
     color: black;
-    font-size: 1rem;
+    font-size: .8rem;
     text-transform: capitalize;
     text-decoration: underline;
 }
