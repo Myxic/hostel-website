@@ -727,10 +727,14 @@ transform: translateX(50%);
 }
 footer{
     padding-top: 4px;
-    
-}
-.footerdiv{
     bottom: -94px;
+}
+/* .footerdiv::backdrop{
+    background: rgba(101, 99, 99, 0.31);
+    
+} */
+.footerdiv{
+    bottom: 0px;
 }
 
 #closeModal{
