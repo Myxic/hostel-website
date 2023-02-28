@@ -64,8 +64,11 @@
     box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
     font-weight:300;
     text-decoration: solid black;
-    text-transform: capitalize;
+    text-transform:capitalize;
 
+}
+.NoCap{
+    text-transform:none !important; 
 }
 
 .email{
@@ -75,7 +78,7 @@
 
 .forgot >a{
     color: black;
-    font-size: .8rem;
+    font-size: .7rem;
     text-transform: capitalize;
     text-decoration: underline;
 }
