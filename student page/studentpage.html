@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student page</title>
     <link rel="stylesheet" href="../stylesheets/studentpage.css">
+    <link rel="stylesheet" href="../stylesheets/Calender.css">
     <script src="../scripts/student.js" defer></script>
+    <script src="../scripts/Calendar.js" defer></script>
 </head>
 
 <body>
@@ -227,9 +229,112 @@
 
               </div>
               <div class="PaymentContent  ContentBody">
+                <h2>Payment</h2>
+                <div class="PaymentTimmer">
+                    <h2>Rent Expires</h2>
+                    <table>
+                        <tr>
+                            <th>
+                                01
+                            </th>
+                            <th>
+                                07
+                            </th>
+                            <th>
+                                 26
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Year</td>
+                            <td>Month</td>
+                            <td>Days</td>
+                        </tr>
+                    </table>
+                    
+                </div>
 
+                <div class="Note">
+                    <small>Note: All student rent expires on the 31st July irrespective of the payment period</small>
+                </div>
               </div>
-              <div class="EventContent  ContentBody">
+              <div class="EventContent  ContentBod">
+                <h2>Events</h2>
+                <div class="EventDetails">
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <span class="month-picker" id="month-picker">February</span>
+                            <div class="year-picker">
+                                <span class="year-change" id="prev-year">
+                                    <pre><</pre>
+                                </span>
+                                <span id="year">2023</span>
+                                <span class="year-change" id="next-year">
+                                    <pre>></pre>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="calendar-body">
+                            <div class="calendar-week-day">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-days"></div>
+                        </div>
+                        <div class="month-list"></div>
+                    </div>
+                    <div class="UpcomingEvent">
+
+                    </div>
+                    <div class="UpcomingEvent">
+
+                    </div>
+                </div>
+                <div class="EventBox">
+                    <h3>Events</h3>
+                    <table border="1">
+                        <tr>
+                            <th>#</th>
+                            <th>Topic</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>...</th>
+                        </tr>
+                        <tr>
+                            <td class="EventId">1</td>
+                            <td class="EventTopic">Carnival</td>
+                            <td class="EventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
+                            <td class="EventDate">02/11/22</td>
+                            <td class="ViewAnnouncement"><button class="ViewAnnouncementButton" type="button">View</button></td>
+                        </tr>
+                        <tr>
+                            <td class="EventId">2</td>
+                            <td class="EventTopic">Hf Week</td>
+                            <td class="EventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
+                            <td class="EventDate">02/11/22</td>
+                            <td class="ViewAnnouncement"><button class="ViewAnnouncementButton" type="button">View</button></td>
+                        </tr>
+                        <tr>
+                            <td class="EventId">3</td>
+                            <td class="EventTopic">Arch Bishop</td>
+                            <td class="EventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
+                            <td class="EventDate">02/11/22</td>
+                            <td class="ViewAnnouncement"><button class="ViewAnnouncementButton" type="button">View</button></td>
+                        </tr>
+                        <tr>
+                            <td class="EventId">4</td>
+                            <td class="EventTopic">Talent Hunt</td>
+                            <td class="EventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
+                            <td class="EventDate">02/11/22</td>
+                            <td class="ViewAnnouncement"><button class="ViewAnnouncementButton" type="button">View</button></td>
+                        </tr>
+                    </table>
+                    <!-- <button type="button">Show All</button> -->
+                </div>
 
               </div>
               <div class="ReportContent  ContentBody">

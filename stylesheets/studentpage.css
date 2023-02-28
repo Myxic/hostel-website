@@ -33,6 +33,13 @@ svg,
     --box-shadow--: 0px 0px 2px black;
     --box-burger--: 0px 1px 3px rgba(178, 164, 158, 0.2) ;
     --position-background--:100% 60%;
+    
+    --color-txt: var(--light-text);
+    --bg-body: var(--light-body);
+    --bg-main: var(--light-main);
+    --bg-second: var(--light-second);
+    --color-hover: var(--light-hover);
+    --color-txt: var(--light-text);
 }
 .darkmode{
         --pc--:var(--fc--);
@@ -43,6 +50,12 @@ svg,
         --icon--hover:#ef670b;
         --box-shadow--: 0px 0px 2px white;
         --box-burger--: 0px 1px 3px rgba(255, 101, 47, 0.2) ;
+
+        --bg-body: var(--dark-body);
+        --bg-main: var(--dark-main);
+        --bg-second: var(--dark-second);
+        --color-hover: var(--dark-hover);
+        --color-txt: var(--dark-text);
 }
 
 
@@ -555,6 +568,7 @@ transform: translateX(50%);
     bottom: 3%;
     display: none;
 }
+.ContentBody,
 #footershow,
 #labell1{
     display: none;
