@@ -6,8 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student page</title>
-    <link rel="stylesheet" href="../stylesheets/studentpage.css">
-    <link rel="stylesheet" href="../stylesheets/Calender.css">
+    <link rel="stylesheet" href="../stylesheets/StudentPageStyleSheet/studentpage.css">
+    <link rel="stylesheet" href="../stylesheets/StudentPageStyleSheet/Calender.css">
+    <link rel="stylesheet" href="../stylesheets/StudentPageStyleSheet/DashBoard.css">
+    <link rel="stylesheet" href="../stylesheets/StudentPageStyleSheet/DisplayPicture.css"> 
+    <link rel="stylesheet" href="../stylesheets/StudentPageStyleSheet/Events.css">
+    <link rel="stylesheet" href="../stylesheets/StudentPageStyleSheet/Message.css">
+    <link rel="stylesheet" href="../stylesheets/StudentPageStyleSheet/Payment.css">
+    <link rel="stylesheet" href="../stylesheets/StudentPageStyleSheet/Report.css">
+    <link rel="stylesheet" href="../stylesheets/StudentPageStyleSheet/Root.css">
+    <link rel="stylesheet" href="../stylesheets/StudentPageStyleSheet/StudentPageFooter.css">
+    <link rel="stylesheet" href="../stylesheets/StudentPageStyleSheet/StudentPageMenu.css">
+    <link rel="stylesheet" href="../stylesheets/StudentPageStyleSheet/HamBurger.css">
+    
     <script src="../scripts/student.js" defer></script>
     <script src="../scripts/Calendar.js" defer></script>
 </head>
@@ -181,168 +192,195 @@
                 </ul>
             </nav>
             <div class="content">
-              <div class="DashboardContent  ContentBody">
-                <h2>Welcome to HFYV Student Portal</h2>
-                    <h2>Welcome Back, User1</h2> 
-                    <!-- . i think you need to get user1 from database and replace it with user1 -->
-                    <p>Room No: Hfyv/xx/xx</p>
-                    
-                    <div class="AnnoucementBox">
-                        <h3> Recent Annoucement</h3>
-                        <table border="1">
-                            <tr>
-                                <th>#</th>
-                                <th>Topic</th>
-                                <th>Description</th>
-                                <th>...</th>
-                            </tr>
-                            <tr>
-                                <td class="AnnoucementId">1</td>
-                                <td class="AnnoucementTopic">Rent</td>
-                                <td class="AnnouncementDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
-                                <td class="ViewAnnouncement"><button class="ViewAnnouncementButton" type="button">View</button></td>
-                            </tr>
-                            <tr>
-                                <td class="AnnoucementId">2</td>
-                                <td class="AnnoucementTopic">Sanitation</td>
-                                <td class="AnnouncementDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
-                                <td class="ViewAnnouncement"><button class="ViewAnnouncementButton" type="button">View</button></td>
-                            </tr>
-                            <tr>
-                                <td class="AnnoucementId">3</td>
-                                <td class="AnnoucementTopic">Mass</td>
-                                <td class="AnnouncementDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
-                                <td class="ViewAnnouncement"><button class="ViewAnnouncementButton" type="button">View</button></td>
-                            </tr>
-                            <tr>
-                                <td class="AnnoucementId">4</td>
-                                <td class="AnnoucementTopic">Noise</td>
-                                <td class="AnnouncementDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
-                                <td class="ViewAnnouncement"><button class="ViewAnnouncementButton" type="button">View</button></td>
-                            </tr>
-                        </table>
-                        <button type="button">Show All</button>
+                <div class="Contentstruture">
+                    <div class="DashboardContent  ContentBody">
+                        <h2>Welcome to HFYV Student Portal</h2>
+                        <h2>Welcome Back, User1</h2>
+                        <!-- . i think you need to get user1 from database and replace it with user1 -->
+                        <p>Room No: Hfyv/xx/xx</p>
+
+                        <div class="AnnoucementBox">
+                            <h3> Recent Annoucement</h3>
+                            <table border="1">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Topic</th>
+                                    <th>Description</th>
+                                    <th>...</th>
+                                </tr>
+                                <tr>
+                                    <td class="AnnoucementId">1</td>
+                                    <td class="AnnoucementTopic">Rent</td>
+                                    <td class="AnnouncementDescription">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam
+                                        officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
+                                    <td class="ViewAnnouncement"><button class="ViewAnnouncementButton"
+                                            type="button">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="AnnoucementId">2</td>
+                                    <td class="AnnoucementTopic">Sanitation</td>
+                                    <td class="AnnouncementDescription">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam
+                                        officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
+                                    <td class="ViewAnnouncement"><button class="ViewAnnouncementButton"
+                                            type="button">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="AnnoucementId">3</td>
+                                    <td class="AnnoucementTopic">Mass</td>
+                                    <td class="AnnouncementDescription">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam
+                                        officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
+                                    <td class="ViewAnnouncement"><button class="ViewAnnouncementButton"
+                                            type="button">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="AnnoucementId">4</td>
+                                    <td class="AnnoucementTopic">Noise</td>
+                                    <td class="AnnouncementDescription">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam
+                                        officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
+                                    <td class="ViewAnnouncement"><button class="ViewAnnouncementButton"
+                                            type="button">View</button></td>
+                                </tr>
+                            </table>
+                            <button type="button">Show All</button>
+                        </div>
+
                     </div>
-                    
-              </div>
-              <div class="MessageContent  ContentBody">
+                    <div class="MessageContent  ContentBody">
 
-              </div>
-              <div class="PaymentContent  ContentBody">
-                <h2>Payment</h2>
-                <div class="PaymentTimmer">
-                    <h2>Rent Expires</h2>
-                    <table>
-                        <tr>
-                            <th>
-                                01
-                            </th>
-                            <th>
-                                07
-                            </th>
-                            <th>
-                                 26
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>Year</td>
-                            <td>Month</td>
-                            <td>Days</td>
-                        </tr>
-                    </table>
-                    
-                </div>
+                    </div>
+                    <div class="PaymentContent  ContentBody">
+                        <h2>Payment</h2>
+                        <div class="PaymentTimmer">
+                            <h2>Rent Expires</h2>
+                            <table>
+                                <tr>
+                                    <th>
+                                        01
+                                    </th>
+                                    <th>
+                                        07
+                                    </th>
+                                    <th>
+                                        26
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>Year</td>
+                                    <td>Month</td>
+                                    <td>Days</td>
+                                </tr>
+                            </table>
 
-                <div class="Note">
-                    <small>Note: All student rent expires on the 31st July irrespective of the payment period</small>
-                </div>
-              </div>
-              <div class="EventContent  ContentBod">
-                <h2>Events</h2>
-                <div class="EventDetails">
-                    <div class="calendar">
-                        <div class="calendar-header">
-                            <span class="month-picker" id="month-picker">February</span>
-                            <div class="year-picker">
-                                <span class="year-change" id="prev-year">
-                                    <pre><</pre>
-                                </span>
-                                <span id="year">2023</span>
-                                <span class="year-change" id="next-year">
-                                    <pre>></pre>
-                                </span>
+                        </div>
+
+                        <div class="Note">
+                            <small>Note: All student rent expires on the 31st July irrespective of the payment
+                                period</small>
+                        </div>
+                    </div>
+                    <div class="EventContent  ContentBody">
+                        <h2>Events</h2>
+                        <div class="EventDetails">
+                            <div class="calendar">
+                                <div class="calendar-header">
+                                    <span class="month-picker" id="month-picker">February</span>
+                                    <div class="year-picker">
+                                        <span class="year-change" id="prev-year">
+                                            <pre><</pre>
+                                        </span>
+                                        <span id="year">2023</span>
+                                        <span class="year-change" id="next-year">
+                                            <pre>></pre>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="calendar-body">
+                                    <div class="calendar-week-day">
+                                        <div>Sun</div>
+                                        <div>Mon</div>
+                                        <div>Tue</div>
+                                        <div>Wed</div>
+                                        <div>Thu</div>
+                                        <div>Fri</div>
+                                        <div>Sat</div>
+                                    </div>
+                                    <div class="calendar-days"></div>
+                                </div>
+                                <div class="month-list"></div>
+                            </div>
+                            <div class="UpcomingEvent">
+
+                            </div>
+                            <div class="UpcomingEvent">
+
                             </div>
                         </div>
-                        <div class="calendar-body">
-                            <div class="calendar-week-day">
-                                <div>Sun</div>
-                                <div>Mon</div>
-                                <div>Tue</div>
-                                <div>Wed</div>
-                                <div>Thu</div>
-                                <div>Fri</div>
-                                <div>Sat</div>
-                            </div>
-                            <div class="calendar-days"></div>
+                        <div class="EventBox">
+                            <h3>Events</h3>
+                            <table border="1">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Topic</th>
+                                    <th>Description</th>
+                                    <th>Date</th>
+                                    <th>...</th>
+                                </tr>
+                                <tr>
+                                    <td class="EventId">1</td>
+                                    <td class="EventTopic">Carnival</td>
+                                    <td class="EventDescription">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem,
+                                        maiores esse facere dolore dolor beatae consequatur aut?</td>
+                                    <td class="EventDate">02/11/22</td>
+                                    <td class="ViewAnnouncement"><button class="ViewAnnouncementButton"
+                                            type="button">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="EventId">2</td>
+                                    <td class="EventTopic">Hf Week</td>
+                                    <td class="EventDescription">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem,
+                                        maiores esse facere dolore dolor beatae consequatur aut?</td>
+                                    <td class="EventDate">02/11/22</td>
+                                    <td class="ViewAnnouncement"><button class="ViewAnnouncementButton"
+                                            type="button">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="EventId">3</td>
+                                    <td class="EventTopic">Arch Bishop</td>
+                                    <td class="EventDescription">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem,
+                                        maiores esse facere dolore dolor beatae consequatur aut?</td>
+                                    <td class="EventDate">02/11/22</td>
+                                    <td class="ViewAnnouncement"><button class="ViewAnnouncementButton"
+                                            type="button">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="EventId">4</td>
+                                    <td class="EventTopic">Talent Hunt</td>
+                                    <td class="EventDescription">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem,
+                                        maiores esse facere dolore dolor beatae consequatur aut?</td>
+                                    <td class="EventDate">02/11/22</td>
+                                    <td class="ViewAnnouncement"><button class="ViewAnnouncementButton"
+                                            type="button">View</button></td>
+                                </tr>
+                            </table>
+                            <!-- <button type="button">Show All</button> -->
                         </div>
-                        <div class="month-list"></div>
-                    </div>
-                    <div class="UpcomingEvent">
 
                     </div>
-                    <div class="UpcomingEvent">
+                    <div class="ReportContent  ContentBody">
 
                     </div>
                 </div>
-                <div class="EventBox">
-                    <h3>Events</h3>
-                    <table border="1">
-                        <tr>
-                            <th>#</th>
-                            <th>Topic</th>
-                            <th>Description</th>
-                            <th>Date</th>
-                            <th>...</th>
-                        </tr>
-                        <tr>
-                            <td class="EventId">1</td>
-                            <td class="EventTopic">Carnival</td>
-                            <td class="EventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
-                            <td class="EventDate">02/11/22</td>
-                            <td class="ViewAnnouncement"><button class="ViewAnnouncementButton" type="button">View</button></td>
-                        </tr>
-                        <tr>
-                            <td class="EventId">2</td>
-                            <td class="EventTopic">Hf Week</td>
-                            <td class="EventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
-                            <td class="EventDate">02/11/22</td>
-                            <td class="ViewAnnouncement"><button class="ViewAnnouncementButton" type="button">View</button></td>
-                        </tr>
-                        <tr>
-                            <td class="EventId">3</td>
-                            <td class="EventTopic">Arch Bishop</td>
-                            <td class="EventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
-                            <td class="EventDate">02/11/22</td>
-                            <td class="ViewAnnouncement"><button class="ViewAnnouncementButton" type="button">View</button></td>
-                        </tr>
-                        <tr>
-                            <td class="EventId">4</td>
-                            <td class="EventTopic">Talent Hunt</td>
-                            <td class="EventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut animi minima laboriosam rerum numquam officia autem, maiores esse facere dolore dolor beatae consequatur aut?</td>
-                            <td class="EventDate">02/11/22</td>
-                            <td class="ViewAnnouncement"><button class="ViewAnnouncementButton" type="button">View</button></td>
-                        </tr>
-                    </table>
-                    <!-- <button type="button">Show All</button> -->
-                </div>
-
-              </div>
-              <div class="ReportContent  ContentBody">
-
-              </div>
             </div>
         </div>
-    </div>
+    
     <!-- ADDING A MODAL FOR THE PROFILE PIC -->
     <div class="dm-pic">
         <dialog class="profile-modal">
@@ -361,29 +399,37 @@
 
                 </div>
                 <div class="pic-upload">
-                    <label for="add-profile-pic" class="label-display"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="black" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                    <label for="add-profile-pic" class="label-display"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="black" class="bi bi-camera-fill" viewBox="0 0 16 16">
                             <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
                             <path
                                 d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
                         </svg></label>
                     <input type="file" name="file" id="add-profile-pic" accept="image/png, image/jpg, image/jpeg">
-                    
+
                 </div>
-                <button type="button" class="edit-dp" id="move-up"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-caret-up-square-fill" viewBox="0 0 16 16">
-                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 9h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5A.5.5 0 0 0 4 11z"/>
-                  </svg></button>
+                <button type="button" class="edit-dp" id="move-up"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="black" class="bi bi-caret-up-square-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 9h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5A.5.5 0 0 0 4 11z" />
+                    </svg></button>
                 <button type="button" class="edit-dp" id="move-down">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
-                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
+                        class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+                    </svg>
                 </button>
-                <button type="button" class="edit-dp" id="move-left"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
-                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z"/>
-                  </svg></button>
-                <button type="button" class="edit-dp" id="move-right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
-                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z"/>
-                  </svg></button>
+                <button type="button" class="edit-dp" id="move-left"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="black" class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+                    </svg></button>
+                <button type="button" class="edit-dp" id="move-right"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="black" class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+                    </svg></button>
                 <!-- <button type="button" class="edit-dp" id="move-up-left"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-caret-up-square-fill" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 9h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5A.5.5 0 0 0 4 11z"/>
                   </svg></button>
@@ -402,7 +448,7 @@
         </dialog>
         <dialog class="full-profile">
             <div class="full-profile-pic">
-                
+
 
             </div>
             <span id="closeModal" class="closeModal1">
@@ -416,7 +462,7 @@
         </dialog>
         <dialog class="size-pic">
             <div class="sizing-pic">
-                
+
             </div>
         </dialog>
     </div>
@@ -462,7 +508,7 @@
             </div>
         </div>
     </footer>
-
+    </div>
 </body>
 
 </html>

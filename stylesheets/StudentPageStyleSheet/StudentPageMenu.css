@@ -1,0 +1,150 @@
+/* Header */
+header {
+    width: 100%;
+    min-height: 12vh;
+    display: grid;
+    grid-template-columns: 5fr 2fr ;
+    /* display: flex;
+    justify-content: space-around;*/
+    align-items: center; 
+    position: relative;
+    box-shadow: var(--box-shadow--);
+    background: var(--bc--) ;
+    padding: 5px 0px;
+    z-index: 3;
+     
+}
+.header-left{ 
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 5fr ;
+    /* border: 1px solid ; */
+} 
+.header-right{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    /* border:1px solid var(--fc--); */
+}
+.togglebtn{
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+}
+.logo
+    {
+        margin-left: 5rem !important;
+    }
+/* hambuger menu */
+.ham{
+    justify-self: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    /* border: 3px solid; */
+}
+
+.ham-burger::after,
+.ham-burger::before{
+    content: " ";
+    background: var(--fc--);
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    box-shadow: var(--box-burger--);
+    transition: all 0.5s ease-in-out;
+}
+.ham-burger{
+    width: 25px;
+    height: 3px;
+    background: var(--fc--);
+    border-radius: 5px;
+    box-shadow: var(--box-burger--);
+    transition: all 0.5s ease-in-out;
+
+}
+.ham-burger::after{
+    transform: translateY(8px);
+}
+.ham-burger::before{
+    transform: translateY(-8px);
+}
+/* Animation for burger*/
+.ham.open .ham-burger{
+    transform: translateX(50px);
+    background: transparent;
+    box-shadow: none;
+
+}
+.ham.open .ham-burger::before{
+    transform: rotate(45deg) translate(-35px, 35px);
+}
+.ham.open .ham-burger::after{
+    transform: rotate(-45deg) translate(-35px, -35px);
+}
+.ham
+{
+    display:none !important;
+}
+
+/* user-profile */
+.user-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.profile-pic{
+    background: url(/images/person-fill.svg),white;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:var(--position-background--);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    border: 2px solid var(--fc--);
+    /* background: var(--pc--); */
+    fill: var(--fc--);
+    /* z-index: 4; */
+}
+.bell svg{
+    width: 30px;
+    height: 30px;
+    /* display: flex; */
+}
+.bell svg *{
+    width: 30px;
+    height: 30px;
+    stroke: var(--fc--);
+}
+.upload-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-upload svg {
+    fill: var(--fc--);
+    opacity: 1;
+    transition: transform 500ms ease-in-out  ;
+    
+}
+.user-upload{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    color: var(--fc--);
+}
+
+input[type="checkbox"]#option-icon:checked + label .user-upload svg{
+    transform: rotate(180deg);
+}
+

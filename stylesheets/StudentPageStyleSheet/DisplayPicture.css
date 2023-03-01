@@ -1,0 +1,158 @@
+/* the modal profile picture */
+.full-profile::backdrop{
+    background:black;
+}
+.profile-modal::backdrop{
+    background: rgba(101, 99, 99, 0.751);  
+}
+.profile-modal{
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    background: none;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+.profile-pic-modal{
+    
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    display: flex;
+    border: 3px solid white;
+    position: relative;
+}
+.profile-pic-modal2{
+    background: url(/images/person-fill.svg),white;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:var(--position-background--);
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+#closeModal{
+    width: 2em;
+    height: 2em;
+    display: flex; 
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    
+    
+}
+#closeModal svg {
+    width: 2em;
+    height: 2em;
+    fill: white;
+}
+
+.pic-upload{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    position: absolute;
+    background: white;
+    right: 20px;
+    bottom: 35px;
+    border: 2px solid var(--ic--);
+}
+.pic-upload label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic-upload label svg{
+    width: 60%;
+    height: 60%;
+}
+input[type="file"]#add-profile-pic{
+    position: absolute;
+    opacity: 0;
+    left: -1000px;
+    top:-1000px
+}
+
+/* FULL PROFILE PIC  */
+.full-profile{
+    margin: auto;
+    width: 40em;
+    height: 40em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    border: none;
+}
+.full-profile-pic{
+
+    background: url(/images/person-fill.svg),white;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:var(--position-background--);
+    width: 30em;
+    height: 30em;
+}
+/* .dm-pic{
+    display: none;
+} */
+.dm-pic >*{
+    /* display: none; */
+    overflow: hidden;
+}
+.edit-dp{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: none;
+}
+.edit-dp > svg{
+    width: 26px;
+     height: 26px;
+}
+#move-up{
+top: -15px;
+right: 50%;
+transform: translateX(50%);
+}
+#move-down{
+    bottom: -15px;
+right: 50%;
+transform: translateX(50%);
+
+}
+#move-left{
+    left: 0px;
+    top: 50%;
+    transform: translateY(50%);
+    rotate: 90deg;
+}
+#move-right{
+    right: 0px;
+    top: 50%;
+    transform: translateY(50%);
+    rotate: 270deg;
+}
+.remove-dp{
+    padding: 5px 10px;
+    font-size: 1em;
+    color: black;
+    position: absolute;
+    bottom: 3%;
+}
+.save-dp{
+    padding: 5px 10px;
+    font-size: 1em;
+    color: black;
+    position: absolute;
+    bottom: 3%;
+    display: none;
+}
