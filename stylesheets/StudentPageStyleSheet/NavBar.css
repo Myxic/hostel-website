@@ -1,0 +1,77 @@
+/* Nav-bar */
+
+.navbar{
+    width: var(--nwidth--);
+    border: 1px solid transparent;
+    box-shadow: var(--box-shadow--);
+    height: 82vh;
+    background: var(--bc--);
+    overflow: auto;
+    z-index: 1;
+} 
+.navbar>ul li{
+    display: flex;
+    background-color: var(--bc--);
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 200;
+    color: var(--fc--);
+    border-bottom: 1px solid var(--fc--);
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.navbar>ul li:focus,
+.navbar>ul li:hover{
+    background: var(--nav--hover);
+}
+.navbar>ul li:focus strong,
+.navbar>ul li:hover strong{
+    color: var(--icon--hover);
+} 
+
+.navbar>ul li:hover .icon-img1 svg path{
+    
+    stroke: var(--icon--hover);
+}
+.navbar>ul li:hover .icon-img svg path{
+    fill: var(--icon--hover);
+}
+/* adding class for when the icons elements are clicked */
+.navbar>ul .selected{
+    background: var(--nav--hover);
+}
+.selected strong{
+    color: var(--icon--hover);
+} 
+
+.selected .icon-img1 svg path{
+    
+    stroke: var(--icon--hover);
+}
+.selected .icon-img svg path{
+    fill: var(--icon--hover);
+}
+/*     */
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    margin: auto;
+    padding: 1.5em;
+}
+.icon-img1 *{
+    width: 20px;
+    stroke: var(--fc--);
+    
+}
+.icon-img *{ 
+    fill:var(--fc--);
+    width: 20px;
+    
+    
+    
+}
