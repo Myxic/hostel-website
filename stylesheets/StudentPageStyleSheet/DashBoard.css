@@ -26,15 +26,12 @@
    
 
 }
-.AnnoucementBox table  tr 
-{
-    border: 1px solid var(--fc--); 
-    outline: auto;
-}
+
 .AnnoucementBox table  *
 {
-    /* border: 1px solid var(--fc--); */
+    border-bottom: 1px solid var(--fc--);
     padding: .4rem;
+    text-align: center;
 
 }
 
