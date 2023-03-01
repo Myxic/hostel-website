@@ -1,0 +1,68 @@
+.DashboardContent
+/* .MessageContent */
+/* .EventContent */
+/* .PaymentContent */
+/* .ReportContent */
+{
+    display : block;
+}
+.AnnoucementBox
+{
+    margin-top: 5vh;
+    width: 65%;
+     border: 1px transparent ;
+     border-radius: 10px;
+     background: var(--tableBackground--);
+     padding: 1.5%;
+    
+
+}
+.AnnoucementBox table
+{
+    /* border: 1px solid ; */
+    margin: 1rem auto;
+    padding: 5px;
+    font-size: .7rem;
+   
+
+}
+.AnnoucementBox table  tr 
+{
+    border: 1px solid var(--fc--); 
+    outline: auto;
+}
+.AnnoucementBox table  *
+{
+    /* border: 1px solid var(--fc--); */
+    padding: .4rem;
+
+}
+
+.AnnoucementId{
+    width: 10%;
+   
+}
+.AnnoucementTopic{
+    width: 20%;
+}
+.AnnouncementDescription
+{
+    width: 50%;
+}
+.ViewAnnouncementButton
+{
+    border :1px solid var(--ic--);
+    padding: .3rem .6rem;
+    border-radius: 20%;
+    font-size: .5rem;
+    color: var(--ic--);
+}
+
+.ShowAll
+{
+    background: var(--ic--);
+    padding: .3rem .6rem;
+    border :1px solid var(--ic--); 
+    border-radius: 20%;
+    font-size: .8rem;
+}
