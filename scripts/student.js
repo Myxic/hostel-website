@@ -239,7 +239,7 @@ navIcon1.forEach(navIcon => {
             document.querySelector(".report").classList.remove("selected");
             document.querySelector(".ReportContent").classList.remove("ViewPager");
           };
-          if (navIcon1[0].checked || navIcon1[1].checked || navIcon2[1].checked || navIcon3[1].checked || navIcon4[1].checked){
+          if (navIcon1[0].checked || navIcon1[1].checked || navIcon1[2].checked || navIcon1[3].checked || navIcon1[4].checked){
             document.querySelector(".Emptypage").classList.remove("OpenPage"); 
           }else{
             document.querySelector(".Emptypage").classList.add("OpenPage");  
@@ -283,7 +283,7 @@ navIcon1.forEach(navIcon => {
         document.querySelector(".report").classList.remove("selected");
         document.querySelector(".ReportContent").classList.remove("ViewPager");
       };
-      if (navIcon1[1].checked || navIcon2[1].checked || navIcon3[1].checked || navIcon4[1].checked){
+      if (navIcon1[0].checked || navIcon1[1].checked || navIcon1[2].checked || navIcon1[3].checked || navIcon1[4].checked){
         document.querySelector(".Emptypage").classList.remove("OpenPage"); 
       }else{
         document.querySelector(".Emptypage").classList.add("OpenPage");  
