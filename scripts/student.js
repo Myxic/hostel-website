@@ -205,57 +205,89 @@ navIcon1.forEach(navIcon => {
     navIcon.addEventListener("click", () =>{
         if (navIcon1[0].checked){
             document.querySelector(".dashboard").classList.add("selected");
+            document.querySelector(".DashboardContent").classList.add("ViewPager");
           }else{
             document.querySelector(".dashboard").classList.remove("selected");
+            document.querySelector(".DashboardContent").classList.remove("ViewPager");
           };
           if (navIcon1[1].checked){
             document.querySelector(".messages").classList.add("selected");
+            document.querySelector(".MessageContent ").classList.add("ViewPager");
           }else{
             document.querySelector(".messages").classList.remove("selected");
+            document.querySelector(".MessageContent").classList.remove("ViewPager");
+            
           };
           if (navIcon1[2].checked){
             document.querySelector(".payment").classList.add("selected");
+            document.querySelector(".PaymentContent").classList.add("ViewPager");
           }else{
             document.querySelector(".payment").classList.remove("selected");
+            document.querySelector(".PaymentContent").classList.remove("ViewPager");
           };
           if (navIcon1[3].checked){
             document.querySelector(".event").classList.add("selected");
+            document.querySelector(".EventContent").classList.add("ViewPager");
           }else{
             document.querySelector(".event").classList.remove("selected");
+            document.querySelector(".EventContent").classList.remove("ViewPager");
           };
           if (navIcon1[4].checked){
             document.querySelector(".report").classList.add("selected");
+            document.querySelector(".ReportContent").classList.add("ViewPager");
           }else{
             document.querySelector(".report").classList.remove("selected");
+            document.querySelector(".ReportContent").classList.remove("ViewPager");
           };
+          if (navIcon1[0].checked || navIcon1[1].checked || navIcon2[1].checked || navIcon3[1].checked || navIcon4[1].checked){
+            document.querySelector(".Emptypage").classList.remove("OpenPage"); 
+          }else{
+            document.querySelector(".Emptypage").classList.add("OpenPage");  
+          }
     });
     
     window.addEventListener("load", () => {
-        if (navIcon1[0].checked){
-            document.querySelector(".dashboard").classList.add("selected");
-          }else{
-            document.querySelector(".dashboard").classList.remove("selected");
-          };
-          if (navIcon1[1].checked){
-            document.querySelector(".messages").classList.add("selected");
-          }else{
-            document.querySelector(".messages").classList.remove("selected");
-          };
-          if (navIcon1[2].checked){
-            document.querySelector(".payment").classList.add("selected");
-          }else{
-            document.querySelector(".payment").classList.remove("selected");
-          };
-          if (navIcon1[3].checked){
-            document.querySelector(".event").classList.add("selected");
-          }else{
-            document.querySelector(".event").classList.remove("selected");
-          };
-          if (navIcon1[4].checked){
-            document.querySelector(".report").classList.add("selected");
-          }else{
-            document.querySelector(".report").classList.remove("selected");
-          };
+      if (navIcon1[0].checked){
+        document.querySelector(".dashboard").classList.add("selected");
+        document.querySelector(".DashboardContent").classList.add("ViewPager");
+      }else{
+        document.querySelector(".dashboard").classList.remove("selected");
+        document.querySelector(".DashboardContent").classList.remove("ViewPager");
+      };
+      if (navIcon1[1].checked){
+        document.querySelector(".messages").classList.add("selected");
+        document.querySelector(".MessageContent ").classList.add("ViewPager");
+      }else{
+        document.querySelector(".messages").classList.remove("selected");
+        document.querySelector(".MessageContent").classList.remove("ViewPager");
+        
+      };
+      if (navIcon1[2].checked){
+        document.querySelector(".payment").classList.add("selected");
+        document.querySelector(".PaymentContent").classList.add("ViewPager");
+      }else{
+        document.querySelector(".payment").classList.remove("selected");
+        document.querySelector(".PaymentContent").classList.remove("ViewPager");
+      };
+      if (navIcon1[3].checked){
+        document.querySelector(".event").classList.add("selected");
+        document.querySelector(".EventContent").classList.add("ViewPager");
+      }else{
+        document.querySelector(".event").classList.remove("selected");
+        document.querySelector(".EventContent").classList.remove("ViewPager");
+      };
+      if (navIcon1[4].checked){
+        document.querySelector(".report").classList.add("selected");
+        document.querySelector(".ReportContent").classList.add("ViewPager");
+      }else{
+        document.querySelector(".report").classList.remove("selected");
+        document.querySelector(".ReportContent").classList.remove("ViewPager");
+      };
+      if (navIcon1[1].checked || navIcon2[1].checked || navIcon3[1].checked || navIcon4[1].checked){
+        document.querySelector(".Emptypage").classList.remove("OpenPage"); 
+      }else{
+        document.querySelector(".Emptypage").classList.add("OpenPage");  
+      }
     });
    
 });
@@ -270,3 +302,10 @@ if (window.matchMedia("(max-width:400px)").matches) {
   }
 });
 };
+
+
+/* .DashboardContent */
+/* .MessageContent */
+// .EventContent
+/* .PaymentContent */
+/* .ReportContent */

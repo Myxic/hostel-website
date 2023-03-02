@@ -1,11 +1,4 @@
-.DashboardContent
-/* .MessageContent */
-/* .EventContent */
-/* .PaymentContent */
-/* .ReportContent */
-{
-    display : block;
-}
+
 .AnnoucementBox
 {
     margin-top: 5vh;
@@ -17,6 +10,8 @@
     
 
 }
+
+/********************* TABLE *********************/
 .AnnoucementBox table
 {
     /* border: 1px solid ; */
@@ -27,7 +22,8 @@
 
 }
 
-.AnnoucementBox table  *
+.AnnoucementBox table  th,
+.AnnoucementBox table  td
 {
     border-bottom: 1px solid var(--fc--);
     padding: .4rem;
@@ -50,7 +46,7 @@
 {
     border :1px solid var(--ic--);
     padding: .3rem .6rem;
-    border-radius: 20%;
+    border-radius: 10px;
     font-size: .5rem;
     color: var(--ic--);
 }
@@ -60,6 +56,6 @@
     background: var(--ic--);
     padding: .3rem .6rem;
     border :1px solid var(--ic--); 
-    border-radius: 20%;
+    border-radius: 10px;
     font-size: .8rem;
 }
