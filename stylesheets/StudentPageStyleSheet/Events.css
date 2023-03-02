@@ -1,8 +1,93 @@
-/* .DashboardContent */
-/* .MessageContent */
-/* .EventContent */
-/* .PaymentContent */
-/* .ReportContent */
-/* {
-    display : block;
-} */
+.EventDetails
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.UpcomingEvent
+{
+    height: 40vh;
+    width: 20vw;
+    background-color: var(--bg-main);
+    border-radius: 10px;
+    padding: 1rem;
+    /* position: relative;  */
+    overflow: auto;
+}
+
+.comingEvent
+{
+    text-align: center;
+}
+.comingEvent p{
+    overflow: auto;
+    height: 20vh;
+}
+
+
+.UpcomingEventButton
+{
+   background-color: var(--ic--);
+    width: 100%;
+    border: 1px solid var(--ic--);
+    border-radius: 5px;
+    padding: .2rem 0;
+}
+
+/* ****************Table************** */
+
+.EventBox
+{
+    margin: auto;
+    margin-top: 5vh;
+    width: 90%;
+     border: 1px transparent ;
+     border-radius: 10px;
+     background: var(--tableBackground--);
+     padding: 1.5%;
+     
+    
+
+}
+.EventBox table
+{
+    /* border: 1px solid ; */
+    margin: 1rem auto;
+    padding: 5px;
+    font-size: 1rem;
+   
+
+}
+
+.EventBox table  th,
+.EventBox table  td
+{
+    border-bottom: 1px solid var(--fc--);
+    padding: .4rem;
+    text-align: center;
+
+}
+
+.EventId{
+    width: 5%;
+   
+}
+.EventTopic{
+    width: 15%;
+}
+.EventDescription
+{
+    width: 50%;
+}
+.EventDate
+{
+    width: 15%;
+}
+.ViewEventButton
+{
+    border :1px solid var(--ic--);
+    padding: .3rem .6rem;
+    border-radius: 10px;
+    font-size: .7rem;
+    color: var(--ic--);
+}
