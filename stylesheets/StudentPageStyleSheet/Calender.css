@@ -51,14 +51,8 @@ body {
 }  */
 
 .calendar {
-    height: 40vh;
-    width: 25vw;
-    background-color: var(--bg-main);
-    border-radius: 30px;
-    padding: 20px;
-    position: relative;
     overflow: hidden;
-    /* transform: scale(1.25); */
+   
 }
 
 .light .calendar {
@@ -69,7 +63,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--color-txt);
     padding: 10px;
@@ -80,10 +74,10 @@ body {
 }
 
 .calendar-week-day {
-    height: 50px;
+    height: 25px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .calendar-week-day div {
@@ -97,11 +91,12 @@ body {
     grid-template-columns: repeat(7, 1fr);
     gap: 2px;
     color: var(--color-txt);
+    height: 18.5vh;
 }
 
 .calendar-days div {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
