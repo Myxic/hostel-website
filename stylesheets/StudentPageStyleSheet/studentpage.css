@@ -50,15 +50,15 @@ svg,
     
 }
 
-/* .Emptypage
+.Emptypage
 {
-    display: flex;
+
     align-items: center;
     justify-content: center;
     font-size: 2rem;
     
     
-} */
+} 
 
 .body-part{
     width: 100%;
@@ -78,6 +78,16 @@ svg,
     max-height:80vh;
     
 }
+
+.ViewPager
+{
+    display: block;
+}
+.OpenPage
+{
+    display: flex;
+}
+
 
 
 #footershow,

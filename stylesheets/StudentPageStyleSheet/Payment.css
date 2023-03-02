@@ -1,0 +1,46 @@
+
+
+/****************** COUNTER *******************/
+.PaymentTimmer
+{
+    display: flex;
+    width: 90%;
+    background: var(--tableBackground--);
+    padding: 1.5rem 1rem;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+
+}
+
+.PaymentTimmer > table
+{
+    width: 70%;
+    text-align: center;
+}
+
+.PaymentTimmer > table th
+{
+    font-size: 3rem;
+    color: var(--ic--);
+    font-weight: 800;
+}
+/* ************************************** */
+
+/****************** NOTE *****************/
+.Note
+{
+    width: 90%;
+    margin: auto;
+    
+}
+.Note small{
+    background: #FFE5E5;
+    padding: .8rem 1rem;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: var(--ic--);
+}
