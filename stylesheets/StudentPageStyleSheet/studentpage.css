@@ -10,7 +10,7 @@ body
 {
     overflow: hidden; 
     /* max-height: 100vh; */
-    background: red;
+    /* background: red; */
     z-index: 2000;
     font-family: var(--font-family);
 }
