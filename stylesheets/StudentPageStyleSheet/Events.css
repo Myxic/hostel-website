@@ -1,13 +1,31 @@
+.Eventscrollbar
+{
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+    border: 2px solid var(--ic--);
+    border-radius: 10px;
+}
 .EventDetails
 {
+   
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 90%;
     display: flex;
     justify-content: space-around;
+    min-width: 1000px;
+    max-width: 1100px;
+   
 }
 
 .UpcomingEvent
 {
-    height: 40vh;
-    width: 20vw;
+    min-height: 40vh;
+    width: 300px;
+    /* max-width: 30vw;
+    max-height: 50vh; */
     background-color: var(--bg-main);
     border-radius: 10px;
     padding: 1rem;
@@ -21,7 +39,9 @@
 }
 .comingEvent p{
     overflow: auto;
-    height: 20vh;
+    height: 23vh;
+    max-height: 23vh;
+    overflow: auto;
 }
 
 
