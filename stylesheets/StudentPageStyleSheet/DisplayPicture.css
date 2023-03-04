@@ -1,28 +1,33 @@
 /* the modal profile picture */
-.full-profile::backdrop{
+.FullProfile::backdrop{
     background:black;
 }
 .profile-modal::backdrop{
     background: rgba(101, 99, 99, 0.751);  
 }
 .profile-modal{
-    width: 70vw;
-    height: 70vh;
-    margin: auto;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: none;
     border: none;
     transition: all 0.5s ease-in-out;
 }
+dialog[open] 
+{
+    display: flex;
+    justify-content: center !important; 
+    align-items: center !important;
+}
+
+
 .profile-pic-modal{
     
-    width: 25em;
-    height: 25em;
+    width: 50vh;
+    height: 50vh; 
     border-radius: 50%;
     display: flex;
+    margin: auto;
     border: 3px solid white;
     position: relative;
 }
@@ -49,7 +54,7 @@
 #closeModal svg {
     width: 2em;
     height: 2em;
-    fill: white;
+    fill: white;;
 }
 
 .pic-upload{
@@ -78,33 +83,32 @@ input[type="file"]#add-profile-pic{
     opacity: 0;
     left: -1000px;
     top:-1000px
-}
+} 
 
 /* FULL PROFILE PIC  */
-.full-profile{
+
+
+.FullProfile{
+    position: fixed;
     margin: auto;
-    width: 40em;
-    height: 40em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black;
+    /* width: 70%;
+    height: 80vh; */
     border: none;
-}
+} 
 .full-profile-pic{
 
-    background: url(/images/person-fill.svg),white;
+    background: url(/images/person-fill.svg), #79788c;
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size: 100%;
     background-position:var(--position-background--);
-    width: 30em;
-    height: 30em;
+    width: 80vh;
+    height: 80vh;
 }
-/* .dm-pic{
-    display: none;
-} */
+
+
+
 .dm-pic >*{
-    /* display: none; */
+   
     overflow: hidden;
 }
 .edit-dp{

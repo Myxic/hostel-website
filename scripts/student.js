@@ -74,7 +74,7 @@ const profile = document.querySelector('#display-profile-pic');
 const modal = document.querySelector('.profile-modal');
 const closeModal = document.querySelector('.closeModal');
 const closeModal2 = document.querySelector('.closeModal1');
-const modal2 = document.querySelector(".full-profile");
+const modal2 = document.querySelector(".FullProfile");
 
 const moveup = document.querySelector("#move-up");
 const movedown = document.querySelector("#move-down");
@@ -146,6 +146,7 @@ function createReader(file, whenReady) {
 }
 document.querySelector('.profile-pic-modal2').addEventListener("click", () => {
   modal2.showModal();
+  modal.close();
 });
 closeModal2.addEventListener("click", () => {
   modal2.close();
