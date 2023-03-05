@@ -50,7 +50,11 @@
     font-size: .5rem;
     color: var(--ic--);
 }
-
+.ShowAll:hover,
+.ViewAnnouncementButton:hover
+{
+    background-color: var( --nav--hover) ;
+}
 .ShowAll
 {
     background: var(--ic--);
@@ -58,4 +62,13 @@
     border :1px solid var(--ic--); 
     border-radius: 10px;
     font-size: .8rem;
+}
+
+@media (max-width: 400px) {
+    .AnnoucementBox
+    {
+        width: 94%;
+        margin: auto;
+        margin-top: 5vh;
+    }
 }
