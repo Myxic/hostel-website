@@ -1,8 +1,5 @@
-
-
 /****************** COUNTER *******************/
-.PaymentTimmer
-{
+.PaymentTimmer {
     display: flex;
     width: 90%;
     background: var(--tableBackground--);
@@ -16,31 +13,47 @@
 
 }
 
-.PaymentTimmer > table
-{
+.PaymentTimmer>table {
     width: 70%;
     text-align: center;
 }
 
-.PaymentTimmer > table th
-{
+.PaymentTimmer>table th {
     font-size: 3rem;
     color: var(--ic--);
     font-weight: 800;
 }
+
 /* ************************************** */
 
 /****************** NOTE *****************/
-.Note
-{
+.Note {
     width: 90%;
     margin: auto;
-    
+    display: flex;
+
 }
-.Note small{
+
+.Note small {
     background: #FFE5E5;
     padding: .8rem 1rem;
     border: 2px solid red;
     border-radius: 10px;
     color: var(--ic--);
+}
+
+@media (max-width: 400px) {
+    .PaymentTimmer h2
+    {
+        text-align: center;
+    }
+    .PaymentTimmer>table th 
+    {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .Note small {
+        text-overflow: clip;
+    }
 }
