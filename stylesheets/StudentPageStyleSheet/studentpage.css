@@ -174,8 +174,8 @@ svg,
     }
  
     .profile-pic-modal {
-        width: 15em;
-        height: 15em;
+        width: 80vw !important; ;
+        height: 80vw !important;
     }
 
     .pic-upload {

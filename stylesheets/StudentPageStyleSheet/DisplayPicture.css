@@ -97,7 +97,7 @@ input[type="file"]#add-profile-pic{
 } 
 .full-profile-pic{
 
-    background: url(/images/person-fill.svg), #79788c;
+    background: url(/images/person-fill-white.svg), black;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position:var(--position-background--);
