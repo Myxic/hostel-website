@@ -156,7 +156,8 @@ svg,
     }
     .ContentBody {
         position: fixed;
-        border: 3px solid var(--ic--);
+        /* border: 3px solid var(--ic--); */
+        border: none !important;
         margin-top: 10vh;
         min-height: 74vh;
         max-height: 74vh;
@@ -174,8 +175,8 @@ svg,
     }
  
     .profile-pic-modal {
-        width: 15em;
-        height: 15em;
+        width: 80vw !important; ;
+        height: 80vw !important;
     }
 
     .pic-upload {

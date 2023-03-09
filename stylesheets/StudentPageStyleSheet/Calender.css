@@ -67,8 +67,12 @@ body {
     align-items: center;
     font-size: 20px;
     font-weight: 600;
-    color: var(--color-txt);
+    color: var(--color-txt) !important;
     padding: 10px;
+}
+#year,
+pre{
+    color: #fff !important; 
 }
 
 .calendar-body {
@@ -189,6 +193,7 @@ body {
     padding: 5px 10px;
     border-radius: 10px;
     cursor: pointer;
+    color: #fff;
 }
 
 .month-picker:hover {

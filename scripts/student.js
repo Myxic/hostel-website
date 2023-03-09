@@ -198,7 +198,7 @@ document.querySelector(".save-dp").addEventListener("click", () => {
 document.querySelector(".remove-dp").addEventListener("click", () => {
   document.querySelector('.profile-pic-modal2').style.backgroundImage = "url(../images/person-fill.svg)";
   profile.style.backgroundImage = "url(../images/person-fill.svg)";
-  document.querySelector(".full-profile-pic").style.backgroundImage = "url(../images/person-fill.svg)";
+  document.querySelector(".full-profile-pic").style.backgroundImage = "url(../images/person-fill-white.svg)";
 });
 
 const navIcon1 = document.querySelectorAll(".nav-icon")
