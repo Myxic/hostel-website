@@ -28,8 +28,15 @@
     border-radius: 10px;
     padding: 1rem;
     overflow: auto;
+    
+    
 }
-
+.UpcomingEvent h2,
+.UpcomingEvent h3,
+.UpcomingEvent small
+{
+    color: #fff !important;
+}
 .comingEvent
 {
     text-align: center;
@@ -39,6 +46,7 @@
     height: 23vh;
     max-height: 23vh;
     overflow: auto;
+    color: #fff !important;
 }
 
 
@@ -50,6 +58,8 @@
     border-radius: 5px;
     padding: .2rem 0;
     margin-top: 20px;
+    color: #fff !important;
+    
 }
 .UpcomingEventButton:hover
 {
