@@ -100,7 +100,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 2em;
 }
 .profile-pic{
     background: url(/images/person-fill.svg),white;
@@ -119,7 +119,7 @@ header {
 .bell svg{
     width: 30px;
     height: 30px;
-    /* display: flex; */
+    display: flex;
 }
 .bell svg *{
     width: 30px;
