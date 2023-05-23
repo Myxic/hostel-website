@@ -91,12 +91,13 @@
 .row>.column {
   /* flex-shrink: 0; */
   display: flex;
-  padding: 8px 8px;
+  margin: 5px;
+  
   width: 160px;
   height: 110px;
-  border: 1px solid;
+  outline: 4px solid;
   border-radius: 5%;
-  /* border: 2px solid red; */
+ 
 
 }
 
@@ -120,31 +121,7 @@
   width: 25%;
 }
 
-#thumbnail>.column,
-#thumbnail2>.column,
-#thumbnail3>.column {
-  display: flex;
-  width: 120px;
-  height: 60px;
-}
 
-/* fixing the thumbnail to stay at the bottom always */
-#thumbnail,
-#thumbnail2,
-#thumbnail3 {
-  position: fixed !important;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 95%;
-  height: 60px;
-  border: 2px solid white;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 10px;
-  overflow-x: auto;
-  padding: auto !important;
-  gap: 5px;
-}
 
 /* The Modal (background) */
 .modal {
@@ -216,7 +193,8 @@
 .mySlides1 img,
 .mySlides2 img,
 .mySlides3 img {
-  height: 40vh;
+  height: auto !important;
+  /* width: 70vw; */
 }
 
 /* Position the "next button" to the right */
@@ -270,12 +248,12 @@ img.hover-shadow {
 }
 
 @media (max-width: 700px) {
-
+/* 
   .mySlides1 img,
   .mySlides2 img,
   .mySlides3 img {
     height: 60vh;
-  }
+  } */
 
   
 }
@@ -289,4 +267,14 @@ img.hover-shadow {
     height: 70px;
     margin-bottom: 30px;
   }
+  .mySlides1 img,
+.mySlides2 img,
+.mySlides3 img {
+  height: auto !important;
+  
+  /* width: 70vw; */
+}
+.modal-content {
+  top:15vh;
+}
 }

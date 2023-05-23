@@ -45,61 +45,58 @@ function currentSlide3(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides1");
-  var dots = document.getElementsByClassName("demo");
+
   var captionText = document.getElementById("caption");
   if (n > slides.length) { slideIndex = 1; console.log(slideIndex) }
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+ 
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  captionText.innerHTML = dots[slideIndex - 1].alt;
+  
 }
 
 function showSlides2(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides2");
-  var dots = document.getElementsByClassName("demo2");
+  // var dots = document.getElementsByClassName("demo2");
   var captionText = document.getElementById("caption2");
   if (n > slides.length) { slideIndex = 1; console.log(slideIndex) }
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+  // for (i = 0; i < dots.length; i++) {
+  //   dots[i].className = dots[i].className.replace(" active", "");
+  // }
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  captionText.innerHTML = dots[slideIndex - 1].alt;
+  // dots[slideIndex - 1].className += " active";
+  // captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
 function showSlides3(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides3");
-  var dots = document.getElementsByClassName("demo3");
+  // var dots = document.getElementsByClassName("demo3");
   var captionText = document.getElementById("caption3");
   if (n > slides.length) { slideIndex = 1; console.log(slideIndex) }
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+  // for (i = 0; i < dots.length; i++) {
+  //   dots[i].className = dots[i].className.replace(" active", "");
+  // }
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  captionText.innerHTML = dots[slideIndex - 1].alt;
+  // dots[slideIndex - 1].className += " active";
+  // captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
-var slideIndex = 1;
-(showSlides(slideIndex));
-(showSlides2(slideIndex));
-(showSlides3(slideIndex));
+// var slideIndex = 1;
+// (showSlides(slideIndex));
+// (showSlides2(slideIndex));
+// (showSlides3(slideIndex));
 
 
 function plusSlides(n) {
@@ -108,8 +105,8 @@ function plusSlides(n) {
 function plusSlides2(n) {
   showSlides2(slideIndex += n);
 }
-function plusSlides2(n) {
-  showSlides2(slideIndex += n);
+function plusSlides3(n) {
+  showSlides3(slideIndex += n);
 }
 
 const next = document.getElementById("next");
@@ -151,45 +148,45 @@ row3.addEventListener("click", function (e) {
 
 })
 // for the thumbnail display
-thumbnail.addEventListener("click", function (e) {
-  // console.log("hello")
-  // console.log(thumbnail)
-  var target = e.target.closest("div");
-  var parent = target.parentNode;
-  const index = [].indexOf.call(parent.children, target)
-  // console.log(index)
-  num = index + 1
+// thumbnail.addEventListener("click", function (e) {
+//   // console.log("hello")
+//   // console.log(thumbnail)
+//   var target = e.target.closest("div");
+//   var parent = target.parentNode;
+//   const index = [].indexOf.call(parent.children, target)
+//   // console.log(index)
+//   num = index + 1
 
-  currentSlide(num)
-
-
-})
-thumbnail2.addEventListener("click", function (e) {
-  // console.log("hello")
-  // console.log(thumbnail)
-  var target = e.target.closest("div");
-  var parent = target.parentNode;
-  const index = [].indexOf.call(parent.children, target)
-  // console.log(index)
-  num = index + 1
-
-  currentSlide2(num)
+//   currentSlide(num)
 
 
-})
-thumbnail3.addEventListener("click", function (e) {
-  // console.log("hello")
-  // console.log(thumbnail)
-  var target = e.target.closest("div");
-  var parent = target.parentNode;
-  const index = [].indexOf.call(parent.children, target)
-  // console.log(index)
-  num = index + 1
+// })
+// thumbnail2.addEventListener("click", function (e) {
+//   // console.log("hello")
+//   // console.log(thumbnail)
+//   var target = e.target.closest("div");
+//   var parent = target.parentNode;
+//   const index = [].indexOf.call(parent.children, target)
+//   // console.log(index)
+//   num = index + 1
 
-  currentSlide3(num)
+//   currentSlide2(num)
 
 
-})
+// })
+// thumbnail3.addEventListener("click", function (e) {
+//   // console.log("hello")
+//   // console.log(thumbnail)
+//   var target = e.target.closest("div");
+//   var parent = target.parentNode;
+//   const index = [].indexOf.call(parent.children, target)
+//   // console.log(index)
+//   num = index + 1
+
+//   currentSlide3(num)
+
+
+// })
 // This is just to open the Modal
 rowdiv1.forEach(div1 => {
 
