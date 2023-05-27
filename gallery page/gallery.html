@@ -16,9 +16,10 @@
 <body>
   <header>
     <nav>
-      <figure>
-        <a href="../index.html"><img src="#" alt="photo"></a>
-      </figure>
+      <a href="./index.html" class="logo">
+        <img src="../images/logo.png"  alt="photo">
+        <h1>Holy Family Youth Village </h1>
+    </a>
       <ul class="nav_ul">
         <li><img src="../images/x.svg" alt="close" id="exit"></li>
         <li>
@@ -235,9 +236,9 @@
     <dialog name="exterior" id="plus-exterior-img">
       <h4>Adding image to the exterior gallery section</h4>
       <button type="button" id="button11">&#9747</button>
-      <form action="upload.php" method="POST" enctype="multipart/form-data">
-        <label for="name">Enter Title of image:</label>
-        <input type="text" name="name" id="name" placeholder="Enter Title of Image">
+      <form action=".././upload.php" method="post" enctype="multipart/form-data">
+        <!-- <label for="name">Enter Title of image:</label>
+        <input type="text" name="name" id="name" placeholder="Enter Title of Image"> -->
         <label for="image++">Input Image:</label>
         <input type="file" name="image" id="image++" accept="image/png, image/jpg, image/jpeg">
         <button type="submit" name="submit" id="upload1">Upload</button>
