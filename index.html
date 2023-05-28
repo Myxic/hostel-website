@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,13 +17,13 @@
 <body>
     <header>
         <nav>
-           
-                
-                <a href="./index.html" class="logo">
-                    <img src="../images/logo.png"  alt="photo">
-                    <h1>Holy Family Youth Village </h1>
-                </a>
-            
+
+
+            <a href="./index.html" class="logo">
+                <img src="../images/logo.png" alt="photo">
+                <h1>Holy Family Youth Village </h1>
+            </a>
+
             <ul class="nav_ul">
                 <li><img src="./images/x.svg" alt="close" id="exit"></li>
                 <li>
@@ -158,10 +159,17 @@
             <a href="./gallery page/gallery.html" class="veiw_more"><small>veiw more...</small></a>
         </section>
         <section class="section three">
-            <div class="comment_top">
-                <img src="./images/sample.svg" alt="prev" class="prev" id="prev">
+            
+            <div class="comment_top" >
+                <!-- <img src="./images/sample.svg" alt="prev" class="prev" id="prev"> -->
+                <a class="prev"  id="prev">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="8" height="20">
+                        <path d="M8 0 V2 L2 10 L8 18 V20 L0 10 Z" stroke="#000" fill="#000" />
+                    </svg>
+                </a>
                 <div id="de_comment">
-                    <div class="here2">
+                    <div class="here2 active" id="1">
                         <h4>
                             Dev
                         </h4>
@@ -173,7 +181,7 @@
                             ★★★★★
                         </p>
                     </div>
-                    <div class="here1">
+                    <div class="here1 "  id="2" >
                         <h4>
                             Dev2
                         </h4>
@@ -185,17 +193,48 @@
                             ★★★★★
                         </p>
                     </div>
+                    <div class="here3 ">
+                        <h4>
+                            Dev3
+                        </h4>
+                        <q>
+                            Lorem ipsum (This contains testimonial), consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore
+                        </q>
+                        <p style="background: yellow;background-clip: text;-webkit-text-fill-color: transparent;">
+                            ★★★★★
+                        </p>
+                    </div>
+                    <div class="here4 ">
+                        <h4>
+                            Dev4
+                        </h4>
+                        <q>
+                            Lorem ipsum (This contains testimonial), consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore
+                        </q>
+                        <p style="background: yellow;background-clip: text;-webkit-text-fill-color: transparent; ">
+                            ★★★★★
+                        </p>
+                    </div>
 
                 </div>
-                <img src="./images/sample2.svg" alt="next" class="next" id="next">
+                <a class="next" id="next" >
+                    <?xml version=" 1.0" encoding="UTF-8" ?>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="8" height="20">
+                        <path d="M0 0 V2 L6 10 L0 18 V20 L8 10 Z" stroke="#000" fill="#000" />
+                    </svg>
+
+                </a>
+                <!-- <img src="./images/sample2.svg" alt="next" class="next" id="next" onclick="plusSlides(1)"> -->
             </div>
 
 
 
             <div class="comment">
                 <div class="warn"><small id="warning"></small></div>
-                <label
-                    for="username">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label for="username">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </label>
                 <input type="text" name="name" id="username" placeholder="Enter your Name">
 
                 <br>
@@ -203,8 +242,8 @@
                 <div class="comment_box">
 
                     <label for="comment">Testimonial:&nbsp;&nbsp;</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10"
-                        placeholder="Enter Testimonial"></textarea>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter Testimonial">
+                    </textarea>
                 </div>
                 <div class="warn"><small id="warning3"></small></div>
                 <div class="stars">
@@ -234,7 +273,7 @@
                     </div>
                 </div>
                 <input type="submit" value="submit" id="submit" placeholder="Submit">
-
+            </div>
 
         </section>
         <section class="section four">
@@ -250,7 +289,7 @@
 
     </div>
 
-    
+
 
     <button type="button" id="top">
         <i class="arrow up" alt="up"></i>
@@ -309,6 +348,7 @@
     </footer>
     <script src="./scripts/landingpage.js"></script>
     <script src="./scripts/gen script.js"></script>
+
 </body>
 
 </html>

@@ -287,33 +287,74 @@ const prev = document.getElementById("prev");
 
 
 let nextpage = document.querySelector("#de_comment");
-let nexxxt = 1;
+
+
 
 next.onclick = function() {
-    console.log(nextpage.children)
-    console.log(nextpage.childElementCount)
-console.log(nexxxt)
-    if (nexxxt >= 0 &&nexxxt < nextpage.childElementCount){
-        console.log(nextpage.children[nexxxt])
-        nextpage.children[nexxxt].scrollIntoView()
-     nexxxt ++
-}else{
-    nexxxt = 0
-    console.log("lastpage")
-}
-};
-prev.onclick = function() {
-    console.log(nexxxt)
-    if (nexxxt >= 0 && nexxxt < nextpage.childElementCount ){
-        console.log(nextpage.children[nexxxt])
-        nextpage.children[nexxxt].scrollIntoView()
-     nexxxt --
-}else{  
-    nexxxt = nextpage.childElementCount - 1
-    console.log("page")
-}
+    let Active = document.querySelector(".active");
+    var CurrentCommentIndex = getChildIndex(nextpage,Active)
 
+    if (CurrentCommentIndex >= 0 &&  CurrentCommentIndex < nextpage.childElementCount){
+
+        for (b = 0; b < nextpage.childElementCount ; b++) {         
+            nextpage.children[CurrentCommentIndex].classList.remove("active");          
+        }
+
+        if (CurrentCommentIndex < nextpage.childElementCount - 1) {
+            nextpage.children[CurrentCommentIndex + 1].classList.add("active");
+        }else if (CurrentCommentIndex == nextpage.childElementCount - 1){
+            nextpage.children[0].classList.add("active");
+        }
+
+    }
+    
 };
+
+prev.onclick = function() {
+    let Active = document.querySelector(".active");
+    var CurrentCommentIndex = getChildIndex(nextpage,Active)
+
+    if (CurrentCommentIndex >= 0 &&  CurrentCommentIndex < nextpage.childElementCount){
+
+        for (b = 0; b < nextpage.childElementCount ; b++) {         
+            nextpage.children[CurrentCommentIndex].classList.remove("active");          
+        }
+
+        if (CurrentCommentIndex <= nextpage.childElementCount - 1 && CurrentCommentIndex > 0) {
+            nextpage.children[CurrentCommentIndex - 1].classList.add("active");
+        }else if (CurrentCommentIndex <= 0){
+            nextpage.children[nextpage.childElementCount - 1].classList.add("active");
+        }
+
+    }
+    
+};
+
+
+
+
+// function plusSlides(n) {
+//     var slideIndex = 0;
+//     showSlides(slideIndex += n);
+//   }
+
+// function showSlides(n) {
+//     var i;
+//     var slides = document.getElementsByClassName("mySlides1");
+//     slideIndex  = n;
+    
+//     if (n > slides.length) { slideIndex = 1; console.log(slideIndex) }
+//     console.log(slides.length);
+   
+//     if (n < 1) { slideIndex = slides.length }
+//     for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";
+//     }
+    
+//     slides[slideIndex - 1].style.display = "block";
+    
+//   }
+ 
 
 document.getElementById("top").onclick = function() {
     document.querySelector(".welcome").scrollIntoView();
@@ -328,4 +369,9 @@ window.addEventListener("scroll", function(){
 
 })
 
-
+function getChildIndex(parentElement,childElement)  {
+   
+    var childIndex = Array.from(parentElement.children).indexOf(childElement);
+    // console.log("Index of child element: " + childIndex);
+    return childIndex;
+}

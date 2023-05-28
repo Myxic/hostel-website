@@ -63,14 +63,18 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 20px 4%;
+    align-items: center !important;
+    display: flex !important;
     
     
 }
 .nav_ul{
+    display: flex;
     position: absolute;
     right: 50px;
    min-width: 30%;
    gap: 15px;
+   
 }
 
 ul{
@@ -108,10 +112,12 @@ ul{
 .logo img {
     max-height: 40px;
     margin-right: 6px;
+   z-index: 11;
   }
   .logo {
     align-items: center !important;
     display: flex !important;
+ 
   }
 .logo h1 {
     font-size: 30px;
@@ -179,6 +185,7 @@ ul{
     margin-bottom: 40px;
     background: #E9E9E9;
     border-radius: 10px;
+    
     
     
 }
@@ -314,10 +321,7 @@ nav figure:first-child{
     /* border: 2px solid white; */
 }
 
-/* .nav_ul li p,
-.nav_ul li a{
-    color: white;
-} */
+
 #burger{
     position: absolute;
     right: 20px;
