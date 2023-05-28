@@ -125,41 +125,27 @@ blockquote{
     position: relative;
     min-height: 200px;
     text-align: center;
+   
 }
-.prev{
-    position: absolute;
-    left: 10px;
-    margin: auto;
-    top: 10%;
-    /* bottom: 0%; */
-    width: 1em;
-    padding: 50px 5px;
-    outline: 1px solid ;
+.comment_top{
+    align-items: center !important;
+    /* display: flex !important; */
+    display: grid !important;
+    grid-template-columns: 1fr 10fr 1fr;
+
 }
-.next{
-    position: absolute;
-    right: 10px;
-    margin: auto;
-    top: 10%;
-    /* bottom: 0%; */
-    padding: 50px 5px;
-    width: 1em;
-    outline: 1px solid ;
-}
-.next:hover,
-.prev:hover{
-    padding: 55px 5px;
-    /* border: 1px solid; */
-}
+
+
+
 .rating span:hover{
     color: rgb(255, 255, 19);
  
 }
 .rating span:nth-child(4):hover{
-    color: orange;
+    color: rgb(192, 139, 39);
 }
 .rating span:nth-child(5):hover{
-    color: red;
+    color: rgb(165, 147, 57);
 }
 .stars{
     display: flex;
@@ -207,12 +193,15 @@ textarea{
     width:100%;
     max-width:100%;
     padding-top: 50px;
-    flex: 0 0 100%;
+    /* flex: 0 0 100%; */
     text-align: center;
     /* border: 1px solid red; */
-    display: flex;
+    display: none ;
     flex-direction: column;
     
+}
+#de_comment .active{
+    display: flex ;
 }
 #de_comment div p{
     /* border: 1px solid red; */
@@ -245,7 +234,7 @@ input[type="radio"]{
 
 .right{
     width: 70%;
-    font-size: larger;
+    
 }
 .left{
     width: 30%;
@@ -345,23 +334,28 @@ input[type="radio"]{
     #de_comment{
         overflow-x: auto;
     }
-    .comment,
+    /* .comment,
     .next,
     .prev{
         display: none;
-    }
+    } */
    .three{
     padding: 50px 10px;
    }
+   .four{
+    display: block !important;
+}
     .right{
-        width: 60%;
+        width: 100%;
         text-align: justify;
     }
     .left{
-        width: 40%;
+        width: 100%;
         font-size: 12px;
         padding: 0 0;
-        text-align: right;
+        margin-top: 20px;
+        text-align: center;
         
     }
+
 }

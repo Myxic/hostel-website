@@ -42,6 +42,7 @@ function currentSlide2(n) {
 function currentSlide3(n) {
   showSlides3(slideIndex = n);
 }
+
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides1");
