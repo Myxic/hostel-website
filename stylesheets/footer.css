@@ -69,7 +69,7 @@ nav{
     
 }
 .nav_ul{
-    display: flex;
+    display: flex ;
     position: absolute;
     right: 50px;
    min-width: 30%;
@@ -272,7 +272,9 @@ hr{
 p{
     font-size: 13px;
 }
-.nav_ul{
+.buger_nav_ul{
+  
+    display: block ;
     position: fixed;
     top: 0%;
     left: 0%;

@@ -45,3 +45,22 @@ exit.addEventListener("click", ()=> {
 //         window.location.reload(false);  
 //     }
 // })
+
+
+// window.addEventListener("resize", function(){
+//     document.getElementById("demo").innerHTML = Math.random();
+//   });
+
+
+// https://jsfiddle.net/q82nhef0/
+
+// $("#thediv").click(function(e) {
+//     var divWidth = $("#thediv").width();        
+//     var clickX = e.clientX;
+//     if (clickX > divWidth/2) {
+//         console.log("Div was clicked on the right");
+//     } else {
+//         console.log("Div was clicked on the left");
+//     }
+// });
+
