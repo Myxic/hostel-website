@@ -307,6 +307,9 @@ prev.onclick = function () {
   }
 };
 
+
+
+
 document.getElementById("top").onclick = function () {
   document.querySelector(".welcome").scrollIntoView();
 };
