@@ -264,6 +264,8 @@ const prev = document.getElementById("prev");
 
 let nextpage = document.querySelector("#de_comment");
 
+
+
 next.onclick = function () {
   let Active = document.querySelector(".active");
   var CurrentCommentIndex = getChildIndex(nextpage, Active);
@@ -320,3 +322,13 @@ function getChildIndex(parentElement, childElement) {
   // console.log("Index of child element: " + childIndex);
   return childIndex;
 }
+
+window.addEventListener("scroll", function(){
+    
+    if (window.scrollY > 200) {
+        document.getElementById("top").style.display = "block";
+    } else if (window.scrollY < 200){
+        document.getElementById("top").style.display = "none";
+    }
+
+})

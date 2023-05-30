@@ -121,3 +121,81 @@ function getChildIndex(parentElement, childElement) {
 
 // // })
 // // Element.setCapture()
+
+
+
+// Touch control
+let box;
+
+document.addEventListener("click", () => {
+  box = document.querySelector(".modal");
+  box.addEventListener("click", chooseSide);
+});
+
+function chooseSide(e) {
+  const { clientX } = e;
+  const { clientWidth } = box;
+
+  
+  if (clientX > clientWidth / 2) {
+    console.log("right: " + clientX);
+    let Active = document.querySelector(".active");
+    var CurrentCommentIndex = getChildIndex(nextpage, Active);
+    console.log(nextpage.children[CurrentCommentIndex]);
+    if (
+      CurrentCommentIndex >= 0 &&
+      CurrentCommentIndex < nextpage.childElementCount
+    ) {
+      for (b = 0; b < nextpage.childElementCount; b++) {
+        nextpage.children[CurrentCommentIndex].classList.remove(
+          "active"
+        );
+        slides[CurrentCommentIndex].style.display = "none";
+      }
+  
+      if (CurrentCommentIndex < nextpage.childElementCount - 1) {
+        nextpage.children[CurrentCommentIndex + 1].classList.add(
+          "active"
+        );
+        slides[CurrentCommentIndex + 1 ].style.display = "block";
+      } else if (CurrentCommentIndex == nextpage.childElementCount - 1) {
+        nextpage.children[0].classList.add("active");
+        slides[0].style.display = "block";
+      }
+    }
+
+    
+  } else {
+    console.log("left:  "+ clientX);
+
+    let Active = document.querySelector(".active");
+    var CurrentCommentIndex = getChildIndex(nextpage, Active);
+  
+    if (
+      CurrentCommentIndex >= 0 &&
+      CurrentCommentIndex < nextpage.childElementCount
+    ) {
+      for (b = 0; b < nextpage.childElementCount; b++) {
+        nextpage.children[CurrentCommentIndex].classList.remove(
+          "active"
+        );
+        slides[CurrentCommentIndex].style.display = "none";
+      }
+  
+      if (
+        CurrentCommentIndex <= nextpage.childElementCount - 1 &&
+        CurrentCommentIndex > 0
+      ) {
+        nextpage.children[CurrentCommentIndex - 1].classList.add(
+          "active"
+        );
+        slides[CurrentCommentIndex - 1 ].style.display = "block";
+      } else if (CurrentCommentIndex <= 0) {
+        nextpage.children[nextpage.childElementCount - 1].classList.add(
+          "active"
+        );
+        slides[nextpage.childElementCount - 1 ].style.display = "block";
+      }
+    }
+  }
+}

@@ -340,11 +340,13 @@ input[type="radio"]{
     #de_comment{
         overflow-x: auto;
     }
-    /* .comment,
+    .comment{
+        display: none;
+    }
     .next,
     .prev{
-        display: none;
-    } */
+        visibility: hidden;
+    } 
    .three{
     padding: 50px 10px;
    }
