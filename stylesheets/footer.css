@@ -112,7 +112,7 @@ ul{
 .logo img {
     max-height: 40px;
     margin-right: 6px;
-   z-index: 11;
+   /* z-index: 11; */
   }
   .logo {
     align-items: center !important;
