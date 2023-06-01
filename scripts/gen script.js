@@ -17,32 +17,9 @@ close.onclick= function() {
 };
 window.addEventListener("resize", ()=> {
 if (window.matchMedia("(max-width: 400px)").matches) {
+    document.querySelector(".nav_ul").classList.add("buger_nav_ul");
     // Viewport is less or equal to 400 pixels wide
-    burger.addEventListener("click", ()=> {
-    
-        document.querySelector(".nav_ul").classList.add("buger_nav_ul");
-        document.querySelector(".nav_ul").style.display = "block";
-
-        document.querySelector("#top").style.display = "none"
-
-        
-    
-        // if (document.querySelector(".nav_ul").style.display = "none") {
-        //     document.querySelector(".nav_ul").style.display = "block";
-        //     document.querySelector("#top").style.display = "none"
-        //     exit.style.display = "none"
-        // } else if (document.querySelector(".nav_ul").style.display = "block") {
-        //     document.querySelector(".nav_ul").style.display = "none";
-        // }
-    });
-    
-    exit.addEventListener("click", ()=> {
-        // document.querySelector(".nav_ul").style.right = "50vw"; 
-        // document.querySelector(".nav_ul").style.animationDirection= "reverse";
-        document.querySelector(".nav_ul").style.display = "none";
-        document.querySelector("#top").style.display = "block"
-        
-    })
+   
   } else {
     // Viewport is greater than 400 pixels wide
 
@@ -64,3 +41,28 @@ if (window.matchMedia("(max-width: 400px)").matches) {
 //   });
 
 
+burger.addEventListener("click", ()=> {
+    
+        
+    document.querySelector(".nav_ul").style.display = "block";
+
+    document.querySelector("#top").style.display = "none"
+
+    
+
+    // if (document.querySelector(".nav_ul").style.display = "none") {
+    //     document.querySelector(".nav_ul").style.display = "block";
+    //     document.querySelector("#top").style.display = "none"
+    //     exit.style.display = "none"
+    // } else if (document.querySelector(".nav_ul").style.display = "block") {
+    //     document.querySelector(".nav_ul").style.display = "none";
+    // }
+});
+
+exit.addEventListener("click", ()=> {
+    // document.querySelector(".nav_ul").style.right = "50vw"; 
+    // document.querySelector(".nav_ul").style.animationDirection= "reverse";
+    document.querySelector(".nav_ul").style.display = "none";
+    document.querySelector("#top").style.display = "block"
+    
+})
