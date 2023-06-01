@@ -272,6 +272,9 @@ hr{
 p{
     font-size: 13px;
 }
+.nav_ul{
+    display: none;
+}
 .buger_nav_ul{
   
     display: block ;
