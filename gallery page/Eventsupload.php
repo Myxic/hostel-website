@@ -28,7 +28,7 @@ if($pic_size > 0){
         $desc = $target_dir."/".$newName;
         if(move_uploaded_file($pic_temp,$desc)){
             echo "Image uploaded successfully";
-            header("Location: ./index.html");
+            header("Location: ./gallery_events.html");
         }else{
             echo "Image upload failed";
         }
