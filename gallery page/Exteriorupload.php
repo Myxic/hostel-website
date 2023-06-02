@@ -1,6 +1,6 @@
 
 <?php
-$target_dir = "./uploads/";
+$target_dir = "./ExteriorImgs/";
 $target_file = $target_dir . basename($_FILES["image"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -28,7 +28,7 @@ if($pic_size > 0){
         $desc = $target_dir."/".$newName;
         if(move_uploaded_file($pic_temp,$desc)){
             echo "Image uploaded successfully";
-            header("Location: ./index.html");
+            header("Location: ./gallery_exterior.html");
         }else{
             echo "Image upload failed";
         }
