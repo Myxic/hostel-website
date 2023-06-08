@@ -10,7 +10,7 @@ function chooseSide(e) {
   const { clientWidth } = box;
   
   if (clientX > clientWidth / 2) {
-    console.log("right: " + clientX);
+    // console.log("right: " + clientX);
     let Active = document.querySelector(".active");
     var CurrentCommentIndex = getChildIndex(nextpage, Active);
 
