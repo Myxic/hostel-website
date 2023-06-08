@@ -29,7 +29,7 @@ h1 small{
 }
 
 
-/* ********** Facilities**************** */
+/* ********** Features **************** */
 .one{
     min-height: 80vh;
     padding: 30px;
@@ -55,12 +55,22 @@ h1 small{
 }
 .pics{
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: space-around;
+    
 }
 .pics img{
-    width: 100%;
+    width: 80%;
+    margin: 20px auto;
     border-radius: 8px;
+    border: thin #c0c0c0 solid;
+    
+    aspect-ratio: 2/1;
+}
+.activeFeatures,
+.pics img:hover,
+.pics img:focus{
+    box-shadow: 0px  0px .5em 0px black;
 }
 figure{
     border: thin #c0c0c0 solid;
@@ -83,6 +93,7 @@ figure{
     display: none;
     z-index: 6;
 }
+b,
 blockquote{
     padding: 20px;
 }
@@ -102,19 +113,30 @@ blockquote{
 }
 .gallery{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr  ;
     margin: auto;
     margin-bottom: 10%;
 }
 
-.gallery img{
+.gallery .frames{
     width: 80%;
     border-radius: .5em;
-    box-shadow: 0px 0px 0px 5px white;
+    box-shadow: 0px  0px .5em 0px black;
+    outline: .2em solid white;
     margin: 10%;
     margin-left: auto;
     margin-right: auto;
+    
 }
+.gallery .frames img{
+    border-radius: .5em;
+    width: 100%;
+    display: block;
+    transition: opacity 0.5s  ease-in-out;
+      
+      
+}
+
 .two  a{
     color:  rgb(191, 78, 3);
     
@@ -335,8 +357,9 @@ input[type="radio"]{
     }
     .gallery{
         
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns:  1fr 1fr;
     }
+    
     #de_comment{
         overflow-x: auto;
     }

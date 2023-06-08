@@ -21,48 +21,44 @@ pic2.onclick = function () {
   i.style.display = "none";
   iii.style.display = "none";
   iv.style.display = "none";
-  v.style.display = "none";
-  vi.style.display = "none";
+  pic2.classList.add("activeFeatures");
+  pic1.classList.remove("activeFeatures");
+  pic3.classList.remove("activeFeatures");
+  pic4.classList.remove("activeFeatures");
+
 };
 pic1.onclick = function () {
   i.style.display = "block";
   ii.style.display = "none";
   iii.style.display = "none";
   iv.style.display = "none";
-  v.style.display = "none";
-  vi.style.display = "none";
+  pic1.classList.add("activeFeatures");
+  pic2.classList.remove("activeFeatures");
+  pic3.classList.remove("activeFeatures");
+  pic4.classList.remove("activeFeatures");
+ 
 };
 pic3.onclick = function () {
   iii.style.display = "block";
   i.style.display = "none";
   ii.style.display = "none";
   iv.style.display = "none";
-  v.style.display = "none";
-  vi.style.display = "none";
+  pic3.classList.add("activeFeatures");
+  pic1.classList.remove("activeFeatures");
+  pic2.classList.remove("activeFeatures");
+  pic4.classList.remove("activeFeatures");
+  
 };
 pic4.onclick = function () {
   iv.style.display = "block";
   i.style.display = "none";
   iii.style.display = "none";
   ii.style.display = "none";
-  v.style.display = "none";
-  vi.style.display = "none";
-};
-pic5.onclick = function () {
-  v.style.display = "block";
-  i.style.display = "none";
-  iii.style.display = "none";
-  iv.style.display = "none";
-  ii.style.display = "none";
-  vi.style.display = "none";
-};
-pic6.onclick = function () {
-  vi.style.display = "block";
-  i.style.display = "none";
-  iii.style.display = "none";
-  iv.style.display = "none";
-  v.style.display = "none";
-  ii.style.display = "none";
+  pic4.classList.add("activeFeatures");
+  pic1.classList.remove("activeFeatures");
+  pic3.classList.remove("activeFeatures");
+  pic2.classList.remove("activeFeatures");
+  
 };
 
 // Comment box**********************************************************8
@@ -309,7 +305,58 @@ prev.onclick = function () {
   }
 };
 
+//  ***************** Gallery ****************
 
+ 
+  
+
+       
+   
+  
+  
+  function switchImage(image) {
+    
+    // Array of image URLs
+    var imageUrls = ["../images/hfyv1.jpg", "../images/hfyv2.jpg", "../images/hfyv3.jpg", "../images/hfyv4.jpg", "../images/hfyv5.jpg"];
+    
+    // Randomly select an image URL
+    var randomIndex = Math.floor(Math.random() * imageUrls.length);
+    // var newindex = 
+    var newImageUrl = imageUrls[randomIndex ];
+    
+    // Apply fade-out transition
+    image.style.opacity = 0;
+    
+    // Wait for the transition to complete
+    setTimeout(function() {
+      // Change the image source
+      image.src = newImageUrl;
+      
+      // Apply fade-in transition
+      image.style.opacity = 1;
+    }, 400); // Wait for 400 milliseconds (0.4 seconds) before changing the image source
+  }
+
+  function switcher(){
+    switchImage((framesImg[0]));
+    switchImage((framesImg[1]));
+    switchImage((framesImg[2]));
+    switchImage((framesImg[3]));
+    switchImage((framesImg[4]));
+    switchImage((framesImg[5]));
+  }
+
+  let framesImg = document.querySelectorAll(".frames img");
+    // Call the switchImage function initially
+
+  // Call the switchImage function every 10 seconds
+setInterval(switcher, 5000);
+
+
+ 
+  
+  
+  
 
 
 document.getElementById("top").onclick = function () {

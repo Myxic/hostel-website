@@ -3,12 +3,13 @@
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.04em;
-    text-align: center;
+    padding-bottom: 40px;
+    /* text-align: center; */
     position: relative;
 }
 .border-1{
     width: 80%;
-    border: 1px solid ;
+    outline: 1px solid ;
     margin: auto;
     margin-top: 10vh;
     padding: 60px;
@@ -17,7 +18,7 @@
 .border-1>h3{
     font-weight: 600;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .border-1>ul,
 .border-1>p {
@@ -29,6 +30,18 @@
     display: block;
     list-style:disc;
     text-align: left;
-    width: max-content;
     margin: auto;
+}
+@media (max-width: 675px) {
+    .outer{
+        letter-spacing: 0.02em;
+    }
+    .border-1{
+        outline: none;
+        padding: 10px;
+    }
+    .border-1>ul,
+    .border-1>p{
+        font-size: 10px;
+    }
 }
