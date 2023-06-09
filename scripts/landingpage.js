@@ -317,7 +317,7 @@ prev.onclick = function () {
   function switchImage(image) {
     
     // Array of image URLs
-    var imageUrls = ["./images/hfyv1.jpg", "./images/hfyv2.jpg", "./images/hfyv3.jpg", "./images/hfyv4.jpg", "./images/hfyv5.jpg"];
+    var imageUrls = ["./images/hfyv1.jpg", "./images/hfyv2.jpg", "./images/hfyv3.jpg", "./images/hfyv4.JPG", "./images/hfyv5.JPG"];
     
     // Randomly select an image URL
     var randomIndex = Math.floor(Math.random() * imageUrls.length);
