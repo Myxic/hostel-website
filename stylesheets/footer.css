@@ -21,7 +21,6 @@ a{
     width: fit-content;
     margin: auto;
     margin-top: 30px;
-    /* border: 1px solid red; */
     display: flex;
     gap: 20px;   
     font-size: 13px;
@@ -53,9 +52,7 @@ a{
 
 /****************Heading **************/
 header{
-    /* border: 1px transparent black; */
     background: white;
-    /* position: fixed; */
     width: 100%;
     box-shadow:  0px 0px 3px 1px;
     z-index: 10;
@@ -100,7 +97,6 @@ ul{
     padding: 5px;
     color: rgba(54, 88, 124, 0.4);
      border-bottom: 3px solid orangered;
-     /* background: rgba(54, 88, 124, 0.4); */
      transition-property: all;
      transition-duration: 300ms;
      transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
@@ -117,7 +113,6 @@ ul{
 header .logo img {
     max-height: 40px;
     margin-right: 6px;
-   /* z-index: 11; */
   }
   .logo {
     align-items: center !important;
@@ -228,7 +223,6 @@ footer a:hover{
 
 .footer_up{
     padding: 40px 20px;
-    /* display: flex; */
     display: grid;
     grid-template-columns: 3fr 3fr 1fr;
    
@@ -363,7 +357,6 @@ nav figure:first-child{
 .btn_book{
     width: max-content;
     margin: auto;
-    /* border: 2px solid white; */
 }
 
 
@@ -451,12 +444,6 @@ nav figure:first-child{
     font-size: 10px;
 }
 }
-/* @media (min-width:700px) {
-    .nav_ul{
-        display: flex important!;
-    }
-} */
-
 
 
 /* devWhatsapp */

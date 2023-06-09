@@ -7,8 +7,6 @@
 
 .container{
     min-height: 100vh;
-    /* width: 100%; */
-    /* background: #a7bcff; */
     background-image: linear-gradient(0deg, rgba(0, 60, 100, 0.84), rgba(0, 60, 100, 0.84)), url("../images/hfyv1.jpg");
     background-repeat:no-repeat;
     background-size: cover;
@@ -36,9 +34,7 @@
     margin: auto;
     text-align: left;
     flex-direction: column;
-
     gap: 20px;
-    /* padding: 10px 10px; */
 }
 
 .login-1{
@@ -49,7 +45,6 @@
 .ENP{
     font-size: 20px;
     text-align: center;
-    /* border: 2px solid; */
 }
 
 .input{
@@ -60,7 +55,6 @@
     outline: none;
     border: none;
     border-bottom: 1px solid black;
-    /* background: rgba(255, 255, 255, .4); */
     box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
     font-weight:300;
     text-decoration: solid black;

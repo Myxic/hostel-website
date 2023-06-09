@@ -100,7 +100,7 @@ img{
   width: 100%;
   aspect-ratio: 2/1;
   outline: 3px solid white !important;
-  border-radius: .5em;
+  border-radius: .3em;
   margin-left: auto;
   margin-right: auto;
   
@@ -108,12 +108,6 @@ img{
 
 
 
-
-/* Create four equal columns that floats next to eachother */
-/* .column {
-  float: left;
-  width: 25%;
-} */
 
 
 
@@ -184,7 +178,7 @@ img{
 
 .mySlides img {
   height: 70vh !important;
-  /* width: 70vw; */
+
 }
 
 /* Position the "next button" to the right */
@@ -251,12 +245,10 @@ img.hover-shadow {
   }
 .row{
   padding: 4%;
-  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-columns: 1fr 1fr   ;
 }
   .row>#addImage,
   .row>.column {
-    /* width: calc(90%/2.25 ); */
-    /* height: 70px; */
     margin-bottom: 30px;
   }
 

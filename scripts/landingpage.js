@@ -91,12 +91,7 @@ sthree.onclick = function () {
   sthree.style.color = "yellow";
   sfour.style.color = "black";
   sfive.style.color = "black";
-  // const after = document.querySelector("de_comment p");
-  // console.log(after)
-  // de_comment.style.background = "linear-gradient(90deg, yellow 60%, black 60%)";
-  // de_comment.style.webkitBackgroundClip = "text";
-  //       de_comment.style.backgroundClip = "text";
-  //       de_comment.style.webkitTextFillColor = "transparent";
+
 };
 
 sfour.onclick = function () {
@@ -366,7 +361,6 @@ document.getElementById("top").onclick = function () {
 
 function getChildIndex(parentElement, childElement) {
   var childIndex = Array.from(parentElement.children).indexOf(childElement);
-  // console.log("Index of child element: " + childIndex);
   return childIndex;
 }
 
