@@ -263,7 +263,7 @@ let nextpage = document.querySelector("#de_comment");
 
 
 next.onclick = function () {
-  let Active = document.querySelector(".active");
+  let Active = document.querySelector("#de_comment .active");
   var CurrentCommentIndex = getChildIndex(nextpage, Active);
 
   if (
@@ -283,7 +283,7 @@ next.onclick = function () {
 };
 
 prev.onclick = function () {
-  let Active = document.querySelector(".active");
+  let Active = document.querySelector("#de_comment .active");
   var CurrentCommentIndex = getChildIndex(nextpage, Active);
 
   if (
@@ -317,7 +317,7 @@ prev.onclick = function () {
   function switchImage(image) {
     
     // Array of image URLs
-    var imageUrls = ["../images/hfyv1.jpg", "../images/hfyv2.jpg", "../images/hfyv3.jpg", "../images/hfyv4.jpg", "../images/hfyv5.jpg"];
+    var imageUrls = ["/images/hfyv1.jpg", "/images/hfyv2.jpg", "/images/hfyv3.jpg", "/images/hfyv4.jpg", "/images/hfyv5.jpg"];
     
     // Randomly select an image URL
     var randomIndex = Math.floor(Math.random() * imageUrls.length);
@@ -325,7 +325,7 @@ prev.onclick = function () {
     var newImageUrl = imageUrls[randomIndex ];
     
     // Apply fade-out transition
-    image.style.opacity = 0;
+    image.style.opacity = 0.5;
     
     // Wait for the transition to complete
     setTimeout(function() {
