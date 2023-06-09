@@ -282,7 +282,7 @@ hr{
     flex-direction: column;
     gap: 10px;
     text-align: center;
-    opacity: 0;
+    
     
 }
 .btns a{
@@ -294,6 +294,10 @@ hr{
     font-size: 13px;
     cursor:not-allowed;
 }
+.btns .login{
+    display: none;
+}
+
 .follow_us img{
     width: 20px;
 }

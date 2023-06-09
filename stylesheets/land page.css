@@ -13,6 +13,9 @@
    
     height: 100vh;
 }
+.login{
+    display: none;
+}
 .innerwelcome{
     width: -moz-fit-content;
     width: fit-content;
@@ -63,14 +66,14 @@ h1 small{
     width: 80%;
     margin: 20px auto;
     border-radius: 8px;
-    border: thin #c0c0c0 solid;
+    outline: 1px solid silver;
     
     aspect-ratio: 2/1;
 }
 .activeFeatures,
 .pics img:hover,
 .pics img:focus{
-    box-shadow: 0px  0px .5em 0px black;
+    box-shadow: 0px  0px .25em 0px black;
 }
 figure{
     border: thin #c0c0c0 solid;
@@ -80,16 +83,15 @@ figure{
 .info img{
     min-width:100%;
     max-width:100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 2/1;
     border-radius: 10px 10px 0px 0px;
+    margin-bottom: 20px;
     
     
 }
 .ii,
 .iii,
-.iv,
-.v,
-.vi{
+.iv{
     display: none;
     z-index: 6;
 }
@@ -122,7 +124,7 @@ blockquote{
     width: 80%;
     border-radius: .5em;
     box-shadow: 0px  0px .5em 0px black;
-    outline: .2em solid white;
+    outline: .1em solid silver;
     margin: 10%;
     margin-left: auto;
     margin-right: auto;
@@ -362,6 +364,9 @@ input[type="radio"]{
     
     #de_comment{
         overflow-x: auto;
+    }
+    #de_comment .active{
+        cursor: pointer;
     }
     .comment{
         display: none;
