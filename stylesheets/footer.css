@@ -5,7 +5,10 @@
     padding: 0%;
     transition: all 0.5s ease-in-out;
 }
-
+ #burger, 
+ .nav_ul {
+    box-sizing:content-box;
+}
 body{
      width: 100%;
      font-family: 'Poppins', sans-serif;
