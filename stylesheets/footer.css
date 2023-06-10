@@ -11,10 +11,12 @@ body{
      font-family: 'Poppins', sans-serif;
 }
 /* removing text-decorators for the links */
+header a,
+footer a,
 a{
-    text-decoration: none;
+    text-decoration: none ;
     
-    color: #18a0fb87;
+    color: #18A0FB; ;
 }
 .btn1{
     width: -moz-fit-content;
@@ -82,12 +84,12 @@ ul{
    justify-content: space-between;
  }
  ul li p{
-    color: #18a0fb87;
+    color: #18A0FB;
     display: inline;
  }
- .pageActive,
- header .logo h1{
-    color: #18A0FB;
+ .pageActive{
+   
+    border-bottom: 3px solid orangered;
  }
  .nav_ul li a:focus ,
  .nav_ul li p:focus,
