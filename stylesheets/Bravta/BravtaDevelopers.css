@@ -9,7 +9,7 @@
   /* Colors */
   :root {
     --color-default: #222222;
-    --color-primary: #008374;
+    --color-primary: #38a9f5e0;
     --color-secondary: #f85a40;
   }
   
@@ -469,7 +469,7 @@
   # Contact Section
   --------------------------------------------------------------*/
   .contact .info-container {
-    background-color: var(--color-primary);
+    background-color: #d5eeffe0;
     height: 100%;
     padding: 20px;
     border-radius: 10px 0 0 10px;
@@ -478,11 +478,11 @@
   
   .contact .info-item {
     width: 100%;
-    background-color: #009282;
+    background-color: #C4E6FD;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
-    color: #fff;
+    color: #3e63bb;
   }
   
   .contact .info-item:last-child {
@@ -491,11 +491,11 @@
   
   .contact .info-item i {
     font-size: 20px;
-    color: #fff;
+    color: #3e63bb;
     float: left;
     width: 44px;
     height: 44px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -551,7 +551,7 @@
   .contact .php-email-form .sent-message {
     display: none;
     color: #fff;
-    background: #059652;
+    /* background: #059652; */
     text-align: center;
     padding: 15px;
     font-weight: 600;
@@ -571,7 +571,7 @@
     width: 24px;
     height: 24px;
     margin: 0 10px -6px 0;
-    border: 3px solid #059652;
+    border: 3px solid #38a9f5e0;
     border-top-color: #fff;
     animation: animate-loading 1s linear infinite;
   }
@@ -611,7 +611,7 @@
   }
   
   .contact .php-email-form button[type=submit]:hover {
-    background: rgba(0, 131, 116, 0.8);
+    /* background: rgba(0, 131, 116, 0.8); */
   }
   
   @keyframes animate-loading {
