@@ -92,6 +92,9 @@ function getChildIndex(parentElement, childElement) {
   // console.log("Index of child element: " + childIndex);
   return childIndex;
 }
+
+
+
 // // Thumbnail image controls
 // function currentSlide(n) {
 //   showSlides(slideIndex = n);

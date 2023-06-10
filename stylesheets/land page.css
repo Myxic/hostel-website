@@ -53,7 +53,7 @@ h1 small{
     padding-top: 0%;
 }
 .right_side p{
-    /* border: 1px solid red; */
+    
     padding: 30px 0px ;
 }
 .pics{
@@ -73,7 +73,7 @@ h1 small{
 .activeFeatures,
 .pics img:hover,
 .pics img:focus{
-    box-shadow: 0px  0px .25em 0px black;
+    box-shadow: 0px  0px .25em 0px  rgba(0, 60, 100);
 }
 figure{
     border: thin #c0c0c0 solid;
@@ -123,7 +123,7 @@ blockquote{
 .gallery .frames{
     width: 80%;
     border-radius: .5em;
-    box-shadow: 0px  0px .5em 0px black;
+    box-shadow: 0px  0px .5em 0px  rgba(0, 60, 100);
     outline: .1em solid silver;
     margin: 10%;
     margin-left: auto;
@@ -159,7 +159,6 @@ blockquote{
 }
 .comment_top{
     align-items: center !important;
-    /* display: flex !important; */
     display: grid !important;
     grid-template-columns: 1fr 10fr 1fr;
 
@@ -182,12 +181,10 @@ blockquote{
     flex-direction: row;
 }
 .comment{
-    /* display: none; */
     width:80%;
     margin: 20px  auto;
     text-align: left;
     padding: 20px;
-    /* border: 1px solid; */
     border-radius: 5px;
 }
 textarea,
@@ -223,9 +220,7 @@ textarea{
     width:100%;
     max-width:100%;
     padding-top: 50px;
-    /* flex: 0 0 100%; */
     text-align: center;
-    /* border: 1px solid red; */
     display: none ;
     flex-direction: column;
     
@@ -234,7 +229,6 @@ textarea{
     display: flex ;
 }
 #de_comment div p{
-    /* border: 1px solid red; */
     margin: auto;
     
 }
@@ -244,14 +238,12 @@ input[type="radio"]{
 #warning,
 #warning2,
 #warning3{
-    /* border: 1px solid; */
     margin-bottom: 5px;
     text-align: left;
 }
 .warn{
     text-align: left;
     width: 100%;
-    /* border: 1px solid; */
 }
 
 
