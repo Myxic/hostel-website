@@ -17,7 +17,9 @@
   :root {
     scroll-behavior: smooth;
   }
-  
+  .content ul{
+    display: block;
+  }
   /*--------------------------------------------------------------
   # General
   --------------------------------------------------------------*/
@@ -349,6 +351,9 @@
     display: block;
     font-size: 14px;
     color: #6c757d;
+  }
+  .team .member .detail{
+    text-align: left;
   }
   
   .team .member p {
