@@ -137,6 +137,7 @@ function handleFormSubmit(event) {
 
   // Prepare email parameters for EmailJS
   const templateParams = {
+    to_name : "BravtaCode",
     from_name: nameInput.value.trim(),
     from_email: email,
     subject: subjectInput.value.trim(),
@@ -160,32 +161,3 @@ emailForm.addEventListener('submit', handleFormSubmit);
 
 
 
-
-// (function() {
-//   emailjs.init('_GvGGMtBPMcStuQAa');
-
-//   const emailForm = document.getElementById('email-form');
-
-//   emailForm.addEventListener('submit', function(event) {
-//     event.preventDefault();
-
-//     const formData = new FormData(emailForm);
-
-//     const emailParams = {
-//       from_name: formData.get('name'),
-//       from_email: formData.get('email'),
-//       subject: formData.get('subject'),
-//       message: formData.get('message')
-//     };
-
-//     emailjs.send('service_t519zoh', 'template_zqwrpxu', emailParams)
-//       .then(function(response) {
-//         console.log('Email sent successfully:', response);
-//         // Display success message or perform any other actions
-//         emailForm.reset(); // Clear the form after sending
-//       }, function(error) {
-//         console.error('Email send error:', error);
-//         // Display error message or handle the error
-//       });
-//   });
-// })();
