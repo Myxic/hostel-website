@@ -1,5 +1,9 @@
+
+
 var nextpage = document.querySelector(".row");
+// console.log(nextpage);
 var slides = document.getElementsByClassName("mySlides");
+// console.log(slides)
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
 
@@ -19,6 +23,7 @@ function closeModal() {
 document.querySelectorAll(".row img").forEach((div1) => {
   div1.addEventListener("click", () => {
     openModal();
+    console.log('DOMContentLoaded');
     div1.parentElement.classList.add("active");
 
     let Active = document.querySelector(".active");
@@ -89,7 +94,7 @@ prev.onclick = function plusSlidesPrev() {
 
 function getChildIndex(parentElement, childElement) {
   var childIndex = Array.from(parentElement.children).indexOf(childElement);
-  // console.log("Index of child element: " + childIndex);
+  console.log("Index of child element: " + childIndex);
   return childIndex;
 }
 

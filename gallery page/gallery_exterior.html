@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../stylesheets/footer.css">
     <link rel="stylesheet" href="../stylesheets/gallery.css">
     <link rel="stylesheet" href="../stylesheets/addimage.css">
-    <script src="../scripts/gallery.js" defer></script>
-    <script src="../scripts/admin-power.js" defer></script>
+    
+    
 </head>
 
 <body>
@@ -67,54 +67,30 @@
     <div class="gallery-container one-1">
         <!-- Images used to open the lightbox -->
         <div class="row" id="row-1">
-            <div class="column">
-                <img src="../images/hfyv1.jpg" class="hover-shadow" alt="pic">
-            </div>
-            <div class="column">
-                <img src="../images/outer.png" class="hover-shadow" alt="pic">
-            </div>
-            <div class="column">
-                <img src="../images/download12.svg" class="hover-shadow" alt="pic">
-            </div>
-            <div class="column">
-                <img src="../images/outer.png" class="hover-shadow" alt="pic">
-            </div>
-
-
+           <!-- images from folder will be loaded -->
         </div>
+
+
+
         <!-- Admin Function -->
         <div id="addImage">
             <img src="../images/plus.svg" alt="add image" class="addImage">
         </div>
         <!--  -->
+
+
+
+
         <!-- The Modal/Lightbox -->
         <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
             <div class="modal-content">
 
-                <div class="mySlides">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="../images/hfyv1.jpg" style="width:100%" alt="pic">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="../images/outer.png" style="width:100%" alt="pic">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="../images/download12.svg" style="width:100%" alt="pic">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">4 / 4</div>
-                    <img src="../images/outer.png" style="width:100%" alt="pic">
-                </div>
+                <!-- Images from folder will be loaded -->
 
                 <!-- Next/previous controls -->
-                <a class="prev" onclick="plusSlides(-1)" id="prev">&#10094;</a>
-                <a class="next" id="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" id="prev">&#10094;</a>
+                <a class="next" id="next" >&#10095;</a>
 
                 <!-- Caption text -->
                 <div class="caption-container">
@@ -131,13 +107,16 @@
         <dialog name="exterior" id="plus-img">
             <h4>Adding image to the exterior gallery section</h4>
             <button type="button" id="button_3">&#9747</button>
-            <form action="./Exteriorupload.php" method="post" enctype="multipart/form-data">
-                <!-- <label for="name">Enter Title of image:</label>
-        <input type="text" name="name" id="name" placeholder="Enter Title of Image"> -->
-                <label for="image++">Input Image:</label>
-                <input type="file" name="image" id="image++" accept="image/png, image/jpg, image/jpeg">
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="name">Enter Title of image:</label>
+                <input type="text" name="name" id="name" placeholder="Enter Title of Image">
+                <label for="image">Input Image:</label>
+                <input type="file" name="image" id="image" accept="image/png, image/jpg, image/jpeg">
                 <button type="submit" name="submit" id="upload1">Upload</button>
             </form>
+            
+            <div id="warning" style="color: red;"></div>
+            
         </dialog>
 
 
@@ -202,7 +181,10 @@
         </div>
     </footer>
 
+    <script src="../scripts/admin-power.js" ></script>
     <script src="../scripts/gen script.js"></script>
+    <script src="./addingImage.js"></script>
+    <script src="../scripts/gallery.js"></script>
 </body>
 
 </html>
