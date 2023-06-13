@@ -108,7 +108,7 @@ document.querySelectorAll(".row img").forEach((div1) => {
 next.onclick = function plusSlidesNext() {
   let Active = document.querySelector(".active");
   var CurrentCommentIndex = getChildIndex(nextpage, Active);
-  console.log(nextpage.children[CurrentCommentIndex]);
+  
   if (
     CurrentCommentIndex >= 0 &&
     CurrentCommentIndex < nextpage.childElementCount

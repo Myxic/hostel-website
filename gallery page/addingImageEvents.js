@@ -9,14 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const warningDiv = document.getElementById('warning');
 
-// Close the Modal
-function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-    let Active = document.querySelector(".active");
-    var CurrentCommentIndex = getChildIndex(nextpage, Active);
-    Active.classList.remove("active");
-    slides[CurrentCommentIndex].style.display = "none";
-  }
 
     // Function to fetch the images from the folder
     function fetchImages() {
@@ -108,7 +100,7 @@ document.querySelectorAll(".row img").forEach((div1) => {
 next.onclick = function plusSlidesNext() {
   let Active = document.querySelector(".active");
   var CurrentCommentIndex = getChildIndex(nextpage, Active);
-  console.log(nextpage.children[CurrentCommentIndex]);
+  
   if (
     CurrentCommentIndex >= 0 &&
     CurrentCommentIndex < nextpage.childElementCount
@@ -173,7 +165,7 @@ prev.onclick = function plusSlidesPrev() {
     }
     function getChildIndex(parentElement, childElement) {
         var childIndex = Array.from(parentElement.children).indexOf(childElement);
-        console.log("Index of child element: " + childIndex);
+       
         return childIndex;
       }
     fetchImages();
