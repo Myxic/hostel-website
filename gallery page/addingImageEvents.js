@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const imageFolder = './ExteriorImgs'; // Replace with the path to your image folder
+    const imageFolder = './EventsImgs'; // Replace with the path to your image folder
     
     const row = document.querySelector('.row');
  
@@ -225,10 +225,11 @@ prev.onclick = function plusSlidesPrev() {
 
     
 });
+
 function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-    let Active = document.querySelector(".active");
-    var CurrentCommentIndex = getChildIndex(nextpage, Active);
-    Active.classList.remove("active");
-    slides[CurrentCommentIndex].style.display = "none";
-  }
+  document.getElementById("myModal").style.display = "none";
+  let Active = document.querySelector(".active");
+  var CurrentCommentIndex = getChildIndex(nextpage, Active);
+  Active.classList.remove("active");
+  slides[CurrentCommentIndex].style.display = "none";
+}
