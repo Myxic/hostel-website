@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 const dom = parser.parseFromString(html, 'text/html');
                
-                // const images = dom.querySelectorAll('.icon-image');
-                const images = dom.querySelectorAll('a');
+                const images = dom.querySelectorAll('.icon-image');
+                // const images = dom.querySelectorAll('a');
                
 
                 images.forEach(image => {
