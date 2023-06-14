@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const imageFolder = '../blob/main/images/ExteriorImgs'; // Replace with the path to your image folder
+    const imageFolder = '../images/ExteriorImgs'; // Replace with the path to your image folder
     
     const row = document.querySelector('.row');
  
@@ -9,14 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const warningDiv = document.getElementById('warning');
 
-// Close the Modal
-function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-    let Active = document.querySelector(".active");
-    var CurrentCommentIndex = getChildIndex(nextpage, Active);
-    Active.classList.remove("active");
-    slides[CurrentCommentIndex].style.display = "none";
-  }
+
 
     // Function to fetch the images from the folder
     function fetchImages() {
@@ -27,7 +20,8 @@ function closeModal() {
                 
                 const dom = parser.parseFromString(html, 'text/html');
                
-                const images = dom.querySelectorAll('.icon-image');
+                // const images = dom.querySelectorAll('.icon-image');
+                const images = dom.querySelectorAll('a');
                
 
                 images.forEach(image => {
