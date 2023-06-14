@@ -1,12 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-     // Get the current path of the URL
-     const currentPath = window.location.pathname;
-    
-     // Extract the directory name from the current path
-     const directoryName = currentPath.substring(0, currentPath.lastIndexOf('/'));
-     
+
      // Construct the image folder path based on the directory name
-     const imageFolder = directoryName + '/ExteriorImgs';
+     const imageFolder = window.siteBaseUrl + '/ExteriorImgs';
     // const imageFolder = 'ExteriorImgs'; // Replace with the path to your image folder
     
     const row = document.querySelector('.row');
