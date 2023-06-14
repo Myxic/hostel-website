@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to fetch the images from the folder
     function fetchImages() {
-        fetch(imageFolder)
+        fetch("ExteriorImgs")
             .then(response => response.text())
             .then(html => {
                
