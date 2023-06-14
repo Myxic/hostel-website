@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const imageFolder = './InteriorImgs'; // Replace with the path to your image folder
+    const imageFolder = '/gallery page/InteriorImgs'; // Replace with the path to your image folder
     
     const row = document.querySelector('.row');
  

@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const imageFolder1 = './ExteriorImgs'; // Replace with the path to your image folder
+    const imageFolder1 = '/gallery page/ExteriorImgs'; // Replace with the path to your image folder
 
-    const imageFolder2 = './InteriorImgs'; // Replace with the path to your image folder
+    const imageFolder2 = '/gallery page/InteriorImgs'; // Replace with the path to your image folder
 
-    const imageFolder3 = './EventsImgs'; // Replace with the path to your image folder
+    const imageFolder3 = '/gallery page/EventsImgs'; // Replace with the path to your image folder
     
     const row = document.querySelector('.row');
  
