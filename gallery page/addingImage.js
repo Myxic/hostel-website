@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const imageFolder = '../images/ExteriorImgs'; // Replace with the path to your image folder
+    const imageFolder = '../ExteriorImgs'; // Replace with the path to your image folder
     
     const row = document.querySelector('.row');
  
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 const dom = parser.parseFromString(html, 'text/html');
                
-                // const images = dom.querySelectorAll('.icon-image');
-                const images = dom.querySelectorAll('a');
+                const images = dom.querySelectorAll('.icon-image');
+                // const images = dom.querySelectorAll('a');
                
 
                 images.forEach(image => {
