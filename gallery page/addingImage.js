@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
         fetch(imageFolder)
             .then(response => response.text())
             .then(html => {
+                console.log(html);
+                console.log(response.text());
+                console.log("inside image folder")
                 const parser = new DOMParser();
                 
                 const dom = parser.parseFromString(html, 'text/html');
