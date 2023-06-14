@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
      // Construct the image folder path based on the directory name
-     const imageFolder = window.siteBaseUrl + '/ExteriorImgs';
-    // const imageFolder = 'ExteriorImgs'; // Replace with the path to your image folder
+    //  const imageFolder = window.siteBaseUrl + '/ExteriorImgs';
+    const imageFolder = '../ExteriorImgs'; // Replace with the path to your image folder
     
     const row = document.querySelector('.row');
  
@@ -20,8 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.text())
             .then(html => {
                
-                console.log(response.text());
-                console.log("inside image folder")
+              
                 const parser = new DOMParser();
                 
                 const dom = parser.parseFromString(html, 'text/html');
