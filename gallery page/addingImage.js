@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const imageFolder = 'ExteriorImgs'; // Replace with the path to your image folder
+     // Get the current path of the URL
+     const currentPath = window.location.pathname;
+    
+     // Extract the directory name from the current path
+     const directoryName = currentPath.substring(0, currentPath.lastIndexOf('/'));
+     
+     // Construct the image folder path based on the directory name
+     const imageFolder = directoryName + '/ExteriorImgs';
+    // const imageFolder = 'ExteriorImgs'; // Replace with the path to your image folder
     
     const row = document.querySelector('.row');
  
@@ -13,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to fetch the images from the folder
     function fetchImages() {
-        fetch("ExteriorImgs")
+        fetch(imageFolder)
             .then(response => response.text())
             .then(html => {
                
