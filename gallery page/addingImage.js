@@ -9,14 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const warningDiv = document.getElementById('warning');
 
-// Close the Modal
-function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-    let Active = document.querySelector(".active");
-    var CurrentCommentIndex = getChildIndex(nextpage, Active);
-    Active.classList.remove("active");
-    slides[CurrentCommentIndex].style.display = "none";
-  }
+
 
     // Function to fetch the images from the folder
     function fetchImages() {
