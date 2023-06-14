@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const imageFolder = '../ExteriorImgs'; // Replace with the path to your image folder
+    const imageFolder = 'ExteriorImgs'; // Replace with the path to your image folder
     
     const row = document.querySelector('.row');
  
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fetch(imageFolder)
             .then(response => response.text())
             .then(html => {
-                console.log(html);
+               
                 console.log(response.text());
                 console.log("inside image folder")
                 const parser = new DOMParser();
