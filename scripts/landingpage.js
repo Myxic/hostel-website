@@ -304,10 +304,6 @@ prev.onclick = function () {
 
  
   
-
-       
-   
-  
   
   function switchImage(image) {
     

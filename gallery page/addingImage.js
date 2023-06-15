@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
      // Construct the image folder path based on the directory name
     //  const imageFolder = window.siteBaseUrl + '/ExteriorImgs';
-    const imageFolder = '../ExteriorImgs'; // Replace with the path to your image folder
+    const imageFolder = '../images/ExteriorImgs'; // Replace with the path to your image folder
     
     const row = document.querySelector('.row');
  
