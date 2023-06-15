@@ -123,7 +123,7 @@ blockquote{
 .gallery .frames{
     width: 80%;
     border-radius: .5em;
-    box-shadow: 0px  0px .5em 0px  rgba(0, 60, 100);
+    box-shadow: 0px  0px .5em 0px  rgb(2, 17, 27);
     outline: .1em solid silver;
     margin: 10%;
     margin-left: auto;
@@ -227,6 +227,7 @@ textarea{
 }
 #de_comment .active{
     display: flex ;
+    cursor: pointer;
 }
 #de_comment div p{
     margin: auto;
@@ -357,9 +358,7 @@ input[type="radio"]{
     #de_comment{
         overflow-x: auto;
     }
-    #de_comment .active{
-        cursor: pointer;
-    }
+  
     .comment{
         display: none;
     }
