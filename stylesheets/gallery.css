@@ -1,7 +1,7 @@
 body{
   background: #E4E4E4 !important;
 }
-img{
+.row img{
   cursor: pointer;
 }
 .heading{
