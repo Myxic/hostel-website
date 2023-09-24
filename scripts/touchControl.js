@@ -54,43 +54,43 @@ function chooseSide(e) {
     }
   }
 }
-function ShowAdminLogin(word) {
-  console.log(word);
+// function ShowAdminLogin() {
+//   // console.log(word);
 
-  if (window.matchMedia("(min-width: 675px)").matches) {
-    var hiddenbuttons = document.querySelectorAll("#hiddenbuttons .login");
-    var logoImage = document.querySelector("footer .logo img");
-    var clickCount = 0;
+//   if (window.matchMedia("(min-width: 675px)").matches) {
+//     var hiddenbuttons = document.querySelectorAll("#hiddenbuttons .login");
+//     var logoImage = document.querySelector("footer .logo img");
+//     var clickCount = 0;
 
-    function showButtons() {
-      hiddenbuttons.forEach((element) => {
-        element.style.display = "block";
-      });
-    }
+//     function showButtons() {
+//       hiddenbuttons.forEach((element) => {
+//         element.style.display = "block";
+//       });
+//     }
 
-    function hideButtons() {
-      hiddenbuttons.forEach((element) => {
-        element.style.display = "none";
-      });
-    }
+//     function hideButtons() {
+//       hiddenbuttons.forEach((element) => {
+//         element.style.display = "none";
+//       });
+//     }
 
-    function clickHandler() {
-      clickCount++;
+//     function clickHandler() {
+//       clickCount++;
 
-      if (clickCount === 6) {
-        showButtons();
-        logoImage.removeEventListener("click", clickHandler);
+//       if (clickCount === 6) {
+//         showButtons();
+//         logoImage.removeEventListener("click", clickHandler);
         
-        setTimeout(function() {
-          hideButtons();
-          clickCount = 0; // Reset the click count
-          logoImage.addEventListener("click", clickHandler);
-        }, 10000); // Wait for 5 seconds before resetting and adding the click handler again
-      }
-    }
+//         setTimeout(function() {
+//           hideButtons();
+//           clickCount = 0; // Reset the click count
+//           logoImage.addEventListener("click", clickHandler);
+//         }, 10000); // Wait for 5 seconds before resetting and adding the click handler again
+//       }
+//     }
 
-    logoImage.addEventListener("click", clickHandler);
-  }
-}
+//     logoImage.addEventListener("click", clickHandler);
+//   }
+// }
 
-ShowAdminLogin("started");
+// ShowAdminLogin();

@@ -94,12 +94,18 @@ ul{
    
     border-bottom: 3px solid orangered;
  }
+
+ .nav_ul li a,
+ .nav_ul li p{
+    border-bottom: 3px solid transparent;
+    padding: 5px;
+ }
  .nav_ul li a:focus ,
  .nav_ul li p:focus,
  .nav_ul li a:hover ,
  .nav_ul li p:hover {
     
-    padding: 5px;
+
     color: rgba(54, 88, 124, 0.4);
      border-bottom: 3px solid orangered;
      transition-property: all;
