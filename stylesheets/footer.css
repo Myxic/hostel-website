@@ -1,122 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0%;
     padding: 0%;
     transition: all 0.5s ease-in-out;
 }
- #burger, 
- .nav_ul {
-    box-sizing:content-box;
+
+#burger,
+.nav_ul {
+    box-sizing: content-box;
 }
-body{
-     width: 100%;
-     font-family: 'Poppins', sans-serif;
+
+body {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
 }
+
 /* removing text-decorators for the links */
 header a,
 footer a,
-a{
-    text-decoration: none ;
-    
-    color: #18A0FB; ;
+a {
+    text-decoration: none;
+
+    color: #18A0FB;
+    ;
 }
-.btn1{
+
+.btn1 {
     width: -moz-fit-content;
     width: fit-content;
     margin: auto;
     margin-top: 30px;
     display: flex;
-    gap: 20px;   
+    gap: 20px;
     font-size: 13px;
 }
-.btn1 a{
+
+.btn1 a {
     width: 100px;
     color: white;
-    padding-top: 8px ;
+    padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 7px;
 }
-.login{
+
+.login {
     background: orangered;
 }
-.reg{
+
+.reg {
     background: rgb(68, 68, 218);
 }
+
 .login:focus,
-.login:hover{
-    background: rgba(255, 69, 0,0.8);
+.login:hover {
+    background: rgba(255, 69, 0, 0.8);
     color: black;
 
 }
+
 .reg:focus,
-.reg:hover{
-    background: rgba(68, 68, 218,0.8);
+.reg:hover {
+    background: rgba(68, 68, 218, 0.8);
     color: black;
 }
 
 /****************Heading **************/
-header{
+header {
     background: white;
     width: 100%;
-    box-shadow:  0px 0px 3px 1px;
+    box-shadow: 0px 0px 3px 1px;
     z-index: 10;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     padding: 20px 4%;
     align-items: center !important;
     display: flex !important;
-    
-    
+
+
 }
-.nav_ul{
-    display: flex ;
+
+.nav_ul {
+    display: flex;
     position: absolute;
     right: 50px;
-   min-width: 30%;
-   gap: 15px;
-   
+    min-width: 30%;
+    gap: 15px;
+
 }
 
-ul{
-   
+ul {
+
     display: flex;
     list-style: none;
-   justify-content: space-between;
- }
- ul li p{
+    justify-content: space-between;
+}
+
+ul li p {
     color: #18A0FB;
     display: inline;
- }
- .pageActive{
-   
-    border-bottom: 3px solid orangered;
- }
+}
 
- .nav_ul li a,
- .nav_ul li p{
+.pageActive {
+
+    border-bottom: 3px solid orangered;
+}
+
+.nav_ul li a,
+.nav_ul li p {
     border-bottom: 3px solid transparent;
     padding: 5px;
- }
- .nav_ul li a:focus ,
- .nav_ul li p:focus,
- .nav_ul li a:hover ,
- .nav_ul li p:hover {
-    
+}
+
+.nav_ul li a:focus,
+.nav_ul li p:focus,
+.nav_ul li a:hover,
+.nav_ul li p:hover {
+
 
     color: rgba(54, 88, 124, 0.4);
-     border-bottom: 3px solid orangered;
-     transition-property: all;
-     transition-duration: 300ms;
-     transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
- }
- #burger,
- #exit{
+    border-bottom: 3px solid orangered;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+#burger,
+#exit {
     display: none;
- }
- nav figure:first-child{
+}
+
+nav figure:first-child {
     border: none;
 }
 
@@ -124,32 +141,36 @@ ul{
 header .logo img {
     max-height: 40px;
     margin-right: 6px;
-  }
-  .logo {
+}
+
+.logo {
     align-items: center !important;
     display: flex !important;
- 
-  }
+
+}
+
 .logo h1 {
     font-size: 20px;
     margin: 0;
     font-weight: 500;
     letter-spacing: 0.8px;
-   
-  }
-  @media (max-width: 700px) {
+
+}
+
+@media (max-width: 700px) {
 
     .logo h1 {
         font-size: 10px;
         margin: 0;
         font-weight: 500;
     }
-  }
+}
+
 /* *******************BOOKING***************** */
 
-.booking{
+.booking {
     position: fixed;
-    width:100% ;
+    width: 100%;
     background: black;
     height: 100vh;
     top: 0;
@@ -157,309 +178,355 @@ header .logo img {
     z-index: 17;
     display: none;
     overflow: auto;
-       animation: page 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    animation: page 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
 }
-@keyframes page{
-    0%{
+
+@keyframes page {
+    0% {
         left: 50vw;
-        top:20vh;
+        top: 20vh;
         width: 100px;
         height: 10%;
-        
+
     }
-    100%{
+
+    100% {
         width: 100%;
         left: 0;
         top: 0;
-      
+
     }
 }
 
-.outerdiv_booking{
+.outerdiv_booking {
     margin: auto;
     width: 50%;
     border: 1px solid transparent;
     min-height: 100px;
     transform: translateY(20%);
 }
-#close{
-   float: right;
+
+#close {
+    float: right;
     width: 40px;
-    
+
 }
+
 #close:focus,
-#close:hover{
+#close:hover {
     width: 38px;
 }
-.how_to_book{
+
+.how_to_book {
     width: 90%;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
     background: #E9E9E9;
     border-radius: 10px;
-    
-    
-    
+
+
+
 }
-.how_to_book h2{
+
+.how_to_book h2 {
     background: #D9D9D9CF;
     text-align: center;
     border-radius: 10px 10px 0px 0px;
     padding: 10px;
 }
-.how_to_book ul{
+
+.how_to_book ul {
     text-align: left;
-    list-style:outside;
+    list-style: outside;
     display: block;
-    padding:20px 60px;
+    padding: 20px 60px;
     line-height: 25px;
     overflow: auto;
-    
+
 }
 
- /****************Footer **************/
-footer{
+/****************Footer **************/
+footer {
     background-color: rgb(15, 15, 15);
     color: white;
     padding-top: 20px;
 }
-footer a{
+
+footer a {
     color: aliceblue;
 }
+
 footer a:focus,
-footer a:hover{
+footer a:hover {
     color: rgb(101, 101, 191);
 }
 
-.footer_up{
+.footer_up {
     padding: 40px 20px;
     display: grid;
     grid-template-columns: 3fr 3fr 1fr;
-   
-    
+
+
 }
-.footer_down{
+
+.footer_down {
     padding: 40px 20px;
     display: flex;
     justify-content: space-evenly;
-    
+
 }
-footer .logo{
-    
+
+footer .logo {
+
     display: flex;
     justify-content: center;
     gap: 1em;
-    
+
 }
-footer .logo img{
+
+footer .logo img {
     width: 15%;
-    
+
 }
-.links{
+
+.links {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3em;
 
 }
-h4{
+
+h4 {
     margin-bottom: 18px;
 
 }
-.links div h4{
+
+.links div h4 {
     color: #ffc107;
 }
+
 .quick_links div,
 .community div,
-.company div{
+.company div {
     display: flex;
     font-size: 14px;
     flex-direction: column;
 }
-hr{
+
+hr {
     width: 90%;
-    margin: auto;
+    margin: auto !important;
     border-color: black;
+    margin: 1rem 0 ;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .25;
+
+
 }
-.btns{ 
+
+.btns {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: center;
-    
-    
+
+
 }
-.btns a{
+
+.btns a {
     width: 100px;
     color: white;
-    padding-top: 8px ;
+    padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 7px;
     font-size: 13px;
-    cursor:not-allowed;
+    cursor: not-allowed;
 }
-.btns .login{
+
+.btns .login {
     display: none;
 }
 
-.follow_us img{
+.follow_us img {
     width: 20px;
 }
+
 .copyright,
-.follow_us{
+.follow_us {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
+
 @media (max-width:800px) {
-p{
-    font-size: 13px;
-}
-.nav_ul{
-    display: none;
-}
-.buger_nav_ul{
-  
-    display: block ;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    text-align: left;
-    display: none;
-    background: white;
-    padding:10% ;  
-    padding-top: 20%;
-    line-height: 50px;
-    font-size: 15px;
-    height: 100vh;
-    width: 80%;
-    z-index: 10;
-    animation: page 600ms cubic-bezier(0.215, 0.610, 0.355, 1);
-}
-@keyframes page{
-    0%{
-        left: 100vw;
-        
+    p {
+        font-size: 13px;
     }
-    100%{
-        left: 0;
+
+    .nav_ul {
+        display: none;
     }
-} 
 
-nav figure:first-child{
-    z-index:11;
+    .buger_nav_ul {
 
-}
-.nav_ul li a,
-.nav_ul li p{
-    display: block;
-    width: 100%;
-    padding-left: 10px;
-}
+        display: block;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        text-align: left;
+        display: none;
+        background: white;
+        padding: 10%;
+        padding-top: 20%;
+        line-height: 50px;
+        font-size: 15px;
+        height: 100vh;
+        width: 80%;
+        z-index: 10;
+        animation: page 600ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
 
-.nav_ul p{
-    font-size: 15px;
-    margin: 0;
-    
-}
+    @keyframes page {
+        0% {
+            left: 100vw;
 
-.btn_book{
-    width: max-content;
-    margin: auto;
-}
+        }
 
+        100% {
+            left: 0;
+        }
+    }
 
-#burger{
-    position: absolute;
-    right: 20px;
-    width: 20px;
-    display: block;
-    outline: 1px solid #18A0FB;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
+    nav figure:first-child {
+        z-index: 11;
 
-}
-#burger:focus,
-#burger:hover{
-    outline: 3px solid #18A0FB;
-    
-}
-#exit{
-   position: absolute;
-   width: 25px; 
-   right: 30px;
-   top:20px;
-   display: block;
-}
-.outerdiv_booking{
-    width: 90%;
-    transform: translateY(5%);
-}
-.how_to_book ul{
-    font-size: 14px;
-    
-}
+    }
 
-.how_to_book h2{
-    font-size: 20px;
-}
+    .nav_ul li a,
+    .nav_ul li p {
+        display: block;
+        width: 100%;
+        padding-left: 10px;
+    }
 
-.footer_up{
-    display: block;
-}
-.footer_up{
-    position: relative;
-}
-.btns{
-    position: absolute;
-    gap: 15px;
-    top: 10px;
-    right: 20px;
-    display: none;
-}
-.links{
-    margin-top: 60px;
-    width: 100%;
-    justify-content: center;
-    
-}
-.links div h4{
-    font-size: 13px;
-    
-}
-.links div{
-    font-size: 10px;
-}
-.footer_down{
-    flex-direction: column;
-    gap: 13px;
-}
-.copyright,
-.follow_us{
-    font-size: 12px;
+    .nav_ul p {
+        font-size: 15px;
+        margin: 0;
 
-}
+    }
+
+    .btn_book {
+        width: max-content;
+        margin: auto;
+    }
 
 
-.follow_us img{
-    width:15px;
-}
-.btn1 a,
-.btns a{
-    width: 90px;
-    padding-top: 7px ;
-    padding-bottom: 7px;
-    font-size: 10px;
-}
+    #burger {
+        position: absolute;
+        right: 20px;
+        width: 20px;
+        display: block;
+        outline: 1px solid #18A0FB;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+
+    #burger:focus,
+    #burger:hover {
+        outline: 3px solid #18A0FB;
+
+    }
+
+    #exit {
+        position: absolute;
+        width: 25px;
+        right: 30px;
+        top: 20px;
+        display: block;
+    }
+
+    .outerdiv_booking {
+        width: 90%;
+        transform: translateY(5%);
+    }
+
+    .how_to_book ul {
+        font-size: 14px;
+
+    }
+
+    .how_to_book h2 {
+        font-size: 20px;
+    }
+
+    .footer_up {
+        display: block;
+    }
+
+    .footer_up {
+        position: relative;
+    }
+
+    .btns {
+        position: absolute;
+        gap: 15px;
+        top: 10px;
+        right: 20px;
+        display: none;
+    }
+
+    .links {
+        margin-top: 60px;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .links div h4 {
+        font-size: 13px;
+
+    }
+
+    .links div {
+        font-size: 10px;
+    }
+
+    .footer_down {
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .copyright,
+    .follow_us {
+        font-size: 12px;
+
+    }
+
+
+    .follow_us img {
+        width: 15px;
+    }
+
+    .btn1 a,
+    .btns a {
+        width: 90px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 10px;
+    }
 }
 
 
 /* devWhatsapp */
 
-.devWhatsapp{
+.devWhatsapp {
     text-decoration: underline;
     color: #ffc107;
 }
