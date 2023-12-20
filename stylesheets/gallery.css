@@ -99,7 +99,7 @@ body{
 .column>img {
   width: 100%;
   aspect-ratio: 2/1;
-  outline: 3px solid white !important;
+  outline: 1px solid white !important;
   border-radius: .3em;
   margin-left: auto;
   margin-right: auto;
@@ -128,7 +128,7 @@ body{
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  /* background-color: #fefefe; */
   margin: auto;
   padding: 0;
   width: 90%;
@@ -177,7 +177,7 @@ body{
 }
 
 .mySlides img {
-  height: 70vh !important;
+  height: 600px !important;
 
 }
 
@@ -229,7 +229,11 @@ img.hover-shadow {
 }
 
 .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.caption-container > .caption{
+  display: none;
 }
 
 @media (max-width: 700px) {
@@ -238,10 +242,17 @@ img.hover-shadow {
     font-size: smaller;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .gallerySelector{
     width: 70%;
     font-size: xx-small;
+  }
+  .modal{
+    padding: 0;
+  }
+  .mySlides img {
+    height: 70vh !important;
+  
   }
 .row{
   padding: 4%;

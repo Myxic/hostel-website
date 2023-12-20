@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../stylesheets/gallery.css">
   <link rel="stylesheet" href="../stylesheets/addimage.css">
   
-  <script src="../scripts/admin-power.js" defer></script>
+
 </head>
 
 <body>
@@ -71,13 +71,6 @@
 
 
 
-  <!-- Admin Function -->
-  <div id="addImage">
-      <img src="../images/plus.svg" alt="add image" class="addImage">
-  </div>
-  <!--  -->
-
-
 
 
   <!-- The Modal/Lightbox -->
@@ -102,21 +95,7 @@
   </div>
 </div>
 
-  <div class="addimages-arrange">
 
-    <dialog name="interior" id="plus-img">
-      <h4>Adding image to the interior gallery section</h4>
-      <button type="button" id="button_3">&#9747</button>
-      <form action="./Eventsupload.php" method="post" enctype="multipart/form-data">
-        <!-- <label for="name">Enter Title of image:</label> -->
-        <!-- <input type="text" name="name" id="name" placeholder="Enter Title of Image"> -->
-        <label for="image++">Input Image:</label>
-        <input type="file" name="image" id="image++" accept="image/png, image/jpg, image/jpeg">
-        <button type="submit" name="submit3" id="upload2" >Upload</button>
-      </form>
-    </dialog>
-
-  </div>
 
   <footer>
     <div class="footer_up">
@@ -176,8 +155,13 @@
         </div>
     </div>
 </footer>
-  <script src="../scripts/gen script.js"></script>
-  <script src="./addingImageEvents.js"></script>
+<script src="../scripts/gen script.js"></script>
+<script src="../scripts/Gallery/Events.js"></script>
+<script src="../scripts/Gallery/LoadImage.js">
+</script>
+
+
+<script src="../scripts/Gallery/nav.js"></script>
 
 </body>
 
