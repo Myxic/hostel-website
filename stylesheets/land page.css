@@ -303,6 +303,10 @@ input[type="radio"]{
     transform: rotate(-135deg);
    
   }
+  .prev,
+  .next{
+    cursor: pointer;
+  }
 
 @media (max-width:800px) {
     .innerwelcome h1{

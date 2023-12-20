@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../stylesheets/gallery.css">
   <link rel="stylesheet" href="../stylesheets/addimage.css">
   
-  <script src="../scripts/admin-power.js" defer></script>
+ 
 </head>
 
 <body>
@@ -70,11 +70,6 @@
 
 
 
-  <!-- Admin Function -->
-  <div id="addImage">
-      <img src="../images/plus.svg" alt="add image" class="addImage">
-  </div>
-  <!--  -->
 
 
 
@@ -92,7 +87,7 @@
 
           <!-- Caption text -->
           <div class="caption-container">
-              <p id="caption"></p>
+              <!-- <p class="caption">hmm</p> -->
           </div>
       </div>
 
@@ -101,23 +96,6 @@
   </div>
 </div>
 
-  <div class="addimages-arrange">
-
-    
-
-    <dialog name="event" id="plus-img">
-      <h4>Adding image to the events gallery section</h4>
-      <button type="button" id="button_3">&#9747</button>
-      <form action="./interiorupload.php" method="post" enctype="multipart/form-data">
-        <!-- <label for="name">Enter Title of image:</label>
-        <input type="text" name="name" id="name" placeholder="Enter Title of Image"> -->
-        <label for="image++">Input Image:</label>
-        <input type="file" name="image" id="image++" accept="image/png, image/jpg, image/jpeg">
-        <button type="submit" name="submit2" id="upload">Upload</button>
-      </form>
-    </dialog>
-    
-  </div>
 
   <footer>
     <div class="footer_up">
@@ -142,7 +120,7 @@
                 <div>
                     <a href="#" target="_blank">Student's Site</a>
                     <a href="#" target="_blank">Archdiocese's Site</a>
-                    <a href="../BravtaDevelopers/BravtaDevelopers.html" target="_blank">BravtaCode</a>
+                    <a href="https://bravtadevs.github.io/BravtaCode/" target="_blank">BravtaCode</a>
                 </div>
             </div>
             <div class="company">
@@ -166,7 +144,7 @@
     <hr>
     <div class="footer_down">
         <div class="copyright"><small>Copyright &copy; 2023 All rights reserved by: <a
-                    href="https://chat.whatsapp.com/BNHaqEKoH4A1GOibrLZ6JR" class="devWhatsapp">BravtaCode</a>
+                    href="https://bravtadevs.github.io/BravtaCode/" class="devWhatsapp">BravtaCode</a>
             </small></div>
         <div class="follow_us">
             <small>Follow us:</small>
@@ -178,7 +156,14 @@
     </div>
 </footer>
   <script src="../scripts/gen script.js"></script>
-  <script src="./addingImageInterior.js"></script>
+  <script src="../scripts/Gallery/Interior.js"></script>
+  <script src="../scripts/Gallery/LoadImage.js">
+  </script>
+
+ 
+  <script src="../scripts/Gallery/nav.js"></script>
+
+
 </body>
 
 </html>

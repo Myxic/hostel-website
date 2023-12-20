@@ -595,6 +595,9 @@
   .contact .php-email-form textarea {
     padding: 12px 15px;
   }
+  .contact .php-email-form  textarea{
+    resize: none;
+  }
   
   .contact .php-email-form input[type=text]:focus,
   .contact .php-email-form input[type=email]:focus,
