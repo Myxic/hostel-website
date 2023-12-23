@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var requestOptions = {
       method: "GET",
       headers: myHeaders,
+      
 
       redirect: "follow",
     };
@@ -19,9 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch(
       ImageLink,
       requestOptions
+
     )
       .then((response) => response.json())
       .then((data) => {
+        console.log(data);
         const images = data.data.Links;
         const captions = data.data.Captions;
 
