@@ -81,6 +81,7 @@ figure{
     border-radius: 10px;
     
 }
+.info .map,
 .info img{
     min-width:100%;
     max-width:100%;
@@ -156,6 +157,7 @@ blockquote{
     position: relative;
     min-height: 200px;
     text-align: center;
+    background: #98969691;
    
 }
 .comment_top{

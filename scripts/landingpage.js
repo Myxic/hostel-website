@@ -25,7 +25,6 @@ pic2.onclick = function () {
   pic1.classList.remove("activeFeatures");
   pic3.classList.remove("activeFeatures");
   pic4.classList.remove("activeFeatures");
-
 };
 pic1.onclick = function () {
   i.style.display = "block";
@@ -36,7 +35,6 @@ pic1.onclick = function () {
   pic2.classList.remove("activeFeatures");
   pic3.classList.remove("activeFeatures");
   pic4.classList.remove("activeFeatures");
- 
 };
 pic3.onclick = function () {
   iii.style.display = "block";
@@ -47,7 +45,6 @@ pic3.onclick = function () {
   pic1.classList.remove("activeFeatures");
   pic2.classList.remove("activeFeatures");
   pic4.classList.remove("activeFeatures");
-  
 };
 pic4.onclick = function () {
   iv.style.display = "block";
@@ -58,15 +55,12 @@ pic4.onclick = function () {
   pic1.classList.remove("activeFeatures");
   pic3.classList.remove("activeFeatures");
   pic2.classList.remove("activeFeatures");
-  
 };
 
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
 
 let nextpage = document.querySelector("#de_comment");
-
-
 
 next.onclick = function () {
   let Active = document.querySelector("#de_comment .active");
@@ -112,71 +106,99 @@ prev.onclick = function () {
 };
 
 //  ***************** Gallery ****************
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
 
- 
-  
-  
-  function switchImage(image) {
-    
-    // Array of image URLs
-    var imageUrls = ["./images/hfyv1.jpg", "./images/hfyv2.jpg", "./images/hfyv3.jpg", "./images/hfyv4.JPG", "./images/hfyv5.JPG"];
-    
-    // Randomly select an image URL
-    var randomIndex = Math.floor(Math.random() * imageUrls.length);
-    // var newindex = 
-    var newImageUrl = imageUrls[randomIndex ];
-    
-    // Apply fade-out transition
-    image.style.opacity = 0.5;
-    
-    // Wait for the transition to complete
-    setTimeout(function() {
-      // Change the image source
-      image.src = newImageUrl;
-      
-      // Apply fade-in transition
-      image.style.opacity = 1;
-    }, 400); // Wait for 400 milliseconds (0.4 seconds) before changing the image source
-  }
+var requestOptions = {
+  method: "GET",
+  headers: myHeaders,
 
-  function switcher(){
-    switchImage((framesImg[0]));
-    switchImage((framesImg[1]));
-    switchImage((framesImg[2]));
-    switchImage((framesImg[3]));
-    switchImage((framesImg[4]));
-    switchImage((framesImg[5]));
-  }
+  redirect: "follow",
+};
 
-  let framesImg = document.querySelectorAll(".frames img");
-    // Call the switchImage function initially
+var Interior;
+var Exterior;
+var Events;
 
-  // Call the switchImage function every 10 seconds
+fetch(ImageLinkName[0], requestOptions)
+  .then((response) => response.json())
+  .then((data) => {
+    Interior = data.data.Links;
+  })
+  .catch((error) => {
+    console.log("error: " + error);
+    console.error("Error fetching images:", error);
+  });
+fetch(ImageLinkName[2], requestOptions)
+  .then((response) => response.json())
+  .then((data) => {
+    Events = data.data.Links;
+  })
+  .catch((error) => {
+    console.log("error: " + error);
+    console.error("Error fetching images:", error);
+  });
+
+fetch(ImageLinkName[1], requestOptions)
+  .then((response) => response.json())
+  .then((data) => {
+    Exterior = data.data.Links;
+  })
+  .catch((error) => {
+    console.log("error: " + error);
+    console.error("Error fetching images:", error);
+  });
+
+function switchImage(image, ListLinks) {
+  // Array of image URLs
+  var imageUrls = ListLinks;
+
+  // Randomly select an image URL
+  var randomIndex = Math.floor(Math.random() * imageUrls.length);
+  // var newindex =
+  var newImageUrl = imageUrls[randomIndex];
+
+  // Apply fade-out transition
+  image.style.opacity = 0.5;
+
+  // Wait for the transition to complete
+  setTimeout(function () {
+    // Change the image source
+    image.src = newImageUrl;
+
+    // Apply fade-in transition
+    image.style.opacity = 1;
+  }, 400); // Wait for 400 milliseconds (0.4 seconds) before changing the image source
+}
+
+function switcher() {
+  switchImage(framesImg[0], Interior);
+  switchImage(framesImg[1], Exterior);
+  switchImage(framesImg[2], Events);
+  switchImage(framesImg[3], Exterior);
+  switchImage(framesImg[4], Events);
+  switchImage(framesImg[5], Interior);
+}
+
+let framesImg = document.querySelectorAll(".frames img");
+// Call the switchImage function initially
+
+// Call the switchImage function every 10 seconds
 setInterval(switcher, 5000);
-
-
- 
-  
-  
-  
-
 
 document.getElementById("top").onclick = function () {
   document.querySelector(".welcome").scrollIntoView();
 };
-
 
 function getChildIndex(parentElement, childElement) {
   var childIndex = Array.from(parentElement.children).indexOf(childElement);
   return childIndex;
 }
 
-window.addEventListener("scroll", function(){
-    
-    if (window.scrollY > 200) {
-        document.getElementById("top").style.display = "block";
-    } else if (window.scrollY < 200){
-        document.getElementById("top").style.display = "none";
-    }
-
-})
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 200) {
+    document.getElementById("top").style.display = "block";
+  } else if (window.scrollY < 200) {
+    document.getElementById("top").style.display = "none";
+  }
+});

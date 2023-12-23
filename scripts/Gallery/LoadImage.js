@@ -70,7 +70,8 @@ document.addEventListener("DOMContentLoaded", function () {
           images.classList.add("hover-shadow");
         });
         document.querySelectorAll(".mySlides img").forEach((images) => {
-          images.style.width = "100%";
+          // images.style.width = "100%";
+          images.style.outline = "3px solid white";
         });
         document.querySelectorAll(".row img").forEach((div1) => {
           div1.addEventListener("click", () => {
@@ -81,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let Active = document.querySelector(".active");
             
             var CurrentCommentIndex = getChildIndex(nextpage, Active);
-            slides[CurrentCommentIndex].style.display = "block";
+            slides[CurrentCommentIndex].style.display = "flex";
 
             txtCaptions[CurrentCommentIndex].style.display = "block";
           
