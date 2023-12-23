@@ -21,6 +21,7 @@
     height: 500px;
     border: 7px solid ;
     border-style:groove ;
+    z-index: 0;
 }
 .border-1>h3{
     font-weight: 600;
