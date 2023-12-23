@@ -309,6 +309,9 @@ input[type="radio"]{
   .next{
     cursor: pointer;
   }
+  .map{
+    z-index: 0;
+  }
 
 @media (max-width:800px) {
     .innerwelcome h1{
