@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./stylesheets/footer.css">
     <link rel="stylesheet" href="./stylesheets/land page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
 
 </head>
 
@@ -65,7 +68,7 @@
                     <p>
                     <h1>Welcome <br><small>to</small><br> Holy Family Youth Village </h1>
                     </p>
-                    <div class="btn1" id = "hiddenbuttons">
+                    <div class="btn1" id="hiddenbuttons">
                         <a href="./login page/login.html" class="login">Admin Login</a>
                         <!-- <a href="./registration page/registration.html" class="reg">Register</a> -->
                     </div>
@@ -80,18 +83,22 @@
                         The hostel is fully packed with the following features:
                     </p>
                     <div class="pics">
-                      
+
                         <img class="activeFeatures" src="./images/LocationImg.png" alt="pic 1" id="pic1">
                         <img src="./images/24:7PowerImg.png" alt="pic 2" id="pic2">
                         <img src="./images/SecurityImg.png" alt="pic 3" id="pic3">
                         <img src="./images/SportImg.png" alt="pic 4" id="pic4">
-                       
+
 
                     </div>
                 </div>
                 <div class="left_side">
                     <figure class="info i ">
-                        <img src="./images/hfyv3.jpg" alt="pic 1">
+                        <!-- <img src="./images/hfyv3.jpg" alt="pic 1"> -->
+                        <!-- <img src="https://maps.googleapis.com/maps/api/staticmap?center=6.263245, 7.126529&zoom=13&size=600x300&markers=6.263245, 7.126529&key=YOUR_API_KEY" alt=""> -->
+                        <div class="map" id="map">
+
+                        </div>
                         <b>Location</b>
                         <blockquote>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, odio fugiat. Debitis minima
@@ -100,7 +107,7 @@
                         </blockquote>
                     </figure>
                     <figure class="info ii ">
-                        <img  src="./images/hfyv4.JPG" alt="pic 2">
+                        <img src="./images/hfyv4.JPG" alt="pic 2">
                         <b>24/7 Power</b>
                         <blockquote>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, odio fugiat. Debitis minima
@@ -109,7 +116,7 @@
                         </blockquote>
                     </figure>
                     <figure class="info iii ">
-                        <img  src="./images/hfyv5.JPG" alt="pic 3">
+                        <img src="./images/hfyv5.JPG" alt="pic 3">
                         <b>Security</b>
                         <blockquote>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, odio fugiat. Debitis minima
@@ -118,14 +125,14 @@
                         </blockquote>
                     </figure>
                     <figure class="info iv ">
-                        <img  src="./images/hfyv2.jpg"alt="pic 4">
+                        <img src="./images/hfyv2.jpg" alt="pic 4">
                         <b>Sport</b>
                         <blockquote>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, odio fugiat. Debitis minima
                             rerum omnis ex alias fuga eos delectus expedita vero, velit porro corrupti ab. Et laborum
                             labore fuga.
                         </blockquote>
-                   
+
                 </div>
             </div>
 
@@ -134,38 +141,39 @@
             <h2>Gallery</h2>
             <div class="gallery">
                 <div class="frames">
+
                     <img src="./images/hfyv1.jpg" class="active" alt="pics">
-                   
+
                 </div>
                 <div class="frames">
                     <img src="./images/hfyv3.jpg" class="active" alt="pics">
-                    
+
                 </div>
                 <div class="frames">
                     <img src="./images/hfyv4.JPG" class="active" alt="pics">
-                    
+
                 </div>
                 <div class="frames">
                     <img src="./images/hfyv2.jpg" class="active" alt="pics">
-                    
+
                 </div>
                 <div class="frames">
                     <img src="./images/hfyv5.JPG" class="active" alt="pics">
-                   
+
                 </div>
                 <div class="frames">
                     <img src="./images/hfyv2.jpg" class="active" alt="pics">
-                    
+
                 </div>
 
             </div>
             <a href="./gallery page/gallery.html" class="veiw_more"><small>veiw more...</small></a>
         </section>
         <section class="section three">
-            
-            <div class="comment_top" >
-             
-                <a class="prev"  id="prev">
+
+            <div class="comment_top">
+
+                <a class="prev" id="prev">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="8" height="20">
                         <path d="M8 0 V2 L2 10 L8 18 V20 L0 10 Z" stroke="#000" fill="#000" />
@@ -184,7 +192,7 @@
                             ★★★★★
                         </p>
                     </div>
-                    <div class="here1 "  id="2" >
+                    <div class="here1 " id="2">
                         <h4>
                             Dev2
                         </h4>
@@ -222,14 +230,14 @@
                     </div>
 
                 </div>
-                <a class="next" id="next" >
+                <a class="next" id="next">
                     <?xml version=" 1.0" encoding="UTF-8" ?>
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="8" height="20">
                         <path d="M0 0 V2 L6 10 L0 18 V20 L8 10 Z" stroke="#000" fill="#000" />
                     </svg>
 
                 </a>
-             
+
             </div>
 
 
@@ -256,15 +264,15 @@
     <footer>
         <div class="footer_up">
             <div class="logo">
-                 <!-- if you click this logo btns 6times the login will pop-out cool right? and after 10sec it will disapper  -->
-                <img class ="#Showhiddenbuttons" src="./images/logo.png" alt="photo" >
+                <!-- if you click this logo btns 6times the login will pop-out cool right? and after 10sec it will disapper  -->
+                <img class="#Showhiddenbuttons" src="./images/logo.png" alt="photo">
                 <h1>Holy Family Youth Village</h1>
             </div>
             <div class="links">
                 <div class="quick_links">
                     <h4>Quick Link</h4>
                     <div>
-                        <a href="#" >How to Book</a>
+                        <a href="#">How to Book</a>
 
                         <a href="./gallery page/gallery.html">Gallery</a>
 
@@ -289,18 +297,20 @@
                 </div>
             </div>
 
-           
+
             <!-- Admin Login here -->
             <div class="btns" id="hiddenbuttons">
-                
+
                 <a href="./login page/login.html" class="login">Admin Login</a>
 
             </div>
         </div>
         <hr>
         <div class="footer_down">
-            <div class="copyright"><small>Copyright &copy;  2023 All rights reserved by: <a href="https://bravtadevs.github.io/BravtaCode/" class="devWhatsapp">BravtaCode</a> </small></div>
-            <div class="follow_us"> 
+            <div class="copyright"><small>Copyright &copy; 2023 All rights reserved by: <a
+                        href="https://bravtadevs.github.io/BravtaCode/" class="devWhatsapp">BravtaCode</a> </small>
+            </div>
+            <div class="follow_us">
                 <small>Follow us:</small>
                 <img src="./images/Vector.svg" alt="Facebook">
                 <img src="./images/Vector-1.svg" alt="twitter">
@@ -309,9 +319,12 @@
             </div>
         </div>
     </footer>
+    <script src="./scripts/Gallery/Allimages.js"></script>
     <script src="./scripts/landingpage.js"></script>
     <script src="./scripts/gen script.js"></script>
     <script src="./scripts/touchControl.js"></script>
+    <script src="./scripts/map.js"> </script>
+
 
 </body>
 

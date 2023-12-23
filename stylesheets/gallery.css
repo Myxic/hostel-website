@@ -1,10 +1,12 @@
-body{
+body {
   background: #E4E4E4 !important;
 }
-.row img{
+
+.row img {
   cursor: pointer;
 }
-.heading{
+
+.heading {
   text-align: center;
   color: #BF4E03;
   font-family: Montserrat;
@@ -12,52 +14,60 @@ body{
   font-weight: 400;
   font-size: 2.5em;
 }
-.gallerySelector{
+
+.gallerySelector {
   width: 30%;
   margin: 10px auto;
   display: flex !important;
   align-items: center !important;
-  gap:2px;
+  gap: 2px;
   background: #FFFFFF;
   text-align: center;
   justify-content: center;
   font-size: small;
-  border-radius:10px ;
+  border-radius: 10px;
 }
-.gallerySelector a{
+
+.gallerySelector a {
   width: 25%;
-   padding: .3em 0em ;
-   background: #18A0FB;
-   outline: 1px solid #FFFFFF;
-   color: #FFFFFF;
-  
+  padding: .6em 0em;
+  background: #18A0FB;
+  /* outline: 1px solid #FFFFFF; */
+  color: #FFFFFF;
+
 }
-.gallerySelector  a:hover,
-.gallerySelector a:focus{
- 
+
+.gallerySelector a:hover,
+.gallerySelector a:focus {
+
   outline: 1px solid #BF4E03;
   color: #BF4E03 !important;
-  background: none !important;
+  background: white !important;
 }
-.galleryAllEvents{
+
+.galleryAllEvents {
   border-radius: 0px 10px 10px 0px;
 }
-.galleryAll{
+
+.galleryAll {
   border-radius: 10px 0px 0px 10px;
 }
 
 
-.gallerySelector .linkactive{
-  outline: 1px solid #BF4E03;
+.gallerySelector .linkactive {
+  /* outline: 1px solid #BF4E03; */
   color: #BF4E03 !important;
-  background: #E4E4E4 !important; 
+
+  /* background: #E4E4E4 !important;  */
+  background: white;
 }
+
 .gallery-container {
- 
+
   min-height: 60vh;
   padding: 30px 10px;
   position: relative;
- 
+
 
 }
 
@@ -68,29 +78,31 @@ body{
   align-items: center !important;
   margin: auto;
   margin-bottom: 10%;
- 
+
 
 }
-#addImage{
+
+#addImage {
   display: flex !important;
   align-items: center !important;
   justify-content: center;
   width: 25%;
-  margin:auto;
-  
+  margin: auto;
+
 
 }
+
 .row {
-  
+
   display: grid !important;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center !important;
-  text-align: center; 
+  text-align: center;
   width: 90%;
   justify-content: center;
   margin: auto;
   padding: 10px;
-  
+
 }
 
 
@@ -98,12 +110,13 @@ body{
 #addImage>img,
 .column>img {
   width: 100%;
-  aspect-ratio: 2/1;
+  aspect-ratio: 3/2;
+  box-shadow: 0 2px 4px 0 rgba(255, 235, 255, 0.8);
   outline: 1px solid white !important;
   border-radius: .3em;
   margin-left: auto;
   margin-right: auto;
-  
+
 }
 
 
@@ -128,7 +141,7 @@ body{
 /* Modal Content */
 .modal-content {
   position: relative;
-  /* background-color: #fefefe; */
+  aspect-ratio: 3/2;
   margin: auto;
   padding: 0;
   width: 90%;
@@ -155,6 +168,8 @@ body{
 /* Hide the slides by default */
 .mySlides {
   display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Next & previous buttons */
@@ -232,41 +247,47 @@ img.hover-shadow {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 }
 
-.caption-container > .caption{
+.caption-container>.caption {
   display: none;
 }
 
 @media (max-width: 700px) {
-  .gallerySelector{
+  .gallerySelector {
     width: 60%;
     font-size: smaller;
   }
 }
+
 @media (max-width: 500px) {
-  .gallerySelector{
+  .gallerySelector {
     width: 70%;
     font-size: xx-small;
   }
-  .modal{
+
+  .modal {
     padding: 0;
   }
+
   .mySlides img {
     height: 70vh !important;
-  
+
   }
-.row{
-  padding: 4%;
-  grid-template-columns: 1fr 1fr   ;
-}
+
+  .row {
+    padding: 4%;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .row>#addImage,
   .row>.column {
     margin-bottom: 30px;
   }
 
-.mySlides img {
-  height: auto !important;
-}
-.modal-content {
-  top:15vh;
-}
+  .mySlides img {
+    height: auto !important;
+  }
+
+  .modal-content {
+    top: 15vh;
+  }
 }

@@ -34,11 +34,11 @@ next.onclick = function plusSlidesNext() {
 
     if (CurrentCommentIndex < nextpage.childElementCount - 1) {
       nextpage.children[CurrentCommentIndex + 1].classList.add("active");
-      slides[CurrentCommentIndex + 1].style.display = "block";
+      slides[CurrentCommentIndex + 1].style.display = "flex";
       txtCaptions[CurrentCommentIndex + 1].style.display = "block";
     } else if (CurrentCommentIndex == nextpage.childElementCount - 1) {
       nextpage.children[0].classList.add("active");
-      slides[0].style.display = "block";
+      slides[0].style.display = "flex";
       txtCaptions[0].style.display = "block";
     }
   }
@@ -63,13 +63,13 @@ prev.onclick = function plusSlidesPrev() {
       CurrentCommentIndex > 0
     ) {
       nextpage.children[CurrentCommentIndex - 1].classList.add("active");
-      slides[CurrentCommentIndex - 1].style.display = "block";
+      slides[CurrentCommentIndex - 1].style.display = "flex";
       txtCaptions[CurrentCommentIndex - 1].style.display = "block";
     } else if (CurrentCommentIndex <= 0) {
       nextpage.children[nextpage.childElementCount - 1].classList.add(
         "active"
       );
-      slides[nextpage.childElementCount - 1].style.display = "block";
+      slides[nextpage.childElementCount - 1].style.display = "flex";
       txtCaptions[nextpage.childElementCount - 1].style.display = "block";
     }
   }
