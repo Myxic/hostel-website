@@ -5,106 +5,183 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalcontent = document.querySelector(".modal-content");
 
   // Function to fetch the images from the folder
-  function fetchImages(ImageLink) {
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
+  // function fetchImages(ImageLink) {
+  //   var myHeaders = new Headers();
+  //   myHeaders.append("Content-Type", "application/json");
 
-    var requestOptions = {
-      method: "GET",
-      headers: myHeaders,
+  //   var requestOptions = {
+  //     method: "GET",
+  //     headers: myHeaders,
       
 
-      redirect: "follow",
-    };
+  //     redirect: "follow",
+  //   };
 
-    fetch(
-      ImageLink,
-      requestOptions
+  //   fetch(
+  //     ImageLink,
+  //     requestOptions
 
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        const images = data.data.Links;
-        const captions = data.data.Captions;
+  //   )
+  //     .then((response) => response.json())
+  //     .then((data) => {
 
-        if (images.length !== captions.length) {
-          console.error("Arrays have different lengths");
-          return;
-        }
+  //       const images = data.data.Links;
+  //       const captions = data.data.Captions;
 
-        images.forEach((image) => {
-          const imageUrl = image;
+  //       if (images.length !== captions.length) {
+  //         console.error("Arrays have different lengths");
+  //         return;
+  //       }
 
-          // Create an <img> element for each image
-          const imgElement = document.createElement("img");
-          const imgDiv = document.createElement("div");
-          const imgDiv2 = document.createElement("div");
-          imgDiv.classList.add("column");
-          imgDiv2.classList.add("mySlides");
+  //       images.forEach((image) => {
+  //         const imageUrl = image;
 
-          imgElement.setAttribute("src", imageUrl);
+  //         // Create an <img> element for each image
+  //         const imgElement = document.createElement("img");
+  //         const imgDiv = document.createElement("div");
+  //         const imgDiv2 = document.createElement("div");
+  //         imgDiv.classList.add("column");
+  //         imgDiv2.classList.add("mySlides");
 
-          row.appendChild(imgDiv).appendChild(imgElement);
-        });
-        images.forEach((image) => {
-          const imageUrl = image;
+  //         imgElement.setAttribute("src", imageUrl);
 
-          // Create an <img> element for each image
-          const imgElement = document.createElement("img");
+  //         row.appendChild(imgDiv).appendChild(imgElement);
+  //       });
+  //       images.forEach((image) => {
+  //         const imageUrl = image;
 
-          const imgDiv2 = document.createElement("div");
+  //         // Create an <img> element for each image
+  //         const imgElement = document.createElement("img");
 
-          imgDiv2.classList.add("mySlides");
+  //         const imgDiv2 = document.createElement("div");
 
-          imgElement.setAttribute("src", imageUrl);
+  //         imgDiv2.classList.add("mySlides");
 
-          modalcontent.appendChild(imgDiv2).appendChild(imgElement);
-        });
+  //         imgElement.setAttribute("src", imageUrl);
 
-        captions.forEach((caption) => {
-            const PElement = document.createElement("p")
-            PElement.classList.add("caption");
-            PElement.textContent = caption;
-            Caption.appendChild(PElement);
-         } );
+  //         modalcontent.appendChild(imgDiv2).appendChild(imgElement);
+  //       });
 
-        document.querySelectorAll(".column img").forEach((images) => {
-          images.classList.add("hover-shadow");
-        });
-        document.querySelectorAll(".mySlides img").forEach((images) => {
-          // images.style.width = "100%";
-          images.style.outline = "3px solid white";
-        });
-        document.querySelectorAll(".row img").forEach((div1) => {
-          div1.addEventListener("click", () => {
-            openModal();
+  //       captions.forEach((caption) => {
+  //           const PElement = document.createElement("p")
+  //           PElement.classList.add("caption");
+  //           PElement.textContent = caption;
+  //           Caption.appendChild(PElement);
+  //        } );
+
+  //       document.querySelectorAll(".column img").forEach((images) => {
+  //         images.classList.add("hover-shadow");
+  //       });
+  //       document.querySelectorAll(".mySlides img").forEach((images) => {
+  //         // images.style.width = "100%";
+  //         images.style.outline = "3px solid white";
+  //       });
+  //       document.querySelectorAll(".row img").forEach((div1) => {
+  //         div1.addEventListener("click", () => {
+  //           openModal();
       
-            div1.parentElement.classList.add("active");
+  //           div1.parentElement.classList.add("active");
       
-            let Active = document.querySelector(".active");
+  //           let Active = document.querySelector(".active");
             
-            var CurrentCommentIndex = getChildIndex(nextpage, Active);
-            slides[CurrentCommentIndex].style.display = "flex";
+  //           var CurrentCommentIndex = getChildIndex(nextpage, Active);
+  //           slides[CurrentCommentIndex].style.display = "flex";
 
-            txtCaptions[CurrentCommentIndex].style.display = "block";
+  //           txtCaptions[CurrentCommentIndex].style.display = "block";
           
 
-          });
-        });
+  //         });
+  //       });
       
-      })
-      .catch((error) => {
-        console.log("error: " + error);
-        console.error("Error fetching images:", error);
-      });
-  }
+  //     })
+  //     .catch((error) => {
+  //       console.log("error: " + error);
+  //       console.error("Error fetching images:", error);
+  //     });
+  // }
 
+  function fetchImages(ImageLink){
+    
+    const images = ImageLink.Links;
+    const captions = ImageLink.Captions;
+
+    if (images.length !== captions.length) {
+      console.error("Arrays have different lengths");
+      return;
+    }
+
+    images.forEach((image) => {
+      const imageUrl = image;
+
+      // Create an <img> element for each image
+      const imgElement = document.createElement("img");
+      const imgDiv = document.createElement("div");
+      const imgDiv2 = document.createElement("div");
+      imgDiv.classList.add("column");
+      imgDiv2.classList.add("mySlides");
+
+      imgElement.setAttribute("src", imageUrl);
+
+      row.appendChild(imgDiv).appendChild(imgElement);
+    });
+    images.forEach((image) => {
+      const imageUrl = image;
+
+      // Create an <img> element for each image
+      const imgElement = document.createElement("img");
+
+      const imgDiv2 = document.createElement("div");
+
+      imgDiv2.classList.add("mySlides");
+
+      imgElement.setAttribute("src", imageUrl);
+
+      modalcontent.appendChild(imgDiv2).appendChild(imgElement);
+    });
+
+    captions.forEach((caption) => {
+        const PElement = document.createElement("p")
+        PElement.classList.add("caption");
+        PElement.textContent = caption;
+        Caption.appendChild(PElement);
+     });
+
+    document.querySelectorAll(".column img").forEach((images) => {
+      images.classList.add("hover-shadow");
+    });
+    document.querySelectorAll(".mySlides img").forEach((images) => {
+      // images.style.width = "100%";
+      images.style.outline = "3px solid white";
+    });
+    document.querySelectorAll(".row img").forEach((div1) => {
+      div1.addEventListener("click", () => {
+        openModal();
+  
+        div1.parentElement.classList.add("active");
+  
+        let Active = document.querySelector(".active");
+        
+        var CurrentCommentIndex = getChildIndex(nextpage, Active);
+        slides[CurrentCommentIndex].style.display = "flex";
+
+        txtCaptions[CurrentCommentIndex].style.display = "block";
+      
+
+      });
+    });
+  }
 //  fetchImages(ImageLinkName);
 
-ImageLinkName.forEach((link =>{
+
+
+
+if (ImageLinkName.length>0) {
+  ImageLinkName.forEach((link =>{
     fetchImages(link)
 }));
+}else{
+  fetchImages(ImageLinkName);
+}
 
 
   function getChildIndex(parentElement, childElement) {

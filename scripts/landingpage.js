@@ -105,6 +105,10 @@ prev.onclick = function () {
   }
 };
 
+
+
+
+
 //  ***************** Gallery ****************
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
@@ -120,34 +124,43 @@ var Interior;
 var Exterior;
 var Events;
 
-fetch(ImageLinkName[0], requestOptions)
-  .then((response) => response.json())
-  .then((data) => {
-    Interior = data.data.Links;
-  })
-  .catch((error) => {
-    console.log("error: " + error);
-    console.error("Error fetching images:", error);
-  });
-fetch(ImageLinkName[2], requestOptions)
-  .then((response) => response.json())
-  .then((data) => {
-    Events = data.data.Links;
-  })
-  .catch((error) => {
-    console.log("error: " + error);
-    console.error("Error fetching images:", error);
-  });
+// fetch(ImageLinkName[0], requestOptions)
+//   .then((response) => response.json())
+//   .then((data) => {
+//     Interior = data.data.Links;
+//   })
+//   .catch((error) => {
+//     console.log("error: " + error);
+//     console.error("Error fetching images:", error);
+//   });
 
-fetch(ImageLinkName[1], requestOptions)
-  .then((response) => response.json())
-  .then((data) => {
-    Exterior = data.data.Links;
-  })
-  .catch((error) => {
-    console.log("error: " + error);
-    console.error("Error fetching images:", error);
-  });
+// fetch(ImageLinkName[2], requestOptions)
+//   .then((response) => response.json())
+//   .then((data) => {
+//     Events = data.data.Links;
+//   })
+//   .catch((error) => {
+//     console.log("error: " + error);
+//     console.error("Error fetching images:", error);
+//   });
+
+// fetch(ImageLinkName[1], requestOptions)
+//   .then((response) => response.json())
+//   .then((data) => {
+//     Exterior = data.data.Links;
+//   })
+//   .catch((error) => {
+//     console.log("error: " + error);
+//     console.error("Error fetching images:", error);
+//   });
+
+
+Interior = ImageLinkName[0].Links;
+
+Events = ImageLinkName[1].Links;
+
+Exterior = ImageLinkName[2].Links;
+
 
 function switchImage(image, ListLinks) {
   // Array of image URLs
@@ -185,6 +198,9 @@ let framesImg = document.querySelectorAll(".frames img");
 
 // Call the switchImage function every 10 seconds
 setInterval(switcher, 5000);
+
+
+
 
 document.getElementById("top").onclick = function () {
   document.querySelector(".welcome").scrollIntoView();
