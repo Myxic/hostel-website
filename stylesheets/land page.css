@@ -1,5 +1,5 @@
 .section{
-    border: 1px solid grey;
+    border-bottom: 1px solid rgba(71, 70, 70, 0.3);
 }
 /************ welcome session************ */
 .welcome{
@@ -17,7 +17,7 @@
     display: none;
 }
 .innerwelcome{
-    width: -moz-fit-content;
+   
     width: fit-content;
     margin: auto;
     color: white;
@@ -367,11 +367,11 @@ input[type="radio"]{
         font-size: 20px;
     }
     .two small{
-        font-size: 9px;
+        font-size: 12px;
     }
     .gallery{
         
-        grid-template-columns:  1fr 1fr;
+        grid-template-columns:  1fr ;
     }
     
     #de_comment{
@@ -407,6 +407,12 @@ input[type="radio"]{
     .info  img{
     aspect-ratio: auto !important;
     
+}
+
+.gallery> .frames:nth-child(4),
+.gallery> .frames:nth-child(5),
+.gallery> .frames:nth-child(6){
+    display: none;
 }
 
 }

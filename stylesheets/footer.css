@@ -248,13 +248,14 @@ header .logo img {
 
 /****************Footer **************/
 footer {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(20, 20, 20);
     color: white;
     padding-top: 20px;
 }
 
 footer a {
     color: aliceblue;
+    padding: 5px;
 }
 
 footer a:focus,
