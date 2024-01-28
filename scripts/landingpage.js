@@ -161,7 +161,6 @@ Events = ImageLinkName[1].Links;
 
 Exterior = ImageLinkName[2].Links;
 
-console.log(Exterior);
 
 function switchImage(image, ListLinks) {
   // Array of image URLs
