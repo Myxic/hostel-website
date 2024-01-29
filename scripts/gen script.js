@@ -16,7 +16,7 @@ close.onclick= function() {
     document.querySelector("nav figure").style.display = "block"
 };
 window.addEventListener("resize", ()=> {
-if (window.matchMedia("(max-width: 800px)").matches) {
+if (window.matchMedia("(max-width: 900px)").matches) {
     document.querySelector(".nav_ul").classList.add("buger_nav_ul");
     document.querySelector(".nav_ul").style.display = "none";
     // Viewport is less or equal to 400 pixels wide
@@ -31,7 +31,7 @@ if (window.matchMedia("(max-width: 800px)").matches) {
   }
 });
 
-if (window.matchMedia("(max-width: 800px)").matches) {
+if (window.matchMedia("(max-width: 900px)").matches) {
     document.querySelector(".nav_ul").classList.add("buger_nav_ul");
     document.querySelector(".nav_ul").style.display = "none";
     // Viewport is less or equal to 400 pixels wide

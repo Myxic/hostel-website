@@ -112,7 +112,7 @@ ul li p {
 .nav_ul li a,
 .nav_ul li p {
     border-bottom: 3px solid transparent;
-    padding: 5px;
+    padding: .3vw;
 }
 
 .nav_ul li a:focus,
@@ -364,7 +364,7 @@ hr {
     gap: 10px;
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
     p {
         font-size: 13px;
     }
