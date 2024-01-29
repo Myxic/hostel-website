@@ -145,7 +145,8 @@ body {
   aspect-ratio: 3/2;
   margin: auto;
   padding: 0;
-  width: 90%;
+  /* width: 90%; */
+  max-height: 80%;
   
 }
 
@@ -181,7 +182,6 @@ body {
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -199,7 +199,15 @@ body {
     aspect-ratio: 3/2;
   
   }
-  
+  .prev:hover,
+.next:hover {
+  background-color: rgba(151, 147, 147, 0.8) !important;
+}
+.prev,
+.next{
+  margin-top: -50px;
+  border-radius: 3px !important;
+}
 }
 @media (max-width: 1000px) {
   .mySlides img {
