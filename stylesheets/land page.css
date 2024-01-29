@@ -405,7 +405,7 @@ input[type="radio"]{
     }
     .info > .map,
     .info  img{
-    aspect-ratio: auto !important;
+    aspect-ratio: 5/3 !important;
     
 }
 
