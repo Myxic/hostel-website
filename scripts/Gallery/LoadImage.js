@@ -200,4 +200,5 @@ function closeModal() {
   Active.classList.remove("active");
   slides[CurrentCommentIndex].style.display = "none";
   txtCaptions[CurrentCommentIndex].style.display = "none";
+  enableScroll();
 }
