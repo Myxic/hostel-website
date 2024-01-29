@@ -10,6 +10,8 @@ const prev = document.getElementById("prev");
 // Open the Modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
+  console.log("open modal");
+ 
 }
 
 // Close the Modal
@@ -19,13 +21,17 @@ function closeModal() {
   var CurrentCommentIndex = getChildIndex(nextpage, Active);
   Active.classList.remove("active");
   slides[CurrentCommentIndex].style.display = "none";
+
 }
+
+
 document.querySelectorAll(".row img").forEach((div1) => {
   div1.addEventListener("click", () => {
-    openModal();
     console.log('DOMContentLoaded');
+    openModal();
+    
     div1.parentElement.classList.add("active");
-
+  
     let Active = document.querySelector(".active");
     var CurrentCommentIndex = getChildIndex(nextpage, Active);
     slides[CurrentCommentIndex].style.display = "block";
@@ -97,6 +103,7 @@ function getChildIndex(parentElement, childElement) {
   console.log("Index of child element: " + childIndex);
   return childIndex;
 }
+
 
 
 
