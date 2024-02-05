@@ -8,8 +8,9 @@
 const ImageLinkName = [
     {
         "Links": [
-          "https://res.cloudinary.com/dfk4z2ch2/image/upload/v1702984439/testing/k31fhrgleugztlew7svz.jpg",
-          "https://res.cloudinary.com/dfk4z2ch2/image/upload/v1702984402/testing/dzvk60lsrbdckbit5bhl.jpg"
+            "https://res.cloudinary.com/dfk4z2ch2/image/upload/v1706478085/HolyFamily/HFExterior/eyfcljmchl4ukylb110l.jpg",
+            "https://res.cloudinary.com/dfk4z2ch2/image/upload/v1703065465/HolyFamily/HFExterior/msym8lvsefo2b37kiqfx.jpg"
+        
         ],
         "Captions": [
           "A Man",
@@ -46,8 +47,9 @@ const ImageLinkName = [
 
     {
     "Links": [
-        "https://res.cloudinary.com/dfk4z2ch2/image/upload/v1702984439/testing/k31fhrgleugztlew7svz.jpg",
-        "https://res.cloudinary.com/dfk4z2ch2/image/upload/v1702984402/testing/dzvk60lsrbdckbit5bhl.jpg"
+        "https://res.cloudinary.com/dfk4z2ch2/image/upload/v1706478085/HolyFamily/HFExterior/eyfcljmchl4ukylb110l.jpg",
+        "https://res.cloudinary.com/dfk4z2ch2/image/upload/v1703065465/HolyFamily/HFExterior/msym8lvsefo2b37kiqfx.jpg"
+    
       ],
       "Captions": [
         "A Man",
