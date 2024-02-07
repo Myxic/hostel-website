@@ -64,6 +64,7 @@ burger.addEventListener("click", ()=> {
     // }
 });
 
+
 exit.addEventListener("click", ()=> {
     // document.querySelector(".nav_ul").style.right = "50vw"; 
     // document.querySelector(".nav_ul").style.animationDirection= "reverse";
