@@ -30,7 +30,8 @@
   
   a {
     color: var(--color-primary);
-    text-decoration: none;
+    text-decoration: none !important;
+
   }
   
   .gy-4{
