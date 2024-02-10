@@ -446,11 +446,13 @@
     padding-right: 10px;
     font-size: 20px;
     line-height: 0;
-    color: var(--color-primary);
+    /* color: var(--color-primary); */
+    color:  rgb(252, 116, 4);
   }
   
   .faq .accordion-button:not(.collapsed) {
-    color: var(--color-primary);
+    /* color: var(--color-primary); */
+    color:  rgb(252, 116, 4);
     border-bottom: 0;
     box-shadow: none;
   }

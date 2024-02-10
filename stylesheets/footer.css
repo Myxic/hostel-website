@@ -145,7 +145,7 @@ ul li p {
 
 
     /* color: rgba(54, 88, 124, 0.4); */
-    color: aliceblue;
+    color: aliceblue !important;
     border-bottom: 3px solid orangered;
     transition-property: all;
     transition-duration: 300ms;

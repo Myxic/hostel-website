@@ -51,6 +51,7 @@ h1 small{
 .left_side{
     box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    border: 8px solid white;
 }
 .right_side{
     padding: 10px;
@@ -88,6 +89,7 @@ figure{
     border-radius: 10px;
     
 }
+
 .info >.map ,
 .info img{
     aspect-ratio: 3/2;
@@ -338,6 +340,18 @@ input[type="radio"]{
 @media (max-width:800px) {
     .innerwelcome h1{
         font-size: 25px;
+    }
+    .info{
+         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    }
+    .info>img{
+        
+        border: 3px solid white;
+    }
+    .left_side {
+        border: none;
+        padding: 4px 10px ;
+        box-shadow: none;
     }
     .innerwelcome h1 small{
         font-size: large;
