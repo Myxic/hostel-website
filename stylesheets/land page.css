@@ -4,7 +4,9 @@
 /************ welcome session************ */
 .welcome{
     /* background-image: linear-gradient(0deg, rgba(0, 60, 100, 0.84), rgba(0, 60, 100, 0.84)), url(../images/hfyv1.jpg); */
-    background-image: linear-gradient(0deg, rgba(0, 60, 100, 0.717), rgba(0, 60, 100, 0.67)), url(https://res.cloudinary.com/dfk4z2ch2/image/upload/v1706478115/HolyFamily/HFExterior/m3mtfjcgozakr84jiijm.jpg);
+    /* background-image: linear-gradient(0deg, rgba(0, 60, 100, 0.717), rgba(0, 60, 100, 0.67)), url(https://res.cloudinary.com/dfk4z2ch2/image/upload/v1706478115/HolyFamily/HFExterior/m3mtfjcgozakr84jiijm.jpg); */
+    background-image: linear-gradient(0deg, rgba(5, 5, 5, 0.621), rgba(3, 3, 3, 0.769)), url(https://res.cloudinary.com/dfk4z2ch2/image/upload/v1706478115/HolyFamily/HFExterior/m3mtfjcgozakr84jiijm.jpg); 
+    /* background-image: linear-gradient(0deg, rgba(187, 184, 184, 0.34), rgba(201, 196, 196, 0.479)), url(https://res.cloudinary.com/dfk4z2ch2/image/upload/v1706478115/HolyFamily/HFExterior/m3mtfjcgozakr84jiijm.jpg);  */ 
     background-size: cover;
     text-align: center;
     min-height: 100vh;
@@ -12,16 +14,14 @@
 }
 .outer{
    
-    height: 100vh;
+    min-height: 100vh;
 }
-.login{
-    display: none;
-}
+
 .innerwelcome{
    
     width: fit-content;
     margin: auto;
-    color: white;
+    color: wheat;
   
     transform: translateY(35vh);
     
@@ -51,6 +51,7 @@ h1 small{
 .left_side{
     box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    border: 8px solid white;
 }
 .right_side{
     padding: 10px;
@@ -80,13 +81,15 @@ h1 small{
 .activeFeatures,
 .pics img:hover,
 .pics img:focus{
-    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.4) !important;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.4) !important;
+    border: 2px solid  rgba(252, 115, 4, 0.7);
 }
 figure{
     /* border: thin #c0c0c0 solid; */
     border-radius: 10px;
     
 }
+
 .info >.map ,
 .info img{
     aspect-ratio: 3/2;
@@ -174,10 +177,23 @@ blockquote{
 .comment_top{
     align-items: center !important;
     display: grid !important;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns:  1fr;
 
 }
 
+.Comment-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding:10px ;
+}
+.prev,
+.next{
+  cursor: pointer;
+  width: 5%;
+ 
+}
 
 
 .rating span:hover{
@@ -316,10 +332,7 @@ input[type="radio"]{
     transform: rotate(-135deg);
    
   }
-  .prev,
-  .next{
-    cursor: pointer;
-  }
+
   .map{
     z-index: 0;
   }
@@ -327,6 +340,18 @@ input[type="radio"]{
 @media (max-width:800px) {
     .innerwelcome h1{
         font-size: 25px;
+    }
+    .info{
+         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    }
+    .info>img{
+        
+        border: 3px solid white;
+    }
+    .left_side {
+        border: none;
+        padding: 4px 10px ;
+        box-shadow: none;
     }
     .innerwelcome h1 small{
         font-size: large;

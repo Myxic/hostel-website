@@ -5,8 +5,26 @@
     padding: 0%;
     transition: all 0.5s ease-in-out;
     box-sizing: border-box;
+    
 }
-
+.heading {
+    text-align: center;
+    color: wheat;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg, rgba(5, 5, 5, 0.621), rgba(3, 3, 3, 0.769)), url(https://res.cloudinary.com/dfk4z2ch2/image/upload/v1706478115/HolyFamily/HFExterior/m3mtfjcgozakr84jiijm.jpg); 
+    background-position: 20% 30%;
+    min-height: 200px;
+    margin-bottom: 30px;
+  }
+.heading > h1{
+    line-height: 72px;
+    font-weight: 400;
+    font-size: 2.5em;
+   
+}
 #burger,
 .nav_ul {
     box-sizing: content-box;
@@ -18,13 +36,15 @@ body {
 }
 
 /* removing text-decorators for the links */
-header a,
+header a{
+    color: wheat !important;
+}
 footer a,
 a {
     text-decoration: none;
 
     color: #18A0FB;
-    ;
+    
 }
 
 .btn1 {
@@ -34,19 +54,20 @@ a {
     margin-top: 30px;
     display: flex;
     gap: 20px;
-    font-size: 13px;
+    font-size: 1rem;
+   
+    
 }
 
 .btn1 a {
-    width: 100px;
+    width: auto;
     color: white;
-    padding-top: 8px;
-    padding-bottom: 8px;
     border-radius: 7px;
+    padding: 13px;
 }
 
 .login {
-    background: orangered;
+    background: rgb(191, 78, 3);
 }
 
 .reg {
@@ -55,8 +76,8 @@ a {
 
 .login:focus,
 .login:hover {
-    background: rgba(255, 69, 0, 0.8);
-    color: black;
+    background: rgb(252, 116, 4);
+    
 
 }
 
@@ -68,10 +89,11 @@ a {
 
 /****************Heading **************/
 header {
-    background: white;
+    /* background: white; */
     width: 100%;
-    box-shadow: 0px 0px 3px 1px;
-    z-index: 10;
+    /* box-shadow: 0px 0px 3px 1px; */
+   
+    position: absolute;
 }
 
 nav {
@@ -110,7 +132,7 @@ ul li p {
     border-bottom: 3px solid orangered;
 }
 
-.nav_ul li a,
+.nav_ul > li > a,
 .nav_ul li p {
     border-bottom: 3px solid transparent;
     padding: .3vw;
@@ -122,7 +144,8 @@ ul li p {
 .nav_ul li p:hover {
 
 
-    color: rgba(54, 88, 124, 0.4);
+    /* color: rgba(54, 88, 124, 0.4); */
+    color: aliceblue !important;
     border-bottom: 3px solid orangered;
     transition-property: all;
     transition-duration: 300ms;
@@ -165,86 +188,6 @@ header .logo img {
         margin: 0;
         font-weight: 500;
     }
-}
-
-/* *******************BOOKING***************** */
-
-.booking {
-    position: fixed;
-    width: 100%;
-    background: black;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: 17;
-    display: none;
-    overflow: auto;
-    animation: page 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
-}
-
-@keyframes page {
-    0% {
-        left: 50vw;
-        top: 20vh;
-        width: 100px;
-        height: 10%;
-
-    }
-
-    100% {
-        width: 100%;
-        left: 0;
-        top: 0;
-
-    }
-}
-
-.outerdiv_booking {
-    margin: auto;
-    width: 50%;
-    border: 1px solid transparent;
-    min-height: 100px;
-    transform: translateY(20%);
-}
-
-#close {
-    float: right;
-    width: 40px;
-
-}
-
-#close:focus,
-#close:hover {
-    width: 38px;
-}
-
-.how_to_book {
-    width: 90%;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background: #E9E9E9;
-    border-radius: 10px;
-
-
-
-}
-
-.how_to_book h2 {
-    background: #D9D9D9CF;
-    text-align: center;
-    border-radius: 10px 10px 0px 0px;
-    padding: 10px;
-}
-
-.how_to_book ul {
-    text-align: left;
-    list-style: outside;
-    display: block;
-    padding: 20px 60px;
-    line-height: 25px;
-    overflow: auto;
-
 }
 
 /****************Footer **************/
@@ -379,16 +322,16 @@ hr {
         display: block;
         position: fixed;
         top: 0%;
-        left: 0%;
+        left: 40%;
         text-align: left;
         display: none;
-        background: white;
+        background: rgb(59, 56, 56);
         padding: 10%;
         padding-top: 20%;
         line-height: 50px;
         font-size: 15px;
         height: 100vh;
-        width: 80%;
+        width: 40%;
         z-index: 10;
         animation: page 600ms cubic-bezier(0.215, 0.610, 0.355, 1);
     }
@@ -400,7 +343,7 @@ hr {
         }
 
         100% {
-            left: 0;
+            left: 40vw;
         }
     }
 
@@ -433,7 +376,7 @@ hr {
         right: 20px;
         width: 20px;
         display: block;
-        outline: 1px solid #18A0FB;
+        outline: 1px solid rgb(191, 78, 3);;
         padding: 5px;
         border-radius: 5px;
         cursor: pointer;
@@ -442,7 +385,7 @@ hr {
 
     #burger:focus,
     #burger:hover {
-        outline: 3px solid #18A0FB;
+        outline: 3px solid rgb(191, 78, 3);;
 
     }
 
@@ -527,9 +470,18 @@ hr {
 }
 
 
+.headerFiller{
+    height: 100vh;
+    z-index: 1;
+}
+
 /* devWhatsapp */
 
 .devWhatsapp {
-    text-decoration: underline;
+    text-decoration: underline !important;
     color: #ffc107;
 }
+
+
+
+/* rgb(191, 78, 3); */

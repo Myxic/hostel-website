@@ -6,14 +6,7 @@ body {
   cursor: pointer;
 }
 
-.heading {
-  text-align: center;
-  color: #BF4E03;
-  font-family: Montserrat;
-  line-height: 72px;
-  font-weight: 400;
-  font-size: 2.5em;
-}
+
 
 .gallerySelector {
   width: 30%;
@@ -31,7 +24,7 @@ body {
 .gallerySelector a {
   width: 25%;
   padding: .6em 0em;
-  background: #18A0FB;
+  background: rgb(191, 78, 3);
   /* outline: 1px solid #FFFFFF; */
   color: #FFFFFF;
 
