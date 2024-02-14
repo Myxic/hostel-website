@@ -9,7 +9,7 @@
   /* Colors */
   :root {
     --color-default: #222222;
-    --color-primary: #38a9f5e0;
+    --color-primary: #BF4E03;
     --color-secondary: #f85a40;
   }
   
@@ -477,7 +477,7 @@
   # Contact Section
   --------------------------------------------------------------*/
   .contact .info-container {
-    background-color: #d5eeffe0;
+    background-color: #E8CBB9;
     height: 100%;
     padding: 20px;
     border-radius: 10px 0 0 10px;
@@ -486,11 +486,11 @@
   
   .contact .info-item {
     width: 100%;
-    background-color: #C4E6FD;
+    background-color: #E0B599;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
-    color: #3e63bb;
+    color: #BF4E03;
   }
   
   .contact .info-item:last-child {
@@ -499,7 +499,7 @@
   
   .contact .info-item i {
     font-size: 20px;
-    color: #3e63bb;
+    color: #BF4E03;
     float: left;
     width: 44px;
     height: 44px;
