@@ -1,0 +1,505 @@
+:root {
+    --lrw-w: 43.5%;
+    --sh-h: 20%;
+    --sw-lmr-w: 13%;
+    --corridor-backgroundcolor: wheat;
+
+}
+
+.container {
+    position: relative;
+    
+}
+
+div {
+
+
+    z-index: 1;
+}
+
+.roomNo {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    height: 100%;
+    background-color: darkgoldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.building {
+    width: 90%;
+    position: relative;
+    margin: 60px auto;
+    /* height: 400px; */
+    height: 35vw;
+    background: rgb(169, 142, 88);
+    z-index: 0;
+}
+
+.buildingSection {
+    height: 100%;
+    position: absolute;
+}
+
+.left {
+
+    left: 0;
+    width: var(--sw-lmr-w);
+    height: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+}
+
+.leftMiddle1 {
+    border-left: 1px solid white;
+    top: 0;
+    left: 0;
+    height: var(--sh-h);
+    width: var(--lrw-w);
+    background-color: darkgoldenrod;
+
+}
+
+.leftMiddle2 {
+    border-left: 1px solid white;
+    height: 20%;
+    width: var(--lrw-w);
+    bottom: 0;
+    left: 0;
+    background-color: darkgoldenrod;
+
+}
+
+.middle {
+
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--sw-lmr-w);
+}
+
+
+.rightMiddle2 {
+
+    height: var(--sh-h);
+    right: 0;
+    width: var(--lrw-w);
+    bottom: 0;
+}
+
+.rightMiddle1 {
+    position: absolute;
+    height: var(--sh-h);
+    right: 0;
+    width: var(--lrw-w);
+    top: 0;
+}
+
+.right {
+
+    right: 0;
+    width: var(--sw-lmr-w);
+    height: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.CourtYard {
+    width: 30.51%;
+    height: 60%;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.CourtYard>h1 {
+    font-size: 2.5vw;
+}
+
+.Yard1 {
+    left: var(--sw-lmr-w);
+    top: 20%;
+}
+
+.Yard2 {
+    top: 20%;
+    right: var(--sw-lmr-w);
+}
+
+.middleSection {
+    background-color: rgb(255, 213, 0);
+    display: flex;
+}
+
+.bSMS1,
+.bSMS5 {
+    width: 100%;
+    height: 20%;
+
+}
+
+.bSMS2,
+.bSMS3,
+.bSMS4 {
+    top: 20%;
+    height: 60%;
+
+}
+
+.bSMS2,
+.bSMS4 {
+    width: 40%;
+    flex-direction: column;
+}
+
+.bSMS2 {
+    left: 0;
+}
+
+.bSMS4 {
+    right: 0;
+}
+
+.bSMS3 {
+    width: 20%;
+    left: 40%;
+    background-color: var(--corridor-backgroundcolor);
+}
+
+.bSMS5 {
+    bottom: 0;
+
+
+}
+
+
+.circle {
+    width: 3vw;
+    height: 3vw;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.bSMS5Sections {
+    position: absolute;
+    background-color: var(--corridor-backgroundcolor);
+}
+
+.bSMS1Room,
+.bSMS5Room {
+    left: 0;
+    width: 40%;
+    height: 70%;
+    bottom: 0;
+}
+
+.bSMS1Room {
+    top: 0;
+}
+
+.bSMS1Kitchen,
+.bSMS5Kitchen {
+    width: 45%;
+    height: 50%;
+    top: 30%;
+    right: 0;
+}
+
+.bSMS1Kitchen {
+    top: 20%;
+}
+
+.bSMS1Kitchen>.roomNo>h1,
+.bSMS5Kitchen>.roomNo>h1 {
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+.bSMS1corrior1,
+.bSMS5corrior1 {
+    width: 100%;
+    height: 30%;
+
+}
+
+.bSMS1corrior1 {
+    bottom: 0;
+}
+
+.bSMS1corrior2,
+.bSMS5corrior2 {
+    width: 15%;
+    height: 70%;
+    left: 40%;
+    top: 30%;
+}
+
+.bSMS1corrior2 {
+    top: 0%;
+}
+
+.bSMS1stairs,
+.bSMS5stairs {
+    display: flex;
+    width: 45%;
+    height: 25%;
+    bottom: 0;
+    right: 0;
+
+}
+
+.bSMS1stairs {
+    top: 0;
+}
+
+.bSMS1stairs>.roomNo,
+.bSMS5stairs>.roomNo {
+    width: 100%;
+}
+
+.bSRS2>.roomNo>div>div,
+.bSLS1>.roomNo:nth-child(2)>div>div,
+.bSMS1stairs>.roomNo>div,
+.bSMS5stairs>.roomNo>div {
+    width: 100%;
+    border: 1px solid;
+    height: 100%;
+}
+
+.rightMiddleSection .leftMiddleSection,
+.rightSection,
+.leftSection {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(43, 226, 147, 0.475);
+
+}
+
+.bSLS1,
+.bSLS2,
+.bSLS3 {
+    top: 0;
+    height: 100%;
+    width: 40%;
+}
+
+.bSLS1 {
+    left: 0;
+}
+
+.bSLS2 {
+    background-color: rgb(135, 33, 33);
+}
+
+.bSRS2>.roomNo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 25%;
+    width: 30%;
+}
+
+.bSRS2,
+.bSLS3 {
+    right: 0;
+
+
+}
+
+.bSLS3 {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.bSLS2 {
+    left: 40%;
+    width: 20%;
+    background-color: var(--corridor-backgroundcolor);
+}
+
+.bSRS2>.roomNo,
+.bSLS1>.roomNo:nth-child(2) {
+    flex-direction: column;
+}
+
+.bSRS2>.roomNo>div,
+.bSLS1>.roomNo:nth-child(2)>div {
+    width: 100%;
+    height: 50%;
+    border: 1px solid white;
+    background-color: gray;
+    display: flex;
+}
+
+.bSRS2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.controlPanel>h1,
+.lib>h1,
+.bSRS2>h1 {
+
+    color: wheat;
+    font-size: 1vw;
+    rotate: 90deg;
+    text-align: center;
+
+}
+
+.bSRM2S1,
+.bSRM2S2,
+.bSRMS2,
+.bSRMS1,
+.bSLM2S1,
+.bSLM2S2,
+.bSLMS2,
+.bSLMS1 {
+    width: 100%;
+
+}
+
+.bSLM2S2,
+.bSRM2S2,
+.bSRMS1,
+.bSLMS1 {
+    height: 70%;
+    background-color: rgb(135, 33, 33);
+}
+
+.bSLM2S2,
+.bSRM2S2 {
+    bottom: 0;
+}
+
+.bSLM2S1,
+.bSRM2S1,
+.bSRMS2,
+.bSLMS2 {
+    display: flex;
+
+    height: 30%;
+    bottom: 0;
+    background-color: var(--corridor-backgroundcolor);
+
+}
+
+.bSLM2S1,
+.bSRM2S1 {
+    top: 0;
+    bottom: 100%;
+    background-color: var(--corridor-backgroundcolor);
+}
+
+.bSLM2S1,
+.bSLMS2 {
+    left: 10.5%;
+}
+
+.bSLM2S2Corridor {
+    background-color: var(--corridor-backgroundcolor);
+    left: 55%;
+    width: 10%;
+}
+
+.bSLM2S2Rooms1 {
+    width: 55%;
+    left: 0;
+}
+
+.bSLM2S2Rooms2 {
+    width: 35%;
+    right: 0;
+}
+
+.bSRM2S2,
+.bSRMS1,
+.bSRM2S2Rooms1,
+.bSRM2S2Rooms2,
+.bSLM2S2Rooms1,
+.bSLM2S2Rooms2 {
+    display: flex;
+}
+
+.bSRM2S2>div,
+.bSRMS1>div,
+.bSRM2S2Rooms1>div,
+.bSRM2S2Rooms2>div,
+.bSLM2S2Rooms1>div,
+.bSLM2S2Rooms2>div {
+    width: 100%;
+}
+
+.controlPanel {
+    background-color: red;
+}
+
+.lib {
+    background-color: darkgreen;
+}
+
+.bSMS5Kitchen>.roomNo,
+.bSMS1Kitchen>.roomNo {
+    background-color: darkmagenta;
+    color: white;
+
+}
+
+.bSLM2S2Rooms1>.roomNo:nth-child(1),
+.bSLM2S2Rooms1>.roomNo:nth-child(1) {
+    border: 1px solid transparent;
+}
+
+.bSLS3>.roomNo,
+.bSMS2>.roomNo,
+.bSMS4>.roomNo,
+.bSLS1>.roomNo {
+    border: 1px solid white;
+}
+
+.bSMS5stairs>.roomNo,
+.bSMS1stairs>.roomNo {
+    background-color: gray;
+}
+
+
+
+@media (max-width: 550px) {
+    .container {
+        position: relative;
+        background-color: gray;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    .building {
+
+        rotate: 90deg;
+        overflow: auto;
+        width: 90vh;
+        height: 90vw;
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        translate: -50% -50%;
+        display: flex;
+
+    }
+
+    .controlPanel>h1,
+    .lib>h1,
+    .bSRS2>h1 {
+        font-size: 3vw;
+       
+    }
+
+}

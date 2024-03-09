@@ -55,7 +55,7 @@ function chooseSide(e) {
   }
 }
 // function ShowAdminLogin() {
-//   // console.log(word);
+
 
 //   if (window.matchMedia("(min-width: 675px)").matches) {
 //     var hiddenbuttons = document.querySelectorAll("#hiddenbuttons .login");
