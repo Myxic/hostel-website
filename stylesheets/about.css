@@ -10,11 +10,11 @@
 .border-1 {
     width: 96%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin: auto;
     gap: 40px;
     padding: 60px;
-    
+
 
 }
 
@@ -27,6 +27,7 @@
     gap: 20px;
 }
 
+.border-1>div>div>figure,
 .border-1>div>div {
     display: flex;
     flex-direction: column;
@@ -35,9 +36,45 @@
     align-items: center;
 }
 
-.contact,
+
+
 .mapContainer {
-    grid-column: 3 span;
+    grid-column: 2 span;
+}
+
+figure {
+    padding: 1.5rem;
+    position: relative;
+    width: 100%;
+    color: black;
+    --c: 50px;
+}
+
+.border-1>div>div>figure::after,
+.border-1>div>div>figure::before {
+    content: " ";
+    background: transparent;
+    position: absolute;
+    width: 3rem;
+    aspect-ratio: 1;
+   
+
+}
+
+.border-1>div>div>figure::before {
+    top: -0.57rem;
+    left: -0.57rem;
+    rotate: 45deg;
+    z-index: 1;
+    box-shadow: 5px 0 5px -5px rgba(0, 0, 0, .7) ;
+
+}
+
+.border-1>div>div>figure::after {
+    bottom: -0.57rem;
+    right: -0.57rem;
+    rotate: 45deg;
+    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, .7) ;
 }
 
 .map {
@@ -45,7 +82,7 @@
     justify-content: center;
     align-items: center;
     height: 500px;
-    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.2); */
     margin-bottom: 20px;
     z-index: 0;
 }
@@ -55,9 +92,10 @@
     height: 100%;
 }
 
-.border-1>div>div>img {
-    width: 96%;
-    
+.border-1>div>div>figure>img {
+    max-width: 100%;
+    clip-path: polygon(1rem 0, 100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0 1rem);
+
 }
 
 .border-1>div>div>h3 {
@@ -65,6 +103,7 @@
     margin-bottom: 10px;
     margin-top: 20px;
     text-align: center;
+
 }
 
 .contact-list,
@@ -72,17 +111,17 @@
     font-size: 16px;
     font-weight: 300;
     text-align: justify;
-
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
 }
 
 .contact-list {
     display: block;
     list-style: disc;
-    text-align: left;
+    /* text-align: left; */
     margin: auto;
 }
 
-@media (max-width: 675px) {
+@media (max-width: 1000px) {
     .outer {
         letter-spacing: 0.02em;
     }
@@ -98,10 +137,10 @@
         grid-column: 1 span;
     }
 
-    .contact-list,
+    /* .contact-list,
     .border-1>div>div>p {
         font-size: 10px;
-    }
+    } */
 
     .map {
         height: 300px;

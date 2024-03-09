@@ -67,40 +67,30 @@ body {
 
 .row>.column {
   display: flex !important;
-  width: 90%;
+  /* width: 90%; */
   align-items: center !important;
-  margin: auto;
-  margin-bottom: 10%;
-
-
-}
-
-#addImage {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center;
-  width: 25%;
-  margin: auto;
-
-
+  /* margin: auto; */
 }
 
 .row {
 
-  display: grid !important;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex !important;
+  /* grid-template-columns: repeat(5,1fr); */
   align-items: center !important;
   text-align: center;
   width: 90%;
-  justify-content: center;
+  justify-content:center;
   margin: auto;
   padding: 10px;
-
+  flex-wrap: wrap;
+  gap: 40px;
+  flex-direction: row;
 }
 
 
 
-#addImage>img,
+
+
 .column>img {
   width: 100%;
   aspect-ratio: 3/2;
@@ -109,12 +99,8 @@ body {
   border-radius: .3em;
   margin-left: auto;
   margin-right: auto;
-
+  width: 250px;
 }
-
-
-
-
 
 
 /* The Modal (background) */
@@ -122,8 +108,7 @@ body {
   display: none;
   position: fixed;
   z-index: 1;
-
-  padding-top: 100px;
+  padding: 60px;
   left: 0;
   top: 0;
  bottom: 0;
@@ -139,7 +124,12 @@ body {
   margin: auto;
   padding: 0;
   /* width: 90%; */
-  max-height: 80%;
+  /* height: 100%; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0px;
   
 }
 
@@ -165,6 +155,8 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+
 }
 
 /* Next & previous buttons */
@@ -183,41 +175,41 @@ body {
   -webkit-user-select: none;
   user-select: none;
   transform: translateY(-50%);
+  border-radius: 3px !important;
 
 }
-@media (min-width: 1000px) {
+
   .mySlides img {
-    /* height: 600px !important; */
-    width: 55vw ; 
+    width: 75%;
+    /* width: 900px ;  */
     aspect-ratio: 3/2;
   
   }
-  .prev:hover,
+.prev:hover,
 .next:hover {
   background-color: rgba(151, 147, 147, 0.8) !important;
 }
-.prev,
-.next{
-  margin-top: -50px;
-  border-radius: 3px !important;
-}
-}
+
+
 @media (max-width: 1000px) {
-  .mySlides img {
+  /* .mySlides img {
    
     width: 80vw ;
-    aspect-ratio: 3/2;
+   
   
-  }
+  } */
   
 }
 
 @media (max-width: 800px) {
 
-  .mySlides img {
+  /* .mySlides img {
     width: 95vw !important;
- aspect-ratio: 3/2;
+ 
    
+  } */
+  .modal-content{
+    margin-top: 40px;
   }
 
 }
@@ -226,9 +218,10 @@ body {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-
 }
-
+.prev{
+  left: 0;
+}
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
@@ -275,6 +268,7 @@ img.hover-shadow {
 
 .caption-container>.caption {
   display: none;
+  margin: 20px auto;
 }
 
 @media (max-width: 700px) {
@@ -293,21 +287,7 @@ img.hover-shadow {
   .modal {
     padding: 0;
   }
-
-
-  .row {
-    padding: 4%;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .row>#addImage,
   .row>.column {
     margin-bottom: 30px;
-  }
-
-
-
-  .modal-content {
-    top: 15vh;
   }
 }

@@ -15,13 +15,13 @@ let scrollDisabled = false;
 function disableScroll(){
   document.getElementById("myModal").style.overflow = 'hidden';
   document.body.style.overflow = "hidden";
-   console.log('disableScroll');
+  
 }
 
 function enableScroll(){
 document.body.style.overflow = 'auto';
 document.getElementById("myModal").style.overflow = 'auto';
- console.log('enableScroll');
+ 
 }
 
 
@@ -34,7 +34,7 @@ function getChildIndex(parentElement, childElement) {
   }
 // Open the Modal
 function openModal() {
-  document.getElementById("myModal").style.display = "block";
+  document.getElementById("myModal").style.display = "flex";
   disableScroll();
 }
 
